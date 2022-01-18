@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,7 +16,6 @@
 		23E96A0A27969EDF00D7D7D3 /* MypageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E96A0927969EDF00D7D7D3 /* MypageVC.swift */; };
 		23E96A0C27969EF300D7D7D3 /* Mypage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23E96A0B27969EF300D7D7D3 /* Mypage.storyboard */; };
 		23E96A1127969F2400D7D7D3 /* a.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E96A1027969F2400D7D7D3 /* a.swift */; };
-		23E96A1327969F2900D7D7D3 /* b.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E96A1227969F2900D7D7D3 /* b.swift */; };
 		23E96A1827969F6500D7D7D3 /* TeaKKeulTBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E96A1727969F6500D7D7D3 /* TeaKKeulTBC.swift */; };
 		23E96A1A27969F7600D7D7D3 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23E96A1927969F7600D7D7D3 /* TabBar.storyboard */; };
 		23E96A1D27969FC900D7D7D3 /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E96A1C27969FC900D7D7D3 /* Identifiers.swift */; };
@@ -29,6 +28,8 @@
 		23FB787A279698D6000549C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23FB7879279698D6000549C2 /* Assets.xcassets */; };
 		23FB787D279698D6000549C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23FB787B279698D6000549C2 /* LaunchScreen.storyboard */; };
 		55380B265487589C90FD6428 /* Pods_Tea_KKeul_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 899E3EC9C1BE9A389460B161 /* Pods_Tea_KKeul_iOS.framework */; };
+		F2B0453A27970C2F00FFEE27 /* ConditionCheckTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0453827970C2F00FFEE27 /* ConditionCheckTVC.swift */; };
+		F2B0453B27970C2F00FFEE27 /* ConditionCheckTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2B0453927970C2F00FFEE27 /* ConditionCheckTVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +42,6 @@
 		23E96A0927969EDF00D7D7D3 /* MypageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageVC.swift; sourceTree = "<group>"; };
 		23E96A0B27969EF300D7D7D3 /* Mypage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mypage.storyboard; sourceTree = "<group>"; };
 		23E96A1027969F2400D7D7D3 /* a.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = a.swift; sourceTree = "<group>"; };
-		23E96A1227969F2900D7D7D3 /* b.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = b.swift; sourceTree = "<group>"; };
 		23E96A1727969F6500D7D7D3 /* TeaKKeulTBC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaKKeulTBC.swift; sourceTree = "<group>"; };
 		23E96A1927969F7600D7D7D3 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		23E96A1C27969FC900D7D7D3 /* Identifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiers.swift; sourceTree = "<group>"; };
@@ -58,6 +58,8 @@
 		899E3EC9C1BE9A389460B161 /* Pods_Tea_KKeul_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tea_KKeul_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1540D966095D75595CE5F89 /* Pods-Tea-KKeul-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tea-KKeul-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Tea-KKeul-iOS/Pods-Tea-KKeul-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		CCFAAEC4C2AFE14CA7D0EEBD /* Pods-Tea-KKeul-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tea-KKeul-iOS.release.xcconfig"; path = "Target Support Files/Pods-Tea-KKeul-iOS/Pods-Tea-KKeul-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		F2B0453827970C2F00FFEE27 /* ConditionCheckTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionCheckTVC.swift; sourceTree = "<group>"; };
+		F2B0453927970C2F00FFEE27 /* ConditionCheckTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConditionCheckTVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,7 +221,8 @@
 		23E96A0E27969F0900D7D7D3 /* TVC */ = {
 			isa = PBXGroup;
 			children = (
-				23E96A1227969F2900D7D7D3 /* b.swift */,
+				F2B0453827970C2F00FFEE27 /* ConditionCheckTVC.swift */,
+				F2B0453927970C2F00FFEE27 /* ConditionCheckTVC.xib */,
 			);
 			path = TVC;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2B0453B27970C2F00FFEE27 /* ConditionCheckTVC.xib in Resources */,
 				23E969FE27969DE200D7D7D3 /* Home.storyboard in Resources */,
 				23E96A0C27969EF300D7D7D3 /* Mypage.storyboard in Resources */,
 				23FB787D279698D6000549C2 /* LaunchScreen.storyboard in Resources */,
@@ -454,7 +458,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23E96A1327969F2900D7D7D3 /* b.swift in Sources */,
+				F2B0453A27970C2F00FFEE27 /* ConditionCheckTVC.swift in Sources */,
 				23E96A2027969FE900D7D7D3 /* ViewControllerFactory.swift in Sources */,
 				23E96A0A27969EDF00D7D7D3 /* MypageVC.swift in Sources */,
 				23FB7871279698D5000549C2 /* AppDelegate.swift in Sources */,

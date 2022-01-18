@@ -22,7 +22,8 @@ struct Identifiers {
     static let mypageVC = "MypageVC"
     
     //MARK: TVC
-    
+    static let conditionCheckTVC = "ConditionCheckTVC"
+    static let myStateTVC = "myStateTVC"
     //MARK: CVC
     static let magazineCVC = "MagazineCVC"
     
