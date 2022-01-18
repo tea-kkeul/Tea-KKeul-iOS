@@ -24,6 +24,7 @@ struct Identifiers {
     //MARK: TVC
     
     //MARK: CVC
+    static let magazineCVC = "MagazineCVC"
     
     //MARK: View
 }
