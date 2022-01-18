@@ -13,6 +13,7 @@ struct Identifiers {
     static let magazineSB = "Magazine"
     static let calendarSB = "Calendar"
     static let mypageSB = "Mypage"
+    static let loginSB = "Login"
     
     //MARK: Controller
     static let teaKKeulTBC = "TeaKKeulTBC"
@@ -20,6 +21,7 @@ struct Identifiers {
     static let magazineVC = "MagazineVC"
     static let calendarVC = "CalendarVC"
     static let mypageVC = "MypageVC"
+    static let loginVC = "LoginVC"
     
     //MARK: TVC
     

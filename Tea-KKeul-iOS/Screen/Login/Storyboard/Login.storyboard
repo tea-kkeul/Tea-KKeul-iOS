@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--LoginVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="LoginVC" customModule="Tea_KKeul_iOS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="wov-fK-1gs">
+                                <rect key="frame" x="158" y="251" width="98" height="98"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="98" id="0Un-Wh-rDm"/>
+                                    <constraint firstAttribute="height" constant="98" id="kRv-IY-SJC"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoTitle" translatesAutoresizingMaskIntoConstraints="NO" id="W2L-Ah-wS4">
+                                <rect key="frame" x="161" y="349" width="92" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="92" id="1Ha-GF-gqO"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="JBp-bx-BB5"/>
+                                    <constraint firstAttribute="height" constant="40" id="O5B-FP-o8y"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ks0-Zd-mp3" userLabel="googleLoginBtn">
+                                <rect key="frame" x="20" y="533" width="374" height="43"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="3aK-AN-O8o"/>
+                                </constraints>
+                                <state key="normal" title="구글로 로그인하기">
+                                    <color key="titleColor" red="0.40392156862745099" green="0.49411764705882355" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.40392156862745099" green="0.49411764705882355" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="googleLoginBtnClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="6j4-jU-FoN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYC-mT-gEA" userLabel="appleLoginBtn">
+                                <rect key="frame" x="20" y="598" width="374" height="43"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="JdM-ng-qkV"/>
+                                </constraints>
+                                <state key="normal" title="애플로 로그인하기">
+                                    <color key="titleColor" red="0.42331886289999998" green="0.49166226390000001" blue="0.38822105530000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.4039215686" green="0.4941176471" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="appleLoginBtnClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="c1D-Me-ewI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="W2L-Ah-wS4" firstAttribute="top" secondItem="wov-fK-1gs" secondAttribute="bottom" id="47E-BY-VTi"/>
+                            <constraint firstItem="yYC-mT-gEA" firstAttribute="top" secondItem="ks0-Zd-mp3" secondAttribute="bottom" constant="22" id="4NC-my-mvO"/>
+                            <constraint firstItem="ks0-Zd-mp3" firstAttribute="top" secondItem="W2L-Ah-wS4" secondAttribute="bottom" constant="144" id="75X-3W-Uxd"/>
+                            <constraint firstItem="W2L-Ah-wS4" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="9hJ-X9-gFs"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ks0-Zd-mp3" secondAttribute="trailing" constant="20" id="aoB-A4-4r6"/>
+                            <constraint firstItem="wov-fK-1gs" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="bPt-3B-B4z"/>
+                            <constraint firstItem="wov-fK-1gs" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="207" id="dW7-JJ-l0P"/>
+                            <constraint firstItem="yYC-mT-gEA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="gMp-56-lVp"/>
+                            <constraint firstItem="ks0-Zd-mp3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="ij7-vN-xwD"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="yYC-mT-gEA" secondAttribute="trailing" constant="20" id="yiX-CV-Alr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="appleLoginBtn" destination="yYC-mT-gEA" id="vjY-mz-LcN"/>
+                        <outlet property="googleLoginBtn" destination="ks0-Zd-mp3" id="mub-ls-eWw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-233.33333333333334" y="79.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo" width="98" height="90"/>
+        <image name="LogoTitle" width="92" height="40"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

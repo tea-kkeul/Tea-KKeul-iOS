@@ -28,6 +28,8 @@
 		23FB787A279698D6000549C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23FB7879279698D6000549C2 /* Assets.xcassets */; };
 		23FB787D279698D6000549C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23FB787B279698D6000549C2 /* LaunchScreen.storyboard */; };
 		55380B265487589C90FD6428 /* Pods_Tea_KKeul_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 899E3EC9C1BE9A389460B161 /* Pods_Tea_KKeul_iOS.framework */; };
+		BD9456F72796B6D800EB0222 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD9456F62796B6D800EB0222 /* Login.storyboard */; };
+		BD9456F92796B6EE00EB0222 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9456F82796B6EE00EB0222 /* LoginVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +57,8 @@
 		23FB787E279698D6000549C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		899E3EC9C1BE9A389460B161 /* Pods_Tea_KKeul_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tea_KKeul_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1540D966095D75595CE5F89 /* Pods-Tea-KKeul-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tea-KKeul-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Tea-KKeul-iOS/Pods-Tea-KKeul-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		BD9456F62796B6D800EB0222 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		BD9456F82796B6EE00EB0222 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		CCFAAEC4C2AFE14CA7D0EEBD /* Pods-Tea-KKeul-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tea-KKeul-iOS.release.xcconfig"; path = "Target Support Files/Pods-Tea-KKeul-iOS/Pods-Tea-KKeul-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +94,7 @@
 				23E969F727969D7600D7D7D3 /* Magazine */,
 				23E969F427969D5C00D7D7D3 /* Calendar */,
 				23E969F127969D2600D7D7D3 /* Mypage */,
+				BD9456FA2796B70000EB0222 /* Login */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -317,6 +322,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BD9456FA2796B70000EB0222 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BD9456FB2796B70A00EB0222 /* Storyboard */,
+				BD9456FC2796B71B00EB0222 /* Controller */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		BD9456FB2796B70A00EB0222 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				BD9456F62796B6D800EB0222 /* Login.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		BD9456FC2796B71B00EB0222 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BD9456F82796B6EE00EB0222 /* LoginVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -375,6 +405,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD9456F72796B6D800EB0222 /* Login.storyboard in Resources */,
 				23E969FE27969DE200D7D7D3 /* Home.storyboard in Resources */,
 				23E96A0C27969EF300D7D7D3 /* Mypage.storyboard in Resources */,
 				23FB787D279698D6000549C2 /* LaunchScreen.storyboard in Resources */,
@@ -419,6 +450,7 @@
 			files = (
 				23E96A1327969F2900D7D7D3 /* b.swift in Sources */,
 				23E96A2027969FE900D7D7D3 /* ViewControllerFactory.swift in Sources */,
+				BD9456F92796B6EE00EB0222 /* LoginVC.swift in Sources */,
 				23E96A0A27969EDF00D7D7D3 /* MypageVC.swift in Sources */,
 				23FB7871279698D5000549C2 /* AppDelegate.swift in Sources */,
 				23E96A1827969F6500D7D7D3 /* TeaKKeulTBC.swift in Sources */,
