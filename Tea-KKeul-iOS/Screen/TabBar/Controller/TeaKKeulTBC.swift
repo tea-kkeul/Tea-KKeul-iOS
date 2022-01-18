@@ -27,19 +27,23 @@ class TeaKKeulTBC: UITabBarController {
     /// setTabBar - 탭바 Setting
     func setTabBar() {
         
-        let homeTab = makeTabVC(vcType: .home, tabBarTitle: "home", tabBarImage: "", tabBarSelectedImage: "")
-        let magazineTab = makeTabVC(vcType: .magazine, tabBarTitle: "magazine", tabBarImage: "", tabBarSelectedImage: "")
-        let calendarTab = makeTabVC(vcType: .calendar, tabBarTitle: "calendar", tabBarImage: "", tabBarSelectedImage: "")
-        let mypageTab = makeTabVC(vcType: .mypage, tabBarTitle: "mypage", tabBarImage: "", tabBarSelectedImage: "")
+        let homeTab = makeTabVC(vcType: .home, tabBarTitle: "", tabBarImage: "Tab_Home", tabBarSelectedImage: "Tab_Home_Selected")
+        let magazineTab = makeTabVC(vcType: .magazine, tabBarTitle: "", tabBarImage: "Tab_Magazine", tabBarSelectedImage: "Tab_Magazine_Selected")
+        let calendarTab = makeTabVC(vcType: .calendar, tabBarTitle: "", tabBarImage: "Tab_Calendar", tabBarSelectedImage: "Tab_Calendar_Selected")
+        let mypageTab = makeTabVC(vcType: .mypage, tabBarTitle: "", tabBarImage: "Tab_Mypage", tabBarSelectedImage: "Tab_Mypage_Selected")
         
         // 탭바 스타일 설정
-        tabBar.frame.size.height = 65
-        tabBar.tintColor = .black
-        tabBar.layer.shadowOpacity = 0
-        tabBar.layer.shadowOffset = CGSize(width: 0, height: 0)
-        tabBar.layer.borderWidth = 0.3
-        tabBar.layer.borderColor = UIColor.lightGray.cgColor
-        tabBar.clipsToBounds = true
+        tabBar.frame.size.height = 78
+        tabBar.tintColor = .tabBarSelected
+        tabBar.unselectedItemTintColor = .tabBarUnSelected
+        
+        tabBar.layer.shadowOffset = CGSize(width: 0, height: 4)
+        tabBar.layer.shadowRadius = 20
+        tabBar.layer.shadowColor = UIColor.black.cgColor
+        tabBar.layer.shadowOpacity = 0.05
+
+        tabBar.backgroundColor = .white
+        tabBar.isTranslucent = false
         
         // 탭 구성
         let tabs =  [homeTab, magazineTab, calendarTab, mypageTab]
