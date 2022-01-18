@@ -22,13 +22,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="106"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="차와 가까워지는 시간" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="wzk-do-bpD">
-                                        <rect key="frame" x="20" y="50" width="166.33333333333334" height="44"/>
+                                        <rect key="frame" x="20" y="52" width="166.33333333333334" height="44"/>
                                         <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="20"/>
                                         <color key="textColor" red="0.40392156862745099" green="0.49411764705882355" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="쉽게 배우는 차 지식" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="H7g-k9-o8o">
-                                        <rect key="frame" x="20" y="80" width="78" height="22"/>
+                                        <rect key="frame" x="20" y="82" width="78" height="22"/>
                                         <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="10"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -38,9 +38,9 @@
                                 <constraints>
                                     <constraint firstItem="H7g-k9-o8o" firstAttribute="leading" secondItem="HuI-1M-IoR" secondAttribute="leading" constant="20" id="3TN-ho-sX6"/>
                                     <constraint firstItem="wzk-do-bpD" firstAttribute="leading" secondItem="HuI-1M-IoR" secondAttribute="leading" constant="20" id="GSL-r7-dr2"/>
-                                    <constraint firstItem="H7g-k9-o8o" firstAttribute="top" secondItem="HuI-1M-IoR" secondAttribute="top" constant="80" id="KcG-mE-guS"/>
+                                    <constraint firstItem="H7g-k9-o8o" firstAttribute="top" secondItem="HuI-1M-IoR" secondAttribute="top" constant="82" id="KcG-mE-guS"/>
+                                    <constraint firstItem="wzk-do-bpD" firstAttribute="top" secondItem="HuI-1M-IoR" secondAttribute="top" constant="52" id="Kry-Ks-LHd"/>
                                     <constraint firstAttribute="width" secondItem="HuI-1M-IoR" secondAttribute="height" multiplier="375:106" id="a5N-YW-EsP"/>
-                                    <constraint firstItem="wzk-do-bpD" firstAttribute="top" secondItem="HuI-1M-IoR" secondAttribute="top" constant="50" id="cAh-jz-Xem"/>
                                 </constraints>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4de-qX-BnJ">
