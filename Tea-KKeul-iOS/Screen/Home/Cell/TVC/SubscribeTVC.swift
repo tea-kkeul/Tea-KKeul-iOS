@@ -9,6 +9,7 @@ import UIKit
 
 class SubscribeTVC: UITableViewCell {
 
+    @IBOutlet weak var subscribeButton: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
