@@ -23,7 +23,8 @@ struct Identifiers {
     
     //MARK: TVC
     static let conditionCheckTVC = "ConditionCheckTVC"
-    static let myStateTVC = "myStateTVC"
+    static let myStateTVC = "MyStateTVC"
+    static let subscribeTVC = "SubscribeTVC"
     //MARK: CVC
     static let magazineCVC = "MagazineCVC"
     
