@@ -17,21 +17,29 @@ class MagazineVC: UIViewController {
         ["magazine6", "차 제대로 마시는 법"],
     ]
     
+    @IBOutlet weak var titleView: UIView!
     @IBOutlet weak var magazineCV: UICollectionView!
     
     let sectionInsets = UIEdgeInsets(top: 15, left: 20, bottom: 15, right: 20)
     
     override func viewDidLoad() {
+        setTitleView()
         setMagazineCV()
     }
 }
 //MARK: Custom Method
 extension MagazineVC {
+    // titleView border Setting
+    func setTitleView() {
+        titleView.layer.borderWidth = 1
+        titleView.layer.borderColor = UIColor.systemGray3.cgColor
+    }
+    // Magazine collectionView Setting
     func setMagazineCV() {
         magazineCV.dataSource = self
         magazineCV.delegate = self
         
-        magazineCV.backgroundColor = .systemGray4
+        magazineCV.backgroundColor = .white
     }
 }
 
