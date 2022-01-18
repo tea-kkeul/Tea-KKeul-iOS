@@ -1,6 +1,0 @@
-framework module Pods_Tea_KKeul_iOS {
-  umbrella header "Pods-Tea-KKeul-iOS-umbrella.h"
-
-  export *
-  module * { export * }
-}
