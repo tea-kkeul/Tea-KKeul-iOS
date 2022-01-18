@@ -23,6 +23,7 @@ extension HomeVC {
     func setLayout() {
         tableView.dataSource = self
         tableView.delegate = self
+        tableView.separatorStyle = .none
     }
     // MARK: - button 설정
     func setButton() {
@@ -32,13 +33,15 @@ extension HomeVC {
     func registerCell() {
         let conditionCheckNib = UINib(nibName: "ConditionCheckTVC", bundle: nil)
         tableView.register(conditionCheckNib, forCellReuseIdentifier: Identifiers.conditionCheckTVC)
+        let subscribeNib = UINib(nibName: "SubscribeTVC", bundle: nil)
+        tableView.register(subscribeNib, forCellReuseIdentifier: Identifiers.subscribeTVC)
     }
 }
 
 extension HomeVC: UITableViewDataSource {
     // MARK: - 섹션개수 설정
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return 2
     }
     // MARK: - 섹션 별 행 개수 (셀 개수)
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -49,10 +52,17 @@ extension HomeVC: UITableViewDataSource {
         _ tableView: UITableView,
         cellForRowAt indexPath: IndexPath
     ) -> UITableViewCell {
-        guard let cell: ConditionCheckTVC = tableView.dequeueReusableCell(withIdentifier: Identifiers.conditionCheckTVC, for: indexPath) as? ConditionCheckTVC else {
-            return UITableViewCell()
+        if indexPath.section == 0 {
+            guard let cell: ConditionCheckTVC = tableView.dequeueReusableCell(withIdentifier: Identifiers.conditionCheckTVC, for: indexPath) as? ConditionCheckTVC else {
+                return UITableViewCell()
+            }
+            return cell
+        } else {
+            guard let cell: SubscribeTVC = tableView.dequeueReusableCell(withIdentifier: Identifiers.subscribeTVC, for: indexPath) as? SubscribeTVC else {
+                return UITableViewCell()
+            }
+            return cell
         }
-        return cell
     }
     // MARK: - 섹션 별 셀 높이 설정
     func tableview(
