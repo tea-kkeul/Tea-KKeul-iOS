@@ -7,21 +7,49 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23E969FE27969DE200D7D7D3 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23E969FD27969DE200D7D7D3 /* Home.storyboard */; };
+		23E96A0027969E0100D7D7D3 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E969FF27969E0100D7D7D3 /* HomeVC.swift */; };
+		23E96A0227969E7600D7D7D3 /* Magazine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23E96A0127969E7600D7D7D3 /* Magazine.storyboard */; };
+		23E96A0427969E8300D7D7D3 /* MagazineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E96A0327969E8300D7D7D3 /* MagazineVC.swift */; };
+		23E96A0627969EAA00D7D7D3 /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E96A0527969EAA00D7D7D3 /* CalendarVC.swift */; };
+		23E96A0827969ECE00D7D7D3 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23E96A0727969ECE00D7D7D3 /* Calendar.storyboard */; };
+		23E96A0A27969EDF00D7D7D3 /* MypageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E96A0927969EDF00D7D7D3 /* MypageVC.swift */; };
+		23E96A0C27969EF300D7D7D3 /* Mypage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23E96A0B27969EF300D7D7D3 /* Mypage.storyboard */; };
+		23E96A1127969F2400D7D7D3 /* a.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E96A1027969F2400D7D7D3 /* a.swift */; };
+		23E96A1327969F2900D7D7D3 /* b.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E96A1227969F2900D7D7D3 /* b.swift */; };
+		23E96A1827969F6500D7D7D3 /* TeaKKeulTBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E96A1727969F6500D7D7D3 /* TeaKKeulTBC.swift */; };
+		23E96A1A27969F7600D7D7D3 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23E96A1927969F7600D7D7D3 /* TabBar.storyboard */; };
+		23E96A1D27969FC900D7D7D3 /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E96A1C27969FC900D7D7D3 /* Identifiers.swift */; };
+		23E96A2027969FE900D7D7D3 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E96A1F27969FE900D7D7D3 /* ViewControllerFactory.swift */; };
+		23E96A2227969FF900D7D7D3 /* TypeOfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E96A2127969FF900D7D7D3 /* TypeOfViewController.swift */; };
+		23E96A242796A00900D7D7D3 /* StoryboardRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E96A232796A00900D7D7D3 /* StoryboardRepresentation.swift */; };
+		23E96A262796A29C00D7D7D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E96A252796A29C00D7D7D3 /* SceneDelegate.swift */; };
 		23FB7871279698D5000549C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FB7870279698D5000549C2 /* AppDelegate.swift */; };
-		23FB7873279698D5000549C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FB7872279698D5000549C2 /* SceneDelegate.swift */; };
-		23FB7875279698D5000549C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FB7874279698D5000549C2 /* ViewController.swift */; };
-		23FB7878279698D5000549C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23FB7876279698D5000549C2 /* Main.storyboard */; };
 		23FB787A279698D6000549C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23FB7879279698D6000549C2 /* Assets.xcassets */; };
 		23FB787D279698D6000549C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23FB787B279698D6000549C2 /* LaunchScreen.storyboard */; };
 		55380B265487589C90FD6428 /* Pods_Tea_KKeul_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 899E3EC9C1BE9A389460B161 /* Pods_Tea_KKeul_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23E969FD27969DE200D7D7D3 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		23E969FF27969E0100D7D7D3 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		23E96A0127969E7600D7D7D3 /* Magazine.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Magazine.storyboard; sourceTree = "<group>"; };
+		23E96A0327969E8300D7D7D3 /* MagazineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagazineVC.swift; sourceTree = "<group>"; };
+		23E96A0527969EAA00D7D7D3 /* CalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
+		23E96A0727969ECE00D7D7D3 /* Calendar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
+		23E96A0927969EDF00D7D7D3 /* MypageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageVC.swift; sourceTree = "<group>"; };
+		23E96A0B27969EF300D7D7D3 /* Mypage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mypage.storyboard; sourceTree = "<group>"; };
+		23E96A1027969F2400D7D7D3 /* a.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = a.swift; sourceTree = "<group>"; };
+		23E96A1227969F2900D7D7D3 /* b.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = b.swift; sourceTree = "<group>"; };
+		23E96A1727969F6500D7D7D3 /* TeaKKeulTBC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaKKeulTBC.swift; sourceTree = "<group>"; };
+		23E96A1927969F7600D7D7D3 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		23E96A1C27969FC900D7D7D3 /* Identifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiers.swift; sourceTree = "<group>"; };
+		23E96A1F27969FE900D7D7D3 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		23E96A2127969FF900D7D7D3 /* TypeOfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeOfViewController.swift; sourceTree = "<group>"; };
+		23E96A232796A00900D7D7D3 /* StoryboardRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardRepresentation.swift; sourceTree = "<group>"; };
+		23E96A252796A29C00D7D7D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		23FB786D279698D5000549C2 /* Tea-KKeul-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tea-KKeul-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23FB7870279698D5000549C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		23FB7872279698D5000549C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		23FB7874279698D5000549C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		23FB7877279698D5000549C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		23FB7879279698D6000549C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23FB787C279698D6000549C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23FB787E279698D6000549C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,6 +70,208 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23E969EE27969CAD00D7D7D3 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				23FB7870279698D5000549C2 /* AppDelegate.swift */,
+				23E96A252796A29C00D7D7D3 /* SceneDelegate.swift */,
+				23FB7879279698D6000549C2 /* Assets.xcassets */,
+				23FB787B279698D6000549C2 /* LaunchScreen.storyboard */,
+				23FB787E279698D6000549C2 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		23E969EF27969CE400D7D7D3 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				23E96A1427969F3A00D7D7D3 /* TabBar */,
+				23E969FA27969D8C00D7D7D3 /* Home */,
+				23E969F727969D7600D7D7D3 /* Magazine */,
+				23E969F427969D5C00D7D7D3 /* Calendar */,
+				23E969F127969D2600D7D7D3 /* Mypage */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		23E969F027969CF000D7D7D3 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				23E96A1E27969FD500D7D7D3 /* Factory */,
+				23E96A1B27969FBB00D7D7D3 /* Struct */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		23E969F127969D2600D7D7D3 /* Mypage */ = {
+			isa = PBXGroup;
+			children = (
+				23E969F327969D5300D7D7D3 /* Storyboard */,
+				23E969F227969D4500D7D7D3 /* Controller */,
+			);
+			path = Mypage;
+			sourceTree = "<group>";
+		};
+		23E969F227969D4500D7D7D3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				23E96A0927969EDF00D7D7D3 /* MypageVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		23E969F327969D5300D7D7D3 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				23E96A0B27969EF300D7D7D3 /* Mypage.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		23E969F427969D5C00D7D7D3 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				23E969F627969D6E00D7D7D3 /* Storyboard */,
+				23E969F527969D6A00D7D7D3 /* Controller */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		23E969F527969D6A00D7D7D3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				23E96A0527969EAA00D7D7D3 /* CalendarVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		23E969F627969D6E00D7D7D3 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				23E96A0727969ECE00D7D7D3 /* Calendar.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		23E969F727969D7600D7D7D3 /* Magazine */ = {
+			isa = PBXGroup;
+			children = (
+				23E969F827969D7C00D7D7D3 /* Storyboard */,
+				23E969F927969D8300D7D7D3 /* Controller */,
+			);
+			path = Magazine;
+			sourceTree = "<group>";
+		};
+		23E969F827969D7C00D7D7D3 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				23E96A0127969E7600D7D7D3 /* Magazine.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		23E969F927969D8300D7D7D3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				23E96A0327969E8300D7D7D3 /* MagazineVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		23E969FA27969D8C00D7D7D3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				23E969FC27969D9F00D7D7D3 /* Storyboard */,
+				23E969FB27969D9900D7D7D3 /* Controller */,
+				23E96A0D27969F0100D7D7D3 /* Cell */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		23E969FB27969D9900D7D7D3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				23E969FF27969E0100D7D7D3 /* HomeVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		23E969FC27969D9F00D7D7D3 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				23E969FD27969DE200D7D7D3 /* Home.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		23E96A0D27969F0100D7D7D3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				23E96A0F27969F0F00D7D7D3 /* CVC */,
+				23E96A0E27969F0900D7D7D3 /* TVC */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		23E96A0E27969F0900D7D7D3 /* TVC */ = {
+			isa = PBXGroup;
+			children = (
+				23E96A1227969F2900D7D7D3 /* b.swift */,
+			);
+			path = TVC;
+			sourceTree = "<group>";
+		};
+		23E96A0F27969F0F00D7D7D3 /* CVC */ = {
+			isa = PBXGroup;
+			children = (
+				23E96A1027969F2400D7D7D3 /* a.swift */,
+			);
+			path = CVC;
+			sourceTree = "<group>";
+		};
+		23E96A1427969F3A00D7D7D3 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				23E96A1627969F4600D7D7D3 /* Storyboard */,
+				23E96A1527969F4100D7D7D3 /* Controller */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		23E96A1527969F4100D7D7D3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				23E96A1727969F6500D7D7D3 /* TeaKKeulTBC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		23E96A1627969F4600D7D7D3 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				23E96A1927969F7600D7D7D3 /* TabBar.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		23E96A1B27969FBB00D7D7D3 /* Struct */ = {
+			isa = PBXGroup;
+			children = (
+				23E96A1C27969FC900D7D7D3 /* Identifiers.swift */,
+			);
+			path = Struct;
+			sourceTree = "<group>";
+		};
+		23E96A1E27969FD500D7D7D3 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				23E96A232796A00900D7D7D3 /* StoryboardRepresentation.swift */,
+				23E96A2127969FF900D7D7D3 /* TypeOfViewController.swift */,
+				23E96A1F27969FE900D7D7D3 /* ViewControllerFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
 		23FB7864279698D5000549C2 = {
 			isa = PBXGroup;
 			children = (
@@ -63,13 +293,9 @@
 		23FB786F279698D5000549C2 /* Tea-KKeul-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				23FB7870279698D5000549C2 /* AppDelegate.swift */,
-				23FB7872279698D5000549C2 /* SceneDelegate.swift */,
-				23FB7874279698D5000549C2 /* ViewController.swift */,
-				23FB7876279698D5000549C2 /* Main.storyboard */,
-				23FB7879279698D6000549C2 /* Assets.xcassets */,
-				23FB787B279698D6000549C2 /* LaunchScreen.storyboard */,
-				23FB787E279698D6000549C2 /* Info.plist */,
+				23E969F027969CF000D7D7D3 /* Global */,
+				23E969EF27969CE400D7D7D3 /* Screen */,
+				23E969EE27969CAD00D7D7D3 /* Support */,
 			);
 			path = "Tea-KKeul-iOS";
 			sourceTree = "<group>";
@@ -80,7 +306,6 @@
 				A1540D966095D75595CE5F89 /* Pods-Tea-KKeul-iOS.debug.xcconfig */,
 				CCFAAEC4C2AFE14CA7D0EEBD /* Pods-Tea-KKeul-iOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -150,9 +375,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23E969FE27969DE200D7D7D3 /* Home.storyboard in Resources */,
+				23E96A0C27969EF300D7D7D3 /* Mypage.storyboard in Resources */,
 				23FB787D279698D6000549C2 /* LaunchScreen.storyboard in Resources */,
+				23E96A0227969E7600D7D7D3 /* Magazine.storyboard in Resources */,
+				23E96A0827969ECE00D7D7D3 /* Calendar.storyboard in Resources */,
+				23E96A1A27969F7600D7D7D3 /* TabBar.storyboard in Resources */,
 				23FB787A279698D6000549C2 /* Assets.xcassets in Resources */,
-				23FB7878279698D5000549C2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,23 +417,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23FB7875279698D5000549C2 /* ViewController.swift in Sources */,
+				23E96A1327969F2900D7D7D3 /* b.swift in Sources */,
+				23E96A2027969FE900D7D7D3 /* ViewControllerFactory.swift in Sources */,
+				23E96A0A27969EDF00D7D7D3 /* MypageVC.swift in Sources */,
 				23FB7871279698D5000549C2 /* AppDelegate.swift in Sources */,
-				23FB7873279698D5000549C2 /* SceneDelegate.swift in Sources */,
+				23E96A1827969F6500D7D7D3 /* TeaKKeulTBC.swift in Sources */,
+				23E96A1D27969FC900D7D7D3 /* Identifiers.swift in Sources */,
+				23E96A2227969FF900D7D7D3 /* TypeOfViewController.swift in Sources */,
+				23E96A0427969E8300D7D7D3 /* MagazineVC.swift in Sources */,
+				23E96A262796A29C00D7D7D3 /* SceneDelegate.swift in Sources */,
+				23E96A1127969F2400D7D7D3 /* a.swift in Sources */,
+				23E96A242796A00900D7D7D3 /* StoryboardRepresentation.swift in Sources */,
+				23E96A0627969EAA00D7D7D3 /* CalendarVC.swift in Sources */,
+				23E96A0027969E0100D7D7D3 /* HomeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		23FB7876279698D5000549C2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				23FB7877279698D5000549C2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		23FB787B279698D6000549C2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -340,7 +571,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U2Z5Z44P4R;
-				INFOPLIST_FILE = "Tea-KKeul-iOS/Info.plist";
+				INFOPLIST_FILE = "Tea-KKeul-iOS/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -360,7 +591,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U2Z5Z44P4R;
-				INFOPLIST_FILE = "Tea-KKeul-iOS/Info.plist";
+				INFOPLIST_FILE = "Tea-KKeul-iOS/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
