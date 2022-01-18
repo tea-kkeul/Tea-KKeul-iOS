@@ -24,6 +24,7 @@
 		23E96A2227969FF900D7D7D3 /* TypeOfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E96A2127969FF900D7D7D3 /* TypeOfViewController.swift */; };
 		23E96A242796A00900D7D7D3 /* StoryboardRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E96A232796A00900D7D7D3 /* StoryboardRepresentation.swift */; };
 		23E96A262796A29C00D7D7D3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E96A252796A29C00D7D7D3 /* SceneDelegate.swift */; };
+		23E96A2A2796CA1F00D7D7D3 /* MagazineCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E96A292796CA1F00D7D7D3 /* MagazineCVC.swift */; };
 		23FB7871279698D5000549C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FB7870279698D5000549C2 /* AppDelegate.swift */; };
 		23FB787A279698D6000549C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23FB7879279698D6000549C2 /* Assets.xcassets */; };
 		23FB787D279698D6000549C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23FB787B279698D6000549C2 /* LaunchScreen.storyboard */; };
@@ -48,6 +49,7 @@
 		23E96A2127969FF900D7D7D3 /* TypeOfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeOfViewController.swift; sourceTree = "<group>"; };
 		23E96A232796A00900D7D7D3 /* StoryboardRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardRepresentation.swift; sourceTree = "<group>"; };
 		23E96A252796A29C00D7D7D3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		23E96A292796CA1F00D7D7D3 /* MagazineCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagazineCVC.swift; sourceTree = "<group>"; };
 		23FB786D279698D5000549C2 /* Tea-KKeul-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tea-KKeul-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23FB7870279698D5000549C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23FB7879279698D6000549C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 			children = (
 				23E969F827969D7C00D7D7D3 /* Storyboard */,
 				23E969F927969D8300D7D7D3 /* Controller */,
+				23E96A272796CA1100D7D7D3 /* Cell */,
 			);
 			path = Magazine;
 			sourceTree = "<group>";
@@ -270,6 +273,22 @@
 				23E96A1F27969FE900D7D7D3 /* ViewControllerFactory.swift */,
 			);
 			path = Factory;
+			sourceTree = "<group>";
+		};
+		23E96A272796CA1100D7D7D3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				23E96A282796CA1800D7D7D3 /* CVC */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		23E96A282796CA1800D7D7D3 /* CVC */ = {
+			isa = PBXGroup;
+			children = (
+				23E96A292796CA1F00D7D7D3 /* MagazineCVC.swift */,
+			);
+			path = CVC;
 			sourceTree = "<group>";
 		};
 		23FB7864279698D5000549C2 = {
@@ -426,6 +445,7 @@
 				23E96A2227969FF900D7D7D3 /* TypeOfViewController.swift in Sources */,
 				23E96A0427969E8300D7D7D3 /* MagazineVC.swift in Sources */,
 				23E96A262796A29C00D7D7D3 /* SceneDelegate.swift in Sources */,
+				23E96A2A2796CA1F00D7D7D3 /* MagazineCVC.swift in Sources */,
 				23E96A1127969F2400D7D7D3 /* a.swift in Sources */,
 				23E96A242796A00900D7D7D3 /* StoryboardRepresentation.swift in Sources */,
 				23E96A0627969EAA00D7D7D3 /* CalendarVC.swift in Sources */,

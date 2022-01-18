@@ -40,7 +40,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MagazineCVC" id="ltl-RL-8HT">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MagazineCVC" id="ltl-RL-8HT" customClass="MagazineCVC" customModule="Tea_KKeul_iOS" customModuleProvider="target">
                                         <rect key="frame" x="20" y="0.0" width="335" height="205"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="NfR-01-NRL">
@@ -69,11 +69,14 @@
                                                 <constraint firstAttribute="bottom" secondItem="jis-Io-3mA" secondAttribute="bottom" constant="8" id="YUS-NL-Wcm"/>
                                                 <constraint firstItem="I1p-d5-KNd" firstAttribute="leading" secondItem="NfR-01-NRL" secondAttribute="leading" id="asa-ft-N6s"/>
                                                 <constraint firstItem="I1p-d5-KNd" firstAttribute="top" secondItem="NfR-01-NRL" secondAttribute="top" id="dez-RK-XL1"/>
-                                                <constraint firstItem="jis-Io-3mA" firstAttribute="top" secondItem="I1p-d5-KNd" secondAttribute="bottom" constant="12" id="p0M-AD-eO4"/>
                                                 <constraint firstItem="jis-Io-3mA" firstAttribute="leading" secondItem="NfR-01-NRL" secondAttribute="leading" constant="15" id="yuX-DZ-Dv7"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="335" height="205"/>
+                                        <connections>
+                                            <outlet property="thumbnail" destination="I1p-d5-KNd" id="UZR-0B-YDf"/>
+                                            <outlet property="title" destination="jis-Io-3mA" id="vEM-Nj-5r8"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
