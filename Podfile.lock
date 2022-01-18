@@ -1,3 +1,24 @@
-PODFILE CHECKSUM: 41304e60e6e8c66e69fc04f3ba631973c594221e
+PODS:
+  - Alamofire (5.4.4)
+  - FSCalendar (2.8.2)
+  - Kingfisher (6.3.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.4)
+  - FSCalendar
+  - Kingfisher (~> 6.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - FSCalendar
+    - Kingfisher
+
+SPEC CHECKSUMS:
+  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  FSCalendar: e6a2eb9c571bf0719ed797ef807e08426753c241
+  Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
+
+PODFILE CHECKSUM: 0fc6df980cc405a55e0c4b5626ff6d352a265878
 
 COCOAPODS: 1.11.2

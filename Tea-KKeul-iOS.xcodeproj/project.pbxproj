@@ -328,6 +328,7 @@
 				23FB7869279698D5000549C2 /* Sources */,
 				23FB786A279698D5000549C2 /* Frameworks */,
 				23FB786B279698D5000549C2 /* Resources */,
+				8460DA53FE5F396A81A35CBC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -388,6 +389,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		8460DA53FE5F396A81A35CBC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tea-KKeul-iOS/Pods-Tea-KKeul-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tea-KKeul-iOS/Pods-Tea-KKeul-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tea-KKeul-iOS/Pods-Tea-KKeul-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BBBA48C30480E00B62AD987A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
