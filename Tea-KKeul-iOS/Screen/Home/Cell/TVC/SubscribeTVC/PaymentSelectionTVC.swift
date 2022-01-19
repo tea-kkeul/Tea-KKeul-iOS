@@ -18,6 +18,8 @@ class PaymentSelectionTVC: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        cautionLabel.isHidden = true
+        accountPayButton.addTarget(self, action: #selector(didTapAccountButton), for: .touchUpInside)
         // Initialization code
     }
 
@@ -26,5 +28,9 @@ class PaymentSelectionTVC: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+
+    @objc func didTapAccountButton() {
+        accountPayButton.setImage(UIImage(named: "ic_accountpay_selected"), for: .normal)
+        cautionLabel.isHidden = false
+    }
 }
