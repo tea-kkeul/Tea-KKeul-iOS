@@ -59,6 +59,10 @@
 		F278F26927980AE300B7A22F /* HomeNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F278F26827980AE300B7A22F /* HomeNC.swift */; };
 		F278F26D279846A500B7A22F /* AddressTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F278F26B279846A500B7A22F /* AddressTVC.swift */; };
 		F278F26E279846A500B7A22F /* AddressTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F278F26C279846A500B7A22F /* AddressTVC.xib */; };
+		F278F271279849A800B7A22F /* SubTitleHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F278F270279849A800B7A22F /* SubTitleHeaderView.xib */; };
+		F278F27527984AAC00B7A22F /* SubTitleHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F278F27427984AAC00B7A22F /* SubTitleHeaderView.swift */; };
+		F278F2782798519100B7A22F /* DeliveryBoxTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F278F2762798519100B7A22F /* DeliveryBoxTVC.swift */; };
+		F278F2792798519100B7A22F /* DeliveryBoxTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F278F2772798519100B7A22F /* DeliveryBoxTVC.xib */; };
 		F2B0453A27970C2F00FFEE27 /* ConditionCheckTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0453827970C2F00FFEE27 /* ConditionCheckTVC.swift */; };
 		F2B0453B27970C2F00FFEE27 /* ConditionCheckTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2B0453927970C2F00FFEE27 /* ConditionCheckTVC.xib */; };
 		F2B0453E2797288300FFEE27 /* SubscribeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0453C2797288300FFEE27 /* SubscribeTVC.swift */; };
@@ -122,6 +126,10 @@
 		F278F26827980AE300B7A22F /* HomeNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNC.swift; sourceTree = "<group>"; };
 		F278F26B279846A500B7A22F /* AddressTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressTVC.swift; sourceTree = "<group>"; };
 		F278F26C279846A500B7A22F /* AddressTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressTVC.xib; sourceTree = "<group>"; };
+		F278F270279849A800B7A22F /* SubTitleHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubTitleHeaderView.xib; sourceTree = "<group>"; };
+		F278F27427984AAC00B7A22F /* SubTitleHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTitleHeaderView.swift; sourceTree = "<group>"; };
+		F278F2762798519100B7A22F /* DeliveryBoxTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryBoxTVC.swift; sourceTree = "<group>"; };
+		F278F2772798519100B7A22F /* DeliveryBoxTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeliveryBoxTVC.xib; sourceTree = "<group>"; };
 		F2B0453827970C2F00FFEE27 /* ConditionCheckTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionCheckTVC.swift; sourceTree = "<group>"; };
 		F2B0453927970C2F00FFEE27 /* ConditionCheckTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConditionCheckTVC.xib; sourceTree = "<group>"; };
 		F2B0453C2797288300FFEE27 /* SubscribeTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeTVC.swift; sourceTree = "<group>"; };
@@ -466,6 +474,10 @@
 			children = (
 				F278F26B279846A500B7A22F /* AddressTVC.swift */,
 				F278F26C279846A500B7A22F /* AddressTVC.xib */,
+				F278F270279849A800B7A22F /* SubTitleHeaderView.xib */,
+				F278F27427984AAC00B7A22F /* SubTitleHeaderView.swift */,
+				F278F2762798519100B7A22F /* DeliveryBoxTVC.swift */,
+				F278F2772798519100B7A22F /* DeliveryBoxTVC.xib */,
 			);
 			path = SubscribeTVC;
 			sourceTree = "<group>";
@@ -529,10 +541,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F278F271279849A800B7A22F /* SubTitleHeaderView.xib in Resources */,
 				F278F2602797FA4500B7A22F /* NotoSans-Regular.ttf in Resources */,
 				F278F25B2797FA3700B7A22F /* NotoSansKR-Thin.otf in Resources */,
 				F2B0453F2797288300FFEE27 /* SubscribeTVC.xib in Resources */,
 				F2B0453B27970C2F00FFEE27 /* ConditionCheckTVC.xib in Resources */,
+				F278F2792798519100B7A22F /* DeliveryBoxTVC.xib in Resources */,
 				F205B3EF2797B3960065DB55 /* HomeTitleHeaderView.xib in Resources */,
 				23E969FE27969DE200D7D7D3 /* Home.storyboard in Resources */,
 				F278F25A2797FA3400B7A22F /* NotoSansKR-Regular.otf in Resources */,
@@ -608,10 +622,12 @@
 				F2B0453A27970C2F00FFEE27 /* ConditionCheckTVC.swift in Sources */,
 				23E96A2027969FE900D7D7D3 /* ViewControllerFactory.swift in Sources */,
 				23E96A0A27969EDF00D7D7D3 /* MypageVC.swift in Sources */,
+				F278F27527984AAC00B7A22F /* SubTitleHeaderView.swift in Sources */,
 				F278F26D279846A500B7A22F /* AddressTVC.swift in Sources */,
 				F278F24A2797F44B00B7A22F /* CALayer+.swift in Sources */,
 				23FB7871279698D5000549C2 /* AppDelegate.swift in Sources */,
 				23E96A1827969F6500D7D7D3 /* TeaKKeulTBC.swift in Sources */,
+				F278F2782798519100B7A22F /* DeliveryBoxTVC.swift in Sources */,
 				F278F2482797F3EE00B7A22F /* UITextView+.swift in Sources */,
 				23E96A1D27969FC900D7D7D3 /* Identifiers.swift in Sources */,
 				23270CA72797199C0006B9FE /* UILabel+.swift in Sources */,
