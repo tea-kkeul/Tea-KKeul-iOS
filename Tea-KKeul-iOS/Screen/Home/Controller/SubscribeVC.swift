@@ -53,6 +53,8 @@ extension SubscribeVC {
         tableView.register(SubscribePeriodNib, forCellReuseIdentifier: Identifiers.subscribePeriodTVC)
         let BlendOptionNib = UINib(nibName: "BlendOptionTVC", bundle: nil)
         tableView.register(BlendOptionNib, forCellReuseIdentifier: Identifiers.blendOptionTVC)
+        let totalCostNib = UINib(nibName: "TotalCostTVC", bundle: nil)
+        tableView.register(totalCostNib, forCellReuseIdentifier: Identifiers.totalCostTVC)
     }
     func setHeaderView() {
         let subTitleHeaderNib = UINib(nibName: "SubTitleHeaderView", bundle: nil)
@@ -79,7 +81,7 @@ extension SubscribeVC: UITableViewDataSource {
 
     }
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 4
+        return 5
     }
     func tableView(
         _ tableView: UITableView,
@@ -122,7 +124,7 @@ extension SubscribeVC: UITableViewDataSource {
             }
             cell.selectionStyle = .none
             return cell
-        } else {
+        } else if indexPath.section == 3{
             guard let cell: BlendOptionTVC = tableView.dequeueReusableCell(withIdentifier: Identifiers.blendOptionTVC, for: indexPath) as? BlendOptionTVC else {
                 return UITableViewCell()
             }
@@ -153,6 +155,11 @@ extension SubscribeVC: UITableViewDataSource {
                 cell.blendOptionLabel.text = "안함"
             }
             cell.selectionStyle = .none
+            return cell
+        } else {
+            guard let cell: TotalCostTVC = tableView.dequeueReusableCell(withIdentifier: Identifiers.totalCostTVC, for: indexPath) as? TotalCostTVC else {
+                return UITableViewCell()
+            }
             return cell
         }
     }

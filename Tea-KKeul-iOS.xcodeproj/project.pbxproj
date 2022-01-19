@@ -67,6 +67,8 @@
 		F278F27D2798648200B7A22F /* SubscribePeriodTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F278F27B2798648200B7A22F /* SubscribePeriodTVC.xib */; };
 		F278F28027987A3900B7A22F /* BlendOptionTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F278F27E27987A3900B7A22F /* BlendOptionTVC.swift */; };
 		F278F28127987A3900B7A22F /* BlendOptionTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F278F27F27987A3900B7A22F /* BlendOptionTVC.xib */; };
+		F278F2862798A55200B7A22F /* TotalCostTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F278F2842798A55200B7A22F /* TotalCostTVC.swift */; };
+		F278F2872798A55200B7A22F /* TotalCostTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F278F2852798A55200B7A22F /* TotalCostTVC.xib */; };
 		F2B0453A27970C2F00FFEE27 /* ConditionCheckTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0453827970C2F00FFEE27 /* ConditionCheckTVC.swift */; };
 		F2B0453B27970C2F00FFEE27 /* ConditionCheckTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2B0453927970C2F00FFEE27 /* ConditionCheckTVC.xib */; };
 		F2B0453E2797288300FFEE27 /* SubscribeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0453C2797288300FFEE27 /* SubscribeTVC.swift */; };
@@ -138,6 +140,8 @@
 		F278F27B2798648200B7A22F /* SubscribePeriodTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubscribePeriodTVC.xib; sourceTree = "<group>"; };
 		F278F27E27987A3900B7A22F /* BlendOptionTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlendOptionTVC.swift; sourceTree = "<group>"; };
 		F278F27F27987A3900B7A22F /* BlendOptionTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlendOptionTVC.xib; sourceTree = "<group>"; };
+		F278F2842798A55200B7A22F /* TotalCostTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalCostTVC.swift; sourceTree = "<group>"; };
+		F278F2852798A55200B7A22F /* TotalCostTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TotalCostTVC.xib; sourceTree = "<group>"; };
 		F2B0453827970C2F00FFEE27 /* ConditionCheckTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionCheckTVC.swift; sourceTree = "<group>"; };
 		F2B0453927970C2F00FFEE27 /* ConditionCheckTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConditionCheckTVC.xib; sourceTree = "<group>"; };
 		F2B0453C2797288300FFEE27 /* SubscribeTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeTVC.swift; sourceTree = "<group>"; };
@@ -490,6 +494,8 @@
 				F278F27B2798648200B7A22F /* SubscribePeriodTVC.xib */,
 				F278F27E27987A3900B7A22F /* BlendOptionTVC.swift */,
 				F278F27F27987A3900B7A22F /* BlendOptionTVC.xib */,
+				F278F2842798A55200B7A22F /* TotalCostTVC.swift */,
+				F278F2852798A55200B7A22F /* TotalCostTVC.xib */,
 			);
 			path = SubscribeTVC;
 			sourceTree = "<group>";
@@ -574,6 +580,7 @@
 				F278F2572797FA2500B7A22F /* NotoSansKR-Bold.otf in Resources */,
 				23E96A0227969E7600D7D7D3 /* Magazine.storyboard in Resources */,
 				23E96A0827969ECE00D7D7D3 /* Calendar.storyboard in Resources */,
+				F278F2872798A55200B7A22F /* TotalCostTVC.xib in Resources */,
 				F278F2592797FA3200B7A22F /* NotoSansKR-Medium.otf in Resources */,
 				F278F26E279846A500B7A22F /* AddressTVC.xib in Resources */,
 				23E96A1A27969F7600D7D7D3 /* TabBar.storyboard in Resources */,
@@ -664,6 +671,7 @@
 				23E96A0027969E0100D7D7D3 /* HomeVC.swift in Sources */,
 				F205B3EB2797ACCE0065DB55 /* HomeTitleHeaderView.swift in Sources */,
 				F205B3E0279796BB0065DB55 /* MyStateTVC.swift in Sources */,
+				F278F2862798A55200B7A22F /* TotalCostTVC.swift in Sources */,
 				23270CA3279718EC0006B9FE /* UIColor+.swift in Sources */,
 				23270CA9279719BA0006B9FE /* Notification+Name.swift in Sources */,
 				23270CAD279719EF0006B9FE /* UIButton+.swift in Sources */,
