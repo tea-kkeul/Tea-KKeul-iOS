@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -28,6 +28,7 @@
 		23FB787A279698D6000549C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23FB7879279698D6000549C2 /* Assets.xcassets */; };
 		23FB787D279698D6000549C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23FB787B279698D6000549C2 /* LaunchScreen.storyboard */; };
 		55380B265487589C90FD6428 /* Pods_Tea_KKeul_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 899E3EC9C1BE9A389460B161 /* Pods_Tea_KKeul_iOS.framework */; };
+		BD2B7EBD27972D990070CA0D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD2B7EBC27972D990070CA0D /* GoogleService-Info.plist */; };
 		BD9456F72796B6D800EB0222 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD9456F62796B6D800EB0222 /* Login.storyboard */; };
 		BD9456F92796B6EE00EB0222 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9456F82796B6EE00EB0222 /* LoginVC.swift */; };
 /* End PBXBuildFile section */
@@ -57,6 +58,7 @@
 		23FB787E279698D6000549C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		899E3EC9C1BE9A389460B161 /* Pods_Tea_KKeul_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tea_KKeul_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1540D966095D75595CE5F89 /* Pods-Tea-KKeul-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tea-KKeul-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Tea-KKeul-iOS/Pods-Tea-KKeul-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		BD2B7EBC27972D990070CA0D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BD9456F62796B6D800EB0222 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		BD9456F82796B6EE00EB0222 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		CCFAAEC4C2AFE14CA7D0EEBD /* Pods-Tea-KKeul-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tea-KKeul-iOS.release.xcconfig"; path = "Target Support Files/Pods-Tea-KKeul-iOS/Pods-Tea-KKeul-iOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -298,6 +300,7 @@
 		23FB786F279698D5000549C2 /* Tea-KKeul-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				BD2B7EBC27972D990070CA0D /* GoogleService-Info.plist */,
 				23E969F027969CF000D7D7D3 /* Global */,
 				23E969EF27969CE400D7D7D3 /* Screen */,
 				23E969EE27969CAD00D7D7D3 /* Support */,
@@ -358,6 +361,8 @@
 				23FB7869279698D5000549C2 /* Sources */,
 				23FB786A279698D5000549C2 /* Frameworks */,
 				23FB786B279698D5000549C2 /* Resources */,
+				1E666A100231B3E56154C4B8 /* [CP] Embed Pods Frameworks */,
+				57EC4A5A4F2C7B9EFC3D90E9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -407,6 +412,7 @@
 			files = (
 				BD9456F72796B6D800EB0222 /* Login.storyboard in Resources */,
 				23E969FE27969DE200D7D7D3 /* Home.storyboard in Resources */,
+				BD2B7EBD27972D990070CA0D /* GoogleService-Info.plist in Resources */,
 				23E96A0C27969EF300D7D7D3 /* Mypage.storyboard in Resources */,
 				23FB787D279698D6000549C2 /* LaunchScreen.storyboard in Resources */,
 				23E96A0227969E7600D7D7D3 /* Magazine.storyboard in Resources */,
@@ -419,6 +425,40 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1E666A100231B3E56154C4B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tea-KKeul-iOS/Pods-Tea-KKeul-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tea-KKeul-iOS/Pods-Tea-KKeul-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tea-KKeul-iOS/Pods-Tea-KKeul-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57EC4A5A4F2C7B9EFC3D90E9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tea-KKeul-iOS/Pods-Tea-KKeul-iOS-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tea-KKeul-iOS/Pods-Tea-KKeul-iOS-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tea-KKeul-iOS/Pods-Tea-KKeul-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BBBA48C30480E00B62AD987A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
