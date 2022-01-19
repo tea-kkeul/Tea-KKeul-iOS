@@ -55,6 +55,8 @@ extension SubscribeVC {
         tableView.register(BlendOptionNib, forCellReuseIdentifier: Identifiers.blendOptionTVC)
         let totalCostNib = UINib(nibName: "TotalCostTVC", bundle: nil)
         tableView.register(totalCostNib, forCellReuseIdentifier: Identifiers.totalCostTVC)
+        let paymentSelectionNib = UINib(nibName: "PaymentSelectionTVC", bundle: nil)
+        tableView.register(paymentSelectionNib, forCellReuseIdentifier: Identifiers.paymentSelectionTVC)
     }
     func setHeaderView() {
         let subTitleHeaderNib = UINib(nibName: "SubTitleHeaderView", bundle: nil)
@@ -81,7 +83,7 @@ extension SubscribeVC: UITableViewDataSource {
 
     }
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 5
+        return 6
     }
     func tableView(
         _ tableView: UITableView,
@@ -156,8 +158,13 @@ extension SubscribeVC: UITableViewDataSource {
             }
             cell.selectionStyle = .none
             return cell
-        } else {
+        } else if indexPath.section == 4 {
             guard let cell: TotalCostTVC = tableView.dequeueReusableCell(withIdentifier: Identifiers.totalCostTVC, for: indexPath) as? TotalCostTVC else {
+                return UITableViewCell()
+            }
+            return cell
+        } else {
+            guard let cell: PaymentSelectionTVC = tableView.dequeueReusableCell(withIdentifier: Identifiers.paymentSelectionTVC, for: indexPath) as? PaymentSelectionTVC else {
                 return UITableViewCell()
             }
             return cell

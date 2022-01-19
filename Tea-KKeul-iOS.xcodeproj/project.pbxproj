@@ -69,6 +69,8 @@
 		F278F28127987A3900B7A22F /* BlendOptionTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F278F27F27987A3900B7A22F /* BlendOptionTVC.xib */; };
 		F278F2862798A55200B7A22F /* TotalCostTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F278F2842798A55200B7A22F /* TotalCostTVC.swift */; };
 		F278F2872798A55200B7A22F /* TotalCostTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F278F2852798A55200B7A22F /* TotalCostTVC.xib */; };
+		F278F28A2798AB0900B7A22F /* PaymentSelectionTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F278F2882798AB0900B7A22F /* PaymentSelectionTVC.swift */; };
+		F278F28B2798AB0900B7A22F /* PaymentSelectionTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F278F2892798AB0900B7A22F /* PaymentSelectionTVC.xib */; };
 		F2B0453A27970C2F00FFEE27 /* ConditionCheckTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0453827970C2F00FFEE27 /* ConditionCheckTVC.swift */; };
 		F2B0453B27970C2F00FFEE27 /* ConditionCheckTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2B0453927970C2F00FFEE27 /* ConditionCheckTVC.xib */; };
 		F2B0453E2797288300FFEE27 /* SubscribeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0453C2797288300FFEE27 /* SubscribeTVC.swift */; };
@@ -142,6 +144,8 @@
 		F278F27F27987A3900B7A22F /* BlendOptionTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlendOptionTVC.xib; sourceTree = "<group>"; };
 		F278F2842798A55200B7A22F /* TotalCostTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalCostTVC.swift; sourceTree = "<group>"; };
 		F278F2852798A55200B7A22F /* TotalCostTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TotalCostTVC.xib; sourceTree = "<group>"; };
+		F278F2882798AB0900B7A22F /* PaymentSelectionTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSelectionTVC.swift; sourceTree = "<group>"; };
+		F278F2892798AB0900B7A22F /* PaymentSelectionTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentSelectionTVC.xib; sourceTree = "<group>"; };
 		F2B0453827970C2F00FFEE27 /* ConditionCheckTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionCheckTVC.swift; sourceTree = "<group>"; };
 		F2B0453927970C2F00FFEE27 /* ConditionCheckTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConditionCheckTVC.xib; sourceTree = "<group>"; };
 		F2B0453C2797288300FFEE27 /* SubscribeTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeTVC.swift; sourceTree = "<group>"; };
@@ -496,6 +500,8 @@
 				F278F27F27987A3900B7A22F /* BlendOptionTVC.xib */,
 				F278F2842798A55200B7A22F /* TotalCostTVC.swift */,
 				F278F2852798A55200B7A22F /* TotalCostTVC.xib */,
+				F278F2882798AB0900B7A22F /* PaymentSelectionTVC.swift */,
+				F278F2892798AB0900B7A22F /* PaymentSelectionTVC.xib */,
 			);
 			path = SubscribeTVC;
 			sourceTree = "<group>";
@@ -574,6 +580,7 @@
 				F278F2652798018400B7A22F /* Subscribe.storyboard in Resources */,
 				F278F2562797FA2200B7A22F /* NotoSansKR-Black.otf in Resources */,
 				F278F28127987A3900B7A22F /* BlendOptionTVC.xib in Resources */,
+				F278F28B2798AB0900B7A22F /* PaymentSelectionTVC.xib in Resources */,
 				F278F2582797FA2F00B7A22F /* NotoSansKR-Light.otf in Resources */,
 				23FB787D279698D6000549C2 /* LaunchScreen.storyboard in Resources */,
 				F205B3E1279796BB0065DB55 /* MyStateTVC.xib in Resources */,
@@ -670,6 +677,7 @@
 				F278F26927980AE300B7A22F /* HomeNC.swift in Sources */,
 				23E96A0027969E0100D7D7D3 /* HomeVC.swift in Sources */,
 				F205B3EB2797ACCE0065DB55 /* HomeTitleHeaderView.swift in Sources */,
+				F278F28A2798AB0900B7A22F /* PaymentSelectionTVC.swift in Sources */,
 				F205B3E0279796BB0065DB55 /* MyStateTVC.swift in Sources */,
 				F278F2862798A55200B7A22F /* TotalCostTVC.swift in Sources */,
 				23270CA3279718EC0006B9FE /* UIColor+.swift in Sources */,
