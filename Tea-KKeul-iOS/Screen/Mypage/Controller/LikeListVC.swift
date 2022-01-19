@@ -8,11 +8,11 @@
 import UIKit
 
 class LikeListVC: UIViewController {
-    let LikeListData = [
-        ["LikeList_CV1", "귤껍질차", "피로회복, 식욕증진", "12,900원", "15,900원", 5],
-        ["LikeList_CV2", "대추차", "식욕증진, 심신안정", "12,900원", "15,900원", 4],
-        ["LikeList_CV3", "페퍼민트차", "혈액순환, 해독효과, 숙면", "12,900원", "15,900원", 5],
-        ["LikeList_CV4", "메밀차", "장운동, 간기능 강화", "12,900원", "15,900원", 3]
+    var LikeListData = [
+        ["LikeList_CV1", "귤껍질차", "피로회복, 식욕증진", "12,900원", "15,900원", 5, true],
+        ["LikeList_CV2", "대추차", "식욕증진, 심신안정", "10,900원", "13,900원", 4, true],
+        ["LikeList_CV3", "페퍼민트차", "혈액순환, 해독효과, 숙면", "11,900원", "15,900원", 5, true],
+        ["LikeList_CV4", "메밀차", "장운동, 간기능 강화", "13,900원", "16,900원", 3, true]
     ]
     let sectionInsets = UIEdgeInsets(top: 24, left: 20, bottom: 24, right: 20)
     
@@ -20,6 +20,10 @@ class LikeListVC: UIViewController {
     override func viewDidLoad() {
         setNaviBar()
         setLikeListCV()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        checkLikeList()
     }
 }
 //MARK: Custom Method
@@ -32,6 +36,15 @@ extension LikeListVC {
     func setLikeListCV() {
         likeListCV.dataSource = self
         likeListCV.delegate = self
+    }
+    
+    func checkLikeList() {
+        for i in 0..<LikeListData.count {
+            if !(LikeListData[i][6] as! Bool) {
+                LikeListData.remove(at: i)
+            }
+        }
+        likeListCV.reloadData()
     }
 }
 //MARK: UICollectionViewDataSource

@@ -35,6 +35,8 @@ extension LikeListCVC {
         let attributeString =  NSMutableAttributedString(string: originCost.text ?? "")
             
         attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 2, range: NSMakeRange(0, attributeString.length))
+        
+        originCost.attributedText = attributeString
     }
 
     func setLikeListCVC() {
