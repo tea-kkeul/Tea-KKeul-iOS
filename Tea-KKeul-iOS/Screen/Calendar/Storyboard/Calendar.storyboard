@@ -179,22 +179,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="tMT-db-2bl">
-                                        <rect key="frame" x="18" y="42" width="168" height="18"/>
+                                        <rect key="frame" x="18" y="42" width="174" height="18"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#편두통" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="341-ib-rIV">
-                                                <rect key="frame" x="0.0" y="0.0" width="48.333333333333336" height="18"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#피곤함" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r5X-qN-bhF">
-                                                <rect key="frame" x="53.333333333333329" y="0.0" width="48.333333333333329" height="18"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#감기기운" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHf-EL-4HL">
-                                                <rect key="frame" x="106.66666666666664" y="0.0" width="61.333333333333329" height="18"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#편두통, #피곤함, #감기기운" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="341-ib-rIV">
+                                                <rect key="frame" x="0.0" y="0.0" width="174" height="18"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -276,11 +264,18 @@
                         <outlet property="dateDibButton" destination="pSI-jI-SvE" id="jVS-rN-B5v"/>
                         <outlet property="datePurchaseButton" destination="V7f-hF-HNm" id="0nP-xJ-01T"/>
                         <outlet property="eachDate" destination="TdF-df-l3f" id="UQ8-Xd-N9v"/>
+                        <outlet property="eachDateEffect" destination="G0v-JV-9tX" id="XsT-ai-Rh3"/>
+                        <outlet property="eachDateImage" destination="e1Z-6A-Crs" id="HRr-QW-CWH"/>
+                        <outlet property="eachDateTag" destination="341-ib-rIV" id="1AL-lQ-cof"/>
+                        <outlet property="eachDateTea" destination="o3v-Dw-vMN" id="WpU-uR-KPg"/>
                         <outlet property="eachDateView" destination="YG2-Qq-P1J" id="Oni-PO-Ckg"/>
                         <outlet property="headerLabel" destination="KHn-Oq-Ip7" id="X3H-mD-2ir"/>
                         <outlet property="monthDate" destination="KPh-Zb-A51" id="IMw-H2-ELg"/>
                         <outlet property="monthDibButton" destination="T8k-w7-5yH" id="nsx-kC-R7t"/>
+                        <outlet property="monthEffect" destination="ht5-T4-Bxw" id="vpi-NT-aGE"/>
+                        <outlet property="monthImage" destination="SeJ-My-0mb" id="GYi-hd-Nd1"/>
                         <outlet property="monthPurchaseButton" destination="z25-NJ-fOo" id="7jx-Yx-RVx"/>
+                        <outlet property="monthTea" destination="Ofm-O4-W7s" id="VUX-cK-X99"/>
                         <outlet property="monthView" destination="0lU-l7-LHs" id="cim-bH-fhN"/>
                         <outlet property="nextBtn" destination="Alu-gJ-cJQ" id="bhg-dY-tCT"/>
                         <outlet property="prevBtn" destination="5sR-Pb-PQj" id="VrM-Qz-b25"/>

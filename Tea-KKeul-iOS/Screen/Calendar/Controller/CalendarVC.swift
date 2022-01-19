@@ -31,12 +31,23 @@ class CalendarVC: UIViewController {
     @IBOutlet weak var nextBtn: UIButton!
     @IBOutlet weak var prevBtn: UIButton!
     
+    @IBOutlet weak var eachDateTag: UILabel!
+    @IBOutlet weak var eachDateImage: UIImageView!
+    @IBOutlet weak var eachDateTea: UILabel!
+    @IBOutlet weak var eachDateEffect: UILabel!
+    
+    @IBOutlet weak var monthTea: UILabel!
+    @IBOutlet weak var monthImage: UIImageView!
+    @IBOutlet weak var monthEffect: UILabel!
+    
+    
+    
     let dateFormatter = DateFormatter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        calendarView.register(FSCalendarCell.self, forCellReuseIdentifier: "CELL")
+        //calendarView.register(FSCalendarCell.self, forCellReuseIdentifier: "CELL")
         setCalendarView()
         setStatusView()
         setEachDateView()
@@ -222,9 +233,40 @@ extension CalendarVC: FSCalendarDelegate, FSCalendarDataSource, FSCalendarDelega
         let status5: UIImage = UIImage(named: "Status_5")!
         
         // 해당 date에 입력했던 상태에 따른 이미지를 반환해야함
+        // 특정 date만 이미지가 다르게 나오는지 테스트해보기
         
+        var leaf: Int = 0
+
+//        let dateFormatter = DateFormatter()
+//        dateFormatter.dateFormat = "yy-MM-dd"
+//
+//        if dateFormatter.string(from: date) == "22-01-05" {
+//            return status1
+//        }
+//        if dateFormatter.string(from: date) == "22-01-06" {
+//            return status2
+//        }
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yy-MM-dd"
         
-        return status0
+        if dateFormatter.string(from: date) == "22-01-05" {
+            leaf = 3
+        }
+        if dateFormatter.string(from: date) == "22-01-06" {
+            leaf = 1
+        }
+        
+        switch (leaf) {
+        case 1 : return status1
+        case 2 : return status2
+        case 3 : return status3
+        case 4 : return status4
+        case 5 : return status5
+        default:
+            
+            return status0
+        }
+        
     }
     
     // 기본 날짜 글자 색깔 설정
