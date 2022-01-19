@@ -22,6 +22,10 @@
 		23406B9B27984E1B001D12B0 /* LikeList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23406B9A27984E1B001D12B0 /* LikeList.storyboard */; };
 		23406B9D27984E23001D12B0 /* LikeListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23406B9C27984E23001D12B0 /* LikeListVC.swift */; };
 		23406B9F27985D77001D12B0 /* LikeListCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23406B9E27985D77001D12B0 /* LikeListCVC.swift */; };
+		23406BB227989804001D12B0 /* OnboardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23406BB127989804001D12B0 /* OnboardingVC.swift */; };
+		23406BB427989822001D12B0 /* OnboardingBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23406BB327989822001D12B0 /* OnboardingBaseVC.swift */; };
+		23406BB62798983A001D12B0 /* OnboardingBase.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23406BB52798983A001D12B0 /* OnboardingBase.storyboard */; };
+		23406BB827989859001D12B0 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23406BB727989859001D12B0 /* Onboarding.storyboard */; };
 		23E969FE27969DE200D7D7D3 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23E969FD27969DE200D7D7D3 /* Home.storyboard */; };
 		23E96A0027969E0100D7D7D3 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E969FF27969E0100D7D7D3 /* HomeVC.swift */; };
 		23E96A0227969E7600D7D7D3 /* Magazine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23E96A0127969E7600D7D7D3 /* Magazine.storyboard */; };
@@ -102,6 +106,10 @@
 		23406B9A27984E1B001D12B0 /* LikeList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LikeList.storyboard; sourceTree = "<group>"; };
 		23406B9C27984E23001D12B0 /* LikeListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeListVC.swift; sourceTree = "<group>"; };
 		23406B9E27985D77001D12B0 /* LikeListCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeListCVC.swift; sourceTree = "<group>"; };
+		23406BB127989804001D12B0 /* OnboardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingVC.swift; sourceTree = "<group>"; };
+		23406BB327989822001D12B0 /* OnboardingBaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingBaseVC.swift; sourceTree = "<group>"; };
+		23406BB52798983A001D12B0 /* OnboardingBase.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnboardingBase.storyboard; sourceTree = "<group>"; };
+		23406BB727989859001D12B0 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		23E969FD27969DE200D7D7D3 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		23E969FF27969E0100D7D7D3 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		23E96A0127969E7600D7D7D3 /* Magazine.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Magazine.storyboard; sourceTree = "<group>"; };
@@ -226,6 +234,33 @@
 			path = CVC;
 			sourceTree = "<group>";
 		};
+		23406BAE279897DC001D12B0 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				23406BB0279897EF001D12B0 /* Storyboard */,
+				23406BAF279897E8001D12B0 /* Controller */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		23406BAF279897E8001D12B0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				23406BB127989804001D12B0 /* OnboardingVC.swift */,
+				23406BB327989822001D12B0 /* OnboardingBaseVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		23406BB0279897EF001D12B0 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				23406BB52798983A001D12B0 /* OnboardingBase.storyboard */,
+				23406BB727989859001D12B0 /* Onboarding.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		23E969EE27969CAD00D7D7D3 /* Support */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,6 +277,7 @@
 		23E969EF27969CE400D7D7D3 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				23406BAE279897DC001D12B0 /* Onboarding */,
 				23E96A1427969F3A00D7D7D3 /* TabBar */,
 				23E969FA27969D8C00D7D7D3 /* Home */,
 				23E969F727969D7600D7D7D3 /* Magazine */,
@@ -621,6 +657,7 @@
 				F278F2602797FA4500B7A22F /* NotoSans-Regular.ttf in Resources */,
 				F278F25B2797FA3700B7A22F /* NotoSansKR-Thin.otf in Resources */,
 				F2B0453F2797288300FFEE27 /* SubscribeTVC.xib in Resources */,
+				23406BB827989859001D12B0 /* Onboarding.storyboard in Resources */,
 				F2B0453B27970C2F00FFEE27 /* ConditionCheckTVC.xib in Resources */,
 				F278F2792798519100B7A22F /* DeliveryBoxTVC.xib in Resources */,
 				F205B3EF2797B3960065DB55 /* HomeTitleHeaderView.xib in Resources */,
@@ -647,6 +684,7 @@
 				23FB787A279698D6000549C2 /* Assets.xcassets in Resources */,
 				23406B9027980F27001D12B0 /* DeliveryList.storyboard in Resources */,
 				F278F2632797FA4500B7A22F /* NotoSans-BoldItalic.ttf in Resources */,
+				23406BB62798983A001D12B0 /* OnboardingBase.storyboard in Resources */,
 				F205B3E527979DCB0065DB55 /* TeaListTVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -701,6 +739,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23406B9227980F34001D12B0 /* DeliveryListVC.swift in Sources */,
+				23406BB227989804001D12B0 /* OnboardingVC.swift in Sources */,
 				F2B0453A27970C2F00FFEE27 /* ConditionCheckTVC.swift in Sources */,
 				23E96A2027969FE900D7D7D3 /* ViewControllerFactory.swift in Sources */,
 				23406B942798102A001D12B0 /* MypageNC.swift in Sources */,
@@ -733,6 +772,7 @@
 				23E96A0627969EAA00D7D7D3 /* CalendarVC.swift in Sources */,
 				F278F26927980AE300B7A22F /* HomeNC.swift in Sources */,
 				23E96A0027969E0100D7D7D3 /* HomeVC.swift in Sources */,
+				23406BB427989822001D12B0 /* OnboardingBaseVC.swift in Sources */,
 				23406B9F27985D77001D12B0 /* LikeListCVC.swift in Sources */,
 				F205B3EB2797ACCE0065DB55 /* HomeTitleHeaderView.swift in Sources */,
 				F278F28A2798AB0900B7A22F /* PaymentSelectionTVC.swift in Sources */,
