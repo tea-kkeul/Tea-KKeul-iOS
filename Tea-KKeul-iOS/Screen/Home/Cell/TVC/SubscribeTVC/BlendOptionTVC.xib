@@ -22,11 +22,11 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CS8-GS-T6w">
-                        <rect key="frame" x="18" y="4" width="21" height="22"/>
-                        <state key="normal" image="button_empty-1"/>
+                        <rect key="frame" x="18" y="4" width="24" height="22"/>
+                        <state key="normal" image="check_unselected"/>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="블렌딩케이스" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URR-Oe-sr3">
-                        <rect key="frame" x="51" y="7" width="63" height="17"/>
+                        <rect key="frame" x="54" y="7" width="63" height="17"/>
                         <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="12"/>
                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -50,6 +50,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="button_empty-1" width="21" height="21"/>
+        <image name="check_unselected" width="24" height="24"/>
     </resources>
 </document>

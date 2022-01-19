@@ -58,6 +58,7 @@ extension SubscribeVC {
         let subTitleHeaderNib = UINib(nibName: "SubTitleHeaderView", bundle: nil)
         tableView.register(subTitleHeaderNib, forHeaderFooterViewReuseIdentifier: Identifiers.subTitleHeaderView)
     }
+
 }
 
 extension SubscribeVC: UITableViewDataSource {
@@ -88,30 +89,23 @@ extension SubscribeVC: UITableViewDataSource {
             guard let cell: AddressTVC = tableView.dequeueReusableCell(withIdentifier: Identifiers.addressTVC, for: indexPath) as? AddressTVC else {
                 return UITableViewCell()
             }
+            cell.selectionStyle = .none
             return cell
         } else if indexPath.section == 1 {
             // 여기에 티끌박스 내차박스 cell 만들기!
             guard let cell: DeliveryBoxTVC = tableView.dequeueReusableCell(withIdentifier: Identifiers.deliveryBoxTVC, for: indexPath) as? DeliveryBoxTVC else {
                 return UITableViewCell()
             }
+            cell.cellDelegate = self
             if indexPath.row == 0 {
-                if cell.boxButton.isSelected {
-                    cell.boxButton.setImage(UIImage(named: "Group 507"), for: .normal)
-                    // 어떤 옵션인지 선택해서 tagValue에 값 저장
-                } else {
-                    cell.boxButton.setImage(UIImage(named: "Group 504"), for: .normal)
-                    // 어떤 옵션인지 선택해서 tagValue에 값 저장
-                }
+                cell.boxButton.setImage(UIImage(named: "Group 504"), for: .normal)
+                //cell.boxButton.setImage(UIImage(named: "Group 504"), for: .normal)
             }
             if indexPath.row == 1 {
-                if cell.boxButton.isSelected {
-                    cell.boxButton.setImage(UIImage(named: "Group 490"), for: .normal)
-                    // 어떤 옵션인지 선택해서 tagValue에 값 저장
-                } else {
-                    cell.boxButton.setImage(UIImage(named: "Group 508"), for: .normal)
-                    // 어떤 옵션인지 선택해서 tagValue에 값 저장
-                }
+                cell.boxButton.setImage(UIImage(named: "Group 490"), for: .normal)
+                //cell.boxButton.setImage(UIImage(named: "Group 490"), for: .normal)
             }
+            cell.selectionStyle = .none
             return cell
         } else if indexPath.section == 2 {
             guard let cell: SubscribePeriodTVC = tableView.dequeueReusableCell(withIdentifier: Identifiers.subscribePeriodTVC, for: indexPath) as? SubscribePeriodTVC else {
@@ -126,6 +120,7 @@ extension SubscribeVC: UITableViewDataSource {
             if indexPath.row == 2 {
                 cell.subscribeButton.setImage(UIImage(named: "Group 514"), for: .normal)
             }
+            cell.selectionStyle = .none
             return cell
         } else {
             guard let cell: BlendOptionTVC = tableView.dequeueReusableCell(withIdentifier: Identifiers.blendOptionTVC, for: indexPath) as? BlendOptionTVC else {
@@ -133,18 +128,31 @@ extension SubscribeVC: UITableViewDataSource {
             }
             switch indexPath.row {
             case 1:
+                cell.checkButton.setImage(UIImage(named: "check_unselected"), for: .normal)
+                cell.checkButton.setImage(UIImage(named: "check_selected"), for: .selected)
                 cell.blendOptionLabel.text = "자몽"
             case 2:
+                cell.checkButton.setImage(UIImage(named: "check_unselected"), for: .normal)
+                cell.checkButton.setImage(UIImage(named: "check_selected"), for: .selected)
                 cell.blendOptionLabel.text = "사과"
             case 3:
+                cell.checkButton.setImage(UIImage(named: "check_unselected"), for: .normal)
+                cell.checkButton.setImage(UIImage(named: "check_selected"), for: .selected)
                 cell.blendOptionLabel.text = "오렌지"
             case 4:
+                cell.checkButton.setImage(UIImage(named: "check_unselected"), for: .normal)
+                cell.checkButton.setImage(UIImage(named: "check_selected"), for: .selected)
                 cell.blendOptionLabel.text = "키위"
             case 5:
+                cell.checkButton.setImage(UIImage(named: "check_unselected"), for: .normal)
+                cell.checkButton.setImage(UIImage(named: "check_selected"), for: .selected)
                 cell.blendOptionLabel.text = "파인애플"
             default:
+                cell.checkButton.setImage(UIImage(named: "check_unselected"), for: .normal)
+                cell.checkButton.setImage(UIImage(named: "check_selected"), for: .selected)
                 cell.blendOptionLabel.text = "안함"
             }
+            cell.selectionStyle = .none
             return cell
         }
     }
@@ -159,6 +167,10 @@ extension SubscribeVC: UITableViewDataSource {
         if section == 2 {
             view.sectionTitleLabel.text = "구독기간"
             view.cautionLabel.isHidden = true
+        }
+        if section == 3 {
+            view.sectionTitleLabel.text = "블랜딩"
+            view.cautionLabel.isHidden = false
         }
         return view
     }
@@ -178,5 +190,11 @@ extension SubscribeVC: UITableViewDelegate {
         default:
             return 0.0
         }
+    }
+}
+
+extension SubscribeVC: DeliveryBoxTapDelegate {
+    func didTapDeliveryBox() {
+        
     }
 }
