@@ -18,7 +18,7 @@ class AddressEnrollCVC: UICollectionViewCell {
 extension AddressEnrollCVC {
     func setEnrollBtnLayout() {
         enrollBtn.layer.cornerRadius = 10
-        enrollBtn.backgroundColor = .normalGreen
+        enrollBtn.backgroundColor = .darkGreen
         enrollBtn.tintColor = .white
     }
     

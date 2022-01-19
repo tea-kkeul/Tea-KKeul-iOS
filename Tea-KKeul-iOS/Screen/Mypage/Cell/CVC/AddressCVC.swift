@@ -30,9 +30,9 @@ extension AddressCVC {
     
     func setDefaultAddress() {
         isDefaultAddress.layer.borderWidth = 1
-        isDefaultAddress.layer.borderColor = UIColor.normalGreen.cgColor
+        isDefaultAddress.layer.borderColor = UIColor.darkGreen.cgColor
         
         isDefaultAddress.layer.cornerRadius = isDefaultAddress.frame.height / 2
-        isDefaultAddress.textColor = UIColor.normalGreen
+        isDefaultAddress.textColor = UIColor.darkGreen
     }
 }

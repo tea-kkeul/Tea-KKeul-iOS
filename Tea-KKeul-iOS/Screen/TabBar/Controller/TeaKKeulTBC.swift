@@ -34,8 +34,8 @@ class TeaKKeulTBC: UITabBarController {
         
         // 탭바 스타일 설정
         tabBar.frame.size.height = 78
-        tabBar.tintColor = .normalGreen
-        tabBar.unselectedItemTintColor = .darkGreen
+        tabBar.tintColor = .darkGreen
+        tabBar.unselectedItemTintColor = .normalGreen
         
         tabBar.layer.shadowOffset = CGSize(width: 0, height: 4)
         tabBar.layer.shadowRadius = 20

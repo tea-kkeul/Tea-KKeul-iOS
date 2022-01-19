@@ -24,7 +24,7 @@ class DeliveryListVC: UIViewController {
 extension DeliveryListVC {
     func setNaviBar() {
         navigationItem.title = "배송지 관리"
-        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.normalGreen]
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.darkGreen]
     }
     
     func setAddressListCV() {
