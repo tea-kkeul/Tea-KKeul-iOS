@@ -10,11 +10,11 @@ import UIKit
 extension UIColor {
     
     // 컬러셋 추가
-    @nonobjc class var tabBarSelected: UIColor {
+    @nonobjc class var normalGreen: UIColor {
         return UIColor(red: 103.0 / 255.0, green: 126.0 / 255.0, blue: 96.0 / 255.0, alpha: 1.0)
     }
     
-    @nonobjc class var tabBarUnSelected: UIColor {
+    @nonobjc class var darkGreen: UIColor {
         return UIColor(red: 173.0 / 255.0, green: 193.0 / 255.0, blue: 149.0 / 255.0, alpha: 1.0)
     }
 
