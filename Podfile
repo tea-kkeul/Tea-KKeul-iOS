@@ -7,7 +7,7 @@ target 'Tea-KKeul-iOS' do
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
   pod 'Firebase/Auth'
-  pod 'GoogleSignIn'
+  pod 'GoogleSignIn', '=5.0.2'
 
   # Pods for Tea-KKeul-iOS
 
