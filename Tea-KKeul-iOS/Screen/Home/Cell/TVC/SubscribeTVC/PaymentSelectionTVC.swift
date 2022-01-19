@@ -9,6 +9,13 @@ import UIKit
 
 class PaymentSelectionTVC: UITableViewCell {
 
+    @IBOutlet weak var phonePayButton: UIButton!
+    @IBOutlet weak var accountPayButton: UIButton!
+    @IBOutlet weak var cardPayButton: UIButton!
+    @IBOutlet weak var easyPayButton: UIButton!
+    @IBOutlet weak var cautionLabel: UILabel!
+    @IBOutlet weak var subscribeButton: UIButton!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
