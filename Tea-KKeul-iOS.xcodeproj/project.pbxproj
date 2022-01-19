@@ -30,6 +30,8 @@
 		55380B265487589C90FD6428 /* Pods_Tea_KKeul_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 899E3EC9C1BE9A389460B161 /* Pods_Tea_KKeul_iOS.framework */; };
 		F205B3E0279796BB0065DB55 /* MyStateTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F205B3DE279796BB0065DB55 /* MyStateTVC.swift */; };
 		F205B3E1279796BB0065DB55 /* MyStateTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F205B3DF279796BB0065DB55 /* MyStateTVC.xib */; };
+		F205B3E427979DCB0065DB55 /* TeaListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F205B3E227979DCB0065DB55 /* TeaListTVC.swift */; };
+		F205B3E527979DCB0065DB55 /* TeaListTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F205B3E327979DCB0065DB55 /* TeaListTVC.xib */; };
 		F2B0453A27970C2F00FFEE27 /* ConditionCheckTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0453827970C2F00FFEE27 /* ConditionCheckTVC.swift */; };
 		F2B0453B27970C2F00FFEE27 /* ConditionCheckTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2B0453927970C2F00FFEE27 /* ConditionCheckTVC.xib */; };
 		F2B0453E2797288300FFEE27 /* SubscribeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0453C2797288300FFEE27 /* SubscribeTVC.swift */; };
@@ -64,6 +66,8 @@
 		CCFAAEC4C2AFE14CA7D0EEBD /* Pods-Tea-KKeul-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tea-KKeul-iOS.release.xcconfig"; path = "Target Support Files/Pods-Tea-KKeul-iOS/Pods-Tea-KKeul-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		F205B3DE279796BB0065DB55 /* MyStateTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStateTVC.swift; sourceTree = "<group>"; };
 		F205B3DF279796BB0065DB55 /* MyStateTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyStateTVC.xib; sourceTree = "<group>"; };
+		F205B3E227979DCB0065DB55 /* TeaListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaListTVC.swift; sourceTree = "<group>"; };
+		F205B3E327979DCB0065DB55 /* TeaListTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeaListTVC.xib; sourceTree = "<group>"; };
 		F2B0453827970C2F00FFEE27 /* ConditionCheckTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionCheckTVC.swift; sourceTree = "<group>"; };
 		F2B0453927970C2F00FFEE27 /* ConditionCheckTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConditionCheckTVC.xib; sourceTree = "<group>"; };
 		F2B0453C2797288300FFEE27 /* SubscribeTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeTVC.swift; sourceTree = "<group>"; };
@@ -235,6 +239,8 @@
 				F2B0453D2797288300FFEE27 /* SubscribeTVC.xib */,
 				F205B3DE279796BB0065DB55 /* MyStateTVC.swift */,
 				F205B3DF279796BB0065DB55 /* MyStateTVC.xib */,
+				F205B3E227979DCB0065DB55 /* TeaListTVC.swift */,
+				F205B3E327979DCB0065DB55 /* TeaListTVC.xib */,
 			);
 			path = TVC;
 			sourceTree = "<group>";
@@ -420,6 +426,7 @@
 				23E96A0827969ECE00D7D7D3 /* Calendar.storyboard in Resources */,
 				23E96A1A27969F7600D7D7D3 /* TabBar.storyboard in Resources */,
 				23FB787A279698D6000549C2 /* Assets.xcassets in Resources */,
+				F205B3E527979DCB0065DB55 /* TeaListTVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +487,7 @@
 				23E96A1D27969FC900D7D7D3 /* Identifiers.swift in Sources */,
 				23E96A2227969FF900D7D7D3 /* TypeOfViewController.swift in Sources */,
 				23E96A0427969E8300D7D7D3 /* MagazineVC.swift in Sources */,
+				F205B3E427979DCB0065DB55 /* TeaListTVC.swift in Sources */,
 				23E96A262796A29C00D7D7D3 /* SceneDelegate.swift in Sources */,
 				23E96A2A2796CA1F00D7D7D3 /* MagazineCVC.swift in Sources */,
 				23E96A1127969F2400D7D7D3 /* a.swift in Sources */,
