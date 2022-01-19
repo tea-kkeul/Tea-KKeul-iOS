@@ -18,20 +18,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="차와 가까워지는 시간" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzk-do-bpD">
-                                <rect key="frame" x="20" y="50" width="166.33333333333334" height="44"/>
-                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="20"/>
-                                <color key="textColor" red="0.40392156862745099" green="0.49411764705882355" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="쉽게 배우는 차 지식" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7g-k9-o8o">
-                                <rect key="frame" x="20" y="84" width="78" height="22"/>
-                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="10"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HuI-1M-IoR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="106"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="차와 가까워지는 시간" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="wzk-do-bpD">
+                                        <rect key="frame" x="20" y="52" width="166.33333333333334" height="44"/>
+                                        <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="20"/>
+                                        <color key="textColor" red="0.40392156862745099" green="0.49411764705882355" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="쉽게 배우는 차 지식" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="H7g-k9-o8o">
+                                        <rect key="frame" x="20" y="82" width="78" height="22"/>
+                                        <fontDescription key="fontDescription" name="NotoSansMyanmar-Regular" family="Noto Sans Myanmar" pointSize="10"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="H7g-k9-o8o" firstAttribute="leading" secondItem="HuI-1M-IoR" secondAttribute="leading" constant="20" id="3TN-ho-sX6"/>
+                                    <constraint firstItem="wzk-do-bpD" firstAttribute="leading" secondItem="HuI-1M-IoR" secondAttribute="leading" constant="20" id="GSL-r7-dr2"/>
+                                    <constraint firstItem="H7g-k9-o8o" firstAttribute="top" secondItem="HuI-1M-IoR" secondAttribute="top" constant="82" id="KcG-mE-guS"/>
+                                    <constraint firstItem="wzk-do-bpD" firstAttribute="top" secondItem="HuI-1M-IoR" secondAttribute="top" constant="52" id="Kry-Ks-LHd"/>
+                                    <constraint firstAttribute="width" secondItem="HuI-1M-IoR" secondAttribute="height" multiplier="375:106" id="a5N-YW-EsP"/>
+                                </constraints>
+                            </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="4de-qX-BnJ">
-                                <rect key="frame" x="0.0" y="114" width="375" height="664"/>
+                                <rect key="frame" x="0.0" y="106" width="375" height="672"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cSf-4g-KdJ">
                                     <size key="itemSize" width="335" height="205"/>
@@ -85,17 +98,17 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="4de-qX-BnJ" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="0Dj-vZ-JCj"/>
-                            <constraint firstItem="wzk-do-bpD" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="6" id="GG7-5e-0UT"/>
+                            <constraint firstItem="HuI-1M-IoR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="8eI-zm-ibd"/>
+                            <constraint firstItem="HuI-1M-IoR" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="N5E-ed-4Wk"/>
                             <constraint firstItem="4de-qX-BnJ" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="Nca-dx-xYd"/>
-                            <constraint firstItem="H7g-k9-o8o" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="40" id="STn-iN-S6v"/>
                             <constraint firstItem="4de-qX-BnJ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="UbV-6T-2wZ"/>
-                            <constraint firstItem="H7g-k9-o8o" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="VqX-7E-Ppy"/>
-                            <constraint firstItem="4de-qX-BnJ" firstAttribute="top" secondItem="H7g-k9-o8o" secondAttribute="bottom" constant="8" symbolic="YES" id="djk-nt-Nre"/>
-                            <constraint firstItem="wzk-do-bpD" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="udn-zw-Rdz"/>
+                            <constraint firstItem="4de-qX-BnJ" firstAttribute="top" secondItem="HuI-1M-IoR" secondAttribute="bottom" id="gNf-L9-clX"/>
+                            <constraint firstItem="HuI-1M-IoR" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="mON-j8-hhq"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="magazineCV" destination="4de-qX-BnJ" id="xh4-uE-ZqP"/>
+                        <outlet property="titleView" destination="HuI-1M-IoR" id="FVM-wb-q9X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
