@@ -17,6 +17,14 @@ class HomeVC: UIViewController {
         registerCell()
         setHeaderView()
     }
+
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
 }
 
 extension HomeVC {
@@ -25,6 +33,7 @@ extension HomeVC {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.separatorStyle = .none
+
     }
     // MARK: - button 설정
     func setButton() {
@@ -38,13 +47,23 @@ extension HomeVC {
         tableView.register(subscribeNib, forCellReuseIdentifier: Identifiers.subscribeTVC)
         let teaListNib = UINib(nibName: "TeaListTVC", bundle: nil)
         tableView.register(teaListNib, forCellReuseIdentifier: Identifiers.teaListTVC)
-//        let homeSectionHeaderNib = UINib(nibName: "HomeSectionHeaderView", bundle: nil)
-//        tableView.register(homeSectionHeaderNib, forCellReuseIdentifier: Identifiers.homeSectionHeaderView)
     }
     // MARK: - section header view 추가
     func setHeaderView() {
         let homeTitleHeaderNib = UINib(nibName: "HomeTitleHeaderView", bundle: nil)
         tableView.register(homeTitleHeaderNib, forHeaderFooterViewReuseIdentifier: Identifiers.homeTitleHeaderView)
+    }
+    // MARK: - cell button action 설정
+    @objc func didTapSubscribeButton() {
+        guard let nvc = UIStoryboard(name: Identifiers.subscribeSB, bundle: nil).instantiateViewController(identifier: Identifiers.subscribeVC) as? SubscribeVC else {
+            print("aaaa")
+            return
+        }
+        navigationController?.pushViewController(nvc, animated: true)
+        nvc.navigationItem.title = "구독하기"
+        nvc.navigationItem.leftBarButtonItem?.tintColor = .black
+
+        print("test")
     }
 }
 
@@ -71,6 +90,7 @@ extension HomeVC: UITableViewDataSource {
             guard let cell: SubscribeTVC = tableView.dequeueReusableCell(withIdentifier: Identifiers.subscribeTVC, for: indexPath) as? SubscribeTVC else {
                 return UITableViewCell()
             }
+            cell.subscribeButton.addTarget(self, action: #selector(didTapSubscribeButton), for: .touchUpInside)
             return cell
         } else {
             guard let cell: TeaListTVC = tableView.dequeueReusableCell(withIdentifier: Identifiers.teaListTVC, for: indexPath) as? TeaListTVC else {
@@ -85,7 +105,7 @@ extension HomeVC: UITableViewDataSource {
         viewForHeaderInSection section: Int
     ) -> UIView? {
         let view = tableView.dequeueReusableHeaderFooterView(withIdentifier: Identifiers.homeTitleHeaderView) as! HomeTitleHeaderView
-        if section == 2{
+        if section == 2 {
             view.backgroundColor = .white
             return view
         } else {
@@ -103,10 +123,26 @@ extension HomeVC: UITableViewDataSource {
 }
 
 extension HomeVC: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+    func tableView(
+        _ tableView: UITableView,
+        willDisplayHeaderView view: UIView,
+        forSection section: Int
+    ) {
         let view = tableView.dequeueReusableHeaderFooterView(withIdentifier: Identifiers.homeTitleHeaderView) as! HomeTitleHeaderView
         if section == 2{
             view.backgroundColor = .white
+        }
+    }
+    func tableView(
+        _ tableView: UITableView,
+        heightForHeaderInSection section: Int
+    ) -> CGFloat {
+        // MARK: - 개인 몸 상태 입력에 따라 섹션 개수 재설정되어야함.
+        switch section {
+        case 2:
+            return 30.0
+        default:
+            return 0.0
         }
     }
 }

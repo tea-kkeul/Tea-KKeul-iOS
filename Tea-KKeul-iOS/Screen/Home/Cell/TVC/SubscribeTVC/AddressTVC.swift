@@ -1,5 +1,5 @@
 //
-//  SubscribeTVC.swift
+//  AddressTVC.swift
 //  Tea-KKeul-iOS
 //
 //  Created by 이윤진 on 2022/01/19.
@@ -7,9 +7,8 @@
 
 import UIKit
 
-class SubscribeTVC: UITableViewCell {
+class AddressTVC: UITableViewCell {
 
-    @IBOutlet weak var subscribeButton: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
