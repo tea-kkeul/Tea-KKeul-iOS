@@ -20,7 +20,7 @@ extension TypeOfViewController {
         case .tabBar:
             return StoryboardRepresentation(bundle: nil, storyboardName: Identifiers.tabBarSB, storyboardId: Identifiers.teaKKeulTBC)
         case .home:
-            return StoryboardRepresentation(bundle: nil, storyboardName: Identifiers.homeSB, storyboardId: Identifiers.homeVC)
+            return StoryboardRepresentation(bundle: nil, storyboardName: Identifiers.homeSB, storyboardId: Identifiers.homeNC)
         case .magazine:
             return StoryboardRepresentation(bundle: nil, storyboardName: Identifiers.magazineSB, storyboardId: Identifiers.magazineVC)
         case .calendar:

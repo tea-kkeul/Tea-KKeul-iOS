@@ -54,6 +54,9 @@
 		F278F2612797FA4500B7A22F /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F278F25D2797FA4400B7A22F /* NotoSans-Bold.ttf */; };
 		F278F2622797FA4500B7A22F /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F278F25E2797FA4500B7A22F /* NotoSans-Italic.ttf */; };
 		F278F2632797FA4500B7A22F /* NotoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F278F25F2797FA4500B7A22F /* NotoSans-BoldItalic.ttf */; };
+		F278F2652798018400B7A22F /* Subscribe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F278F2642798018400B7A22F /* Subscribe.storyboard */; };
+		F278F2672798019A00B7A22F /* SubscribeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F278F2662798019A00B7A22F /* SubscribeVC.swift */; };
+		F278F26927980AE300B7A22F /* HomeNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F278F26827980AE300B7A22F /* HomeNC.swift */; };
 		F2B0453A27970C2F00FFEE27 /* ConditionCheckTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0453827970C2F00FFEE27 /* ConditionCheckTVC.swift */; };
 		F2B0453B27970C2F00FFEE27 /* ConditionCheckTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2B0453927970C2F00FFEE27 /* ConditionCheckTVC.xib */; };
 		F2B0453E2797288300FFEE27 /* SubscribeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0453C2797288300FFEE27 /* SubscribeTVC.swift */; };
@@ -112,6 +115,9 @@
 		F278F25D2797FA4400B7A22F /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
 		F278F25E2797FA4500B7A22F /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Italic.ttf"; sourceTree = "<group>"; };
 		F278F25F2797FA4500B7A22F /* NotoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		F278F2642798018400B7A22F /* Subscribe.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Subscribe.storyboard; sourceTree = "<group>"; };
+		F278F2662798019A00B7A22F /* SubscribeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeVC.swift; sourceTree = "<group>"; };
+		F278F26827980AE300B7A22F /* HomeNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNC.swift; sourceTree = "<group>"; };
 		F2B0453827970C2F00FFEE27 /* ConditionCheckTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionCheckTVC.swift; sourceTree = "<group>"; };
 		F2B0453927970C2F00FFEE27 /* ConditionCheckTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConditionCheckTVC.xib; sourceTree = "<group>"; };
 		F2B0453C2797288300FFEE27 /* SubscribeTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeTVC.swift; sourceTree = "<group>"; };
@@ -272,6 +278,8 @@
 			isa = PBXGroup;
 			children = (
 				23E969FF27969E0100D7D7D3 /* HomeVC.swift */,
+				F278F2662798019A00B7A22F /* SubscribeVC.swift */,
+				F278F26827980AE300B7A22F /* HomeNC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -280,6 +288,7 @@
 			isa = PBXGroup;
 			children = (
 				23E969FD27969DE200D7D7D3 /* Home.storyboard */,
+				F278F2642798018400B7A22F /* Subscribe.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -507,6 +516,7 @@
 				F278F25A2797FA3400B7A22F /* NotoSansKR-Regular.otf in Resources */,
 				23E96A0C27969EF300D7D7D3 /* Mypage.storyboard in Resources */,
 				F278F2612797FA4500B7A22F /* NotoSans-Bold.ttf in Resources */,
+				F278F2652798018400B7A22F /* Subscribe.storyboard in Resources */,
 				F278F2562797FA2200B7A22F /* NotoSansKR-Black.otf in Resources */,
 				F278F2582797FA2F00B7A22F /* NotoSansKR-Light.otf in Resources */,
 				23FB787D279698D6000549C2 /* LaunchScreen.storyboard in Resources */,
@@ -587,6 +597,7 @@
 				23270CAB279719D90006B9FE /* UITextField+.swift in Sources */,
 				23270CA52797193A0006B9FE /* UIFont+.swift in Sources */,
 				23E96A262796A29C00D7D7D3 /* SceneDelegate.swift in Sources */,
+				F278F2672798019A00B7A22F /* SubscribeVC.swift in Sources */,
 				F278F24C2797F67A00B7A22F /* UIView+.swift in Sources */,
 				F278F24E2797F71000B7A22F /* UIImageView+.swift in Sources */,
 				23E96A2A2796CA1F00D7D7D3 /* MagazineCVC.swift in Sources */,
@@ -594,6 +605,7 @@
 				23E96A242796A00900D7D7D3 /* StoryboardRepresentation.swift in Sources */,
 				F2B0453E2797288300FFEE27 /* SubscribeTVC.swift in Sources */,
 				23E96A0627969EAA00D7D7D3 /* CalendarVC.swift in Sources */,
+				F278F26927980AE300B7A22F /* HomeNC.swift in Sources */,
 				23E96A0027969E0100D7D7D3 /* HomeVC.swift in Sources */,
 				F205B3EB2797ACCE0065DB55 /* HomeTitleHeaderView.swift in Sources */,
 				F205B3E0279796BB0065DB55 /* MyStateTVC.swift in Sources */,
