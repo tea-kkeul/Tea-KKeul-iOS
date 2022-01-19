@@ -70,7 +70,7 @@ extension SubscribeVC: UITableViewDataSource {
 
     }
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 3
     }
     func tableView(
         _ tableView: UITableView,
@@ -111,6 +111,12 @@ extension SubscribeVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = tableView.dequeueReusableHeaderFooterView(withIdentifier: Identifiers.subTitleHeaderView) as! SubTitleHeaderView
         view.backgroundColor = .white
+        if section == 1 {
+            view.sectionTitleLabel.text = "구독박스"
+        }
+        if section == 2 {
+            view.sectionTitleLabel.text = "구독기간"
+        }
         return view
     }
 
@@ -120,7 +126,9 @@ extension SubscribeVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         switch section {
         case 1:
-            return 52.0
+            return 58.0
+        case 2:
+            return 58.0
         default:
             return 0.0
         }

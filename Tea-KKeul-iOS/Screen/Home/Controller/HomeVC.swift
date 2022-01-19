@@ -105,7 +105,7 @@ extension HomeVC: UITableViewDataSource {
         viewForHeaderInSection section: Int
     ) -> UIView? {
         let view = tableView.dequeueReusableHeaderFooterView(withIdentifier: Identifiers.homeTitleHeaderView) as! HomeTitleHeaderView
-        if section == 2{
+        if section == 2 {
             view.backgroundColor = .white
             return view
         } else {

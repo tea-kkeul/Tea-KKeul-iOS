@@ -63,6 +63,8 @@
 		F278F27527984AAC00B7A22F /* SubTitleHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F278F27427984AAC00B7A22F /* SubTitleHeaderView.swift */; };
 		F278F2782798519100B7A22F /* DeliveryBoxTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F278F2762798519100B7A22F /* DeliveryBoxTVC.swift */; };
 		F278F2792798519100B7A22F /* DeliveryBoxTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F278F2772798519100B7A22F /* DeliveryBoxTVC.xib */; };
+		F278F27C2798648200B7A22F /* SubscribePeriodTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F278F27A2798648200B7A22F /* SubscribePeriodTVC.swift */; };
+		F278F27D2798648200B7A22F /* SubscribePeriodTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F278F27B2798648200B7A22F /* SubscribePeriodTVC.xib */; };
 		F2B0453A27970C2F00FFEE27 /* ConditionCheckTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0453827970C2F00FFEE27 /* ConditionCheckTVC.swift */; };
 		F2B0453B27970C2F00FFEE27 /* ConditionCheckTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2B0453927970C2F00FFEE27 /* ConditionCheckTVC.xib */; };
 		F2B0453E2797288300FFEE27 /* SubscribeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0453C2797288300FFEE27 /* SubscribeTVC.swift */; };
@@ -130,6 +132,8 @@
 		F278F27427984AAC00B7A22F /* SubTitleHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTitleHeaderView.swift; sourceTree = "<group>"; };
 		F278F2762798519100B7A22F /* DeliveryBoxTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryBoxTVC.swift; sourceTree = "<group>"; };
 		F278F2772798519100B7A22F /* DeliveryBoxTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeliveryBoxTVC.xib; sourceTree = "<group>"; };
+		F278F27A2798648200B7A22F /* SubscribePeriodTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribePeriodTVC.swift; sourceTree = "<group>"; };
+		F278F27B2798648200B7A22F /* SubscribePeriodTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubscribePeriodTVC.xib; sourceTree = "<group>"; };
 		F2B0453827970C2F00FFEE27 /* ConditionCheckTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionCheckTVC.swift; sourceTree = "<group>"; };
 		F2B0453927970C2F00FFEE27 /* ConditionCheckTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConditionCheckTVC.xib; sourceTree = "<group>"; };
 		F2B0453C2797288300FFEE27 /* SubscribeTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeTVC.swift; sourceTree = "<group>"; };
@@ -478,6 +482,8 @@
 				F278F27427984AAC00B7A22F /* SubTitleHeaderView.swift */,
 				F278F2762798519100B7A22F /* DeliveryBoxTVC.swift */,
 				F278F2772798519100B7A22F /* DeliveryBoxTVC.xib */,
+				F278F27A2798648200B7A22F /* SubscribePeriodTVC.swift */,
+				F278F27B2798648200B7A22F /* SubscribePeriodTVC.xib */,
 			);
 			path = SubscribeTVC;
 			sourceTree = "<group>";
@@ -542,6 +548,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F278F271279849A800B7A22F /* SubTitleHeaderView.xib in Resources */,
+				F278F27D2798648200B7A22F /* SubscribePeriodTVC.xib in Resources */,
 				F278F2602797FA4500B7A22F /* NotoSans-Regular.ttf in Resources */,
 				F278F25B2797FA3700B7A22F /* NotoSansKR-Thin.otf in Resources */,
 				F2B0453F2797288300FFEE27 /* SubscribeTVC.xib in Resources */,
@@ -652,6 +659,7 @@
 				23270CA3279718EC0006B9FE /* UIColor+.swift in Sources */,
 				23270CA9279719BA0006B9FE /* Notification+Name.swift in Sources */,
 				23270CAD279719EF0006B9FE /* UIButton+.swift in Sources */,
+				F278F27C2798648200B7A22F /* SubscribePeriodTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

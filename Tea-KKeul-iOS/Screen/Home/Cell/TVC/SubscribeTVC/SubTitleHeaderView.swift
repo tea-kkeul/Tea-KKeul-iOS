@@ -8,6 +8,7 @@
 import UIKit
 
 class SubTitleHeaderView: UITableViewHeaderFooterView {
+    @IBOutlet weak var sectionTitleLabel: UILabel!
 
     /*
     // Only override draw() if you perform custom drawing.
