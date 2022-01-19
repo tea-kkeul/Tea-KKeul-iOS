@@ -12,6 +12,8 @@ class DeliveryListVC: UIViewController {
         ["집", "서울특별시 노원구 공릉로 20번길 15-3(공릉동)", "티끌아파트 506동 1203호", "(02708)", "김슈니", "010-1234-5678", true],
         ["회사", "서울특별시 종로구 세종대로 178(종로3가동)", "트윈빌딩 A동 605호", "(04509)", "김슈니", "010-1234-5678", false]
     ]
+    let sectionInsets = UIEdgeInsets(top: 10, left: 0, bottom: 10, right: 0)
+    
     @IBOutlet weak var addressListCV: UICollectionView!
     override func viewDidLoad() {
         setNaviBar()
@@ -66,11 +68,18 @@ extension DeliveryListVC: UICollectionViewDataSource {
 extension DeliveryListVC: UICollectionViewDelegate {
     
 }
-
+//MARK: UICollectionViewDelegateFlowLayout
 extension DeliveryListVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let cellWidth = collectionView.frame.width
 
         return CGSize(width: cellWidth, height: 185)
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return sectionInsets
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return sectionInsets.top
     }
 }
