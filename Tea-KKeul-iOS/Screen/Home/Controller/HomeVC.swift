@@ -35,13 +35,15 @@ extension HomeVC {
         tableView.register(conditionCheckNib, forCellReuseIdentifier: Identifiers.conditionCheckTVC)
         let subscribeNib = UINib(nibName: "SubscribeTVC", bundle: nil)
         tableView.register(subscribeNib, forCellReuseIdentifier: Identifiers.subscribeTVC)
+        let teaListNib = UINib(nibName: "TeaListTVC", bundle: nil)
+        tableView.register(teaListNib, forCellReuseIdentifier: Identifiers.teaListTVC)
     }
 }
 
 extension HomeVC: UITableViewDataSource {
     // MARK: - 섹션개수 설정
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 3
     }
     // MARK: - 섹션 별 행 개수 (셀 개수)
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -57,8 +59,13 @@ extension HomeVC: UITableViewDataSource {
                 return UITableViewCell()
             }
             return cell
-        } else {
+        } else if indexPath.section == 1 {
             guard let cell: SubscribeTVC = tableView.dequeueReusableCell(withIdentifier: Identifiers.subscribeTVC, for: indexPath) as? SubscribeTVC else {
+                return UITableViewCell()
+            }
+            return cell
+        } else {
+            guard let cell: TeaListTVC = tableView.dequeueReusableCell(withIdentifier: Identifiers.teaListTVC, for: indexPath) as? TeaListTVC else {
                 return UITableViewCell()
             }
             return cell
