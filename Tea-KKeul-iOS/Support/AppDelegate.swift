@@ -5,16 +5,22 @@
 //  Created by 황윤경 on 2022/01/18.
 //
 
+import Firebase
+import GoogleSignIn
 import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        FirebaseApp.configure()
+        GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         return true
+    }
+    
+    // MARK: - googleLogin
+    @available(iOS 9.0, *)
+    internal func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
+        return GIDSignIn.sharedInstance().handle(url)
     }
 
     // MARK: UISceneSession Lifecycle

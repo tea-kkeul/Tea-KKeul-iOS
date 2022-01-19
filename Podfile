@@ -4,6 +4,12 @@
 target 'Tea-KKeul-iOS' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
+  pod 'Firebase'
+  pod 'Firebase/Core'
+  pod 'Firebase/Analytics'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Auth'
+  pod 'GoogleSignIn', '=5.0.2'
 
   # Pods for Tea-KKeul-iOS
   pod 'Alamofire', '~> 5.4'
