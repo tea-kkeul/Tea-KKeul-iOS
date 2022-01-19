@@ -148,12 +148,8 @@ extension CalendarVC: FSCalendarDelegate, FSCalendarDataSource, FSCalendarDelega
         calendarView.appearance.todaySelectionColor = .none
         
         //calendar.appearance.selectionColor = UIColor.blueColor
-        calendarView.appearance.todayColor = .none
+        calendarView.today = nil
         //calendar.appearance.todaySelectionColor = UIColor.blackColor
-
-        
-        
-    
         
         //        // 헤더 폰트 설정
         //        calendarView.appearance.headerTitleFont = UIFont(name: "NotoSansKR-Medium", size: 20)
@@ -166,7 +162,21 @@ extension CalendarVC: FSCalendarDelegate, FSCalendarDataSource, FSCalendarDelega
         
         headerLabel.text = self.dateFormatter2.string(from: calendarView.currentPage)
         
+        // 
+        calendar(calendarView, imageFor: Date())
     
+    }
+    
+    // FSCalendarDataSource
+    func calendar(_ calendar: FSCalendar, imageFor date: Date) -> UIImage? {
+        let status0: UIImage = UIImage(named: "button_empty-1")!
+        let status1: UIImage = UIImage(named: "Status_1")!
+        let status2: UIImage = UIImage(named: "Status_2")!
+        let status3: UIImage = UIImage(named: "Status_3")!
+        let status4: UIImage = UIImage(named: "Status_4")!
+        let status5: UIImage = UIImage(named: "Status_5")!
+        
+        return status0
     }
     
     func calendarCurrentPageDidChange(_ calendar: FSCalendar) {
