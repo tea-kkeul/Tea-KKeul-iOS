@@ -28,7 +28,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="d37-Hy-sHr">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LikeListCVC" id="d37-Hy-sHr" customClass="LikeListCVC" customModule="Tea_KKeul_iOS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="159" height="261"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="SSa-qk-4Nu">
@@ -47,38 +47,38 @@
                                                     <state key="normal" image="LikeBtn"/>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="차이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gA7-iK-NQ9">
-                                                    <rect key="frame" x="16" y="135" width="34" height="18"/>
+                                                    <rect key="frame" x="16.000000000000004" y="135" width="36.333333333333343" height="18"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="18" id="rcc-ti-8sO"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="효과" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UI5-F5-vnm">
-                                                    <rect key="frame" x="16" y="158" width="21" height="16"/>
+                                                    <rect key="frame" x="16" y="158" width="22.666666666666671" height="16"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="16" id="Kpi-Z9-FRc"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="가격" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ljg-M3-aBu">
-                                                    <rect key="frame" x="16" y="183" width="26" height="20"/>
+                                                    <rect key="frame" x="16" y="183" width="28" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="roD-re-bed"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="원가" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B8b-7v-aPS">
-                                                    <rect key="frame" x="16" y="208" width="18" height="14"/>
+                                                    <rect key="frame" x="15.999999999999998" y="208" width="19.333333333333329" height="14"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="14" id="f7E-i9-TuA"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -145,6 +145,18 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="159" height="261"/>
+                                        <connections>
+                                            <outlet property="originCost" destination="B8b-7v-aPS" id="3Te-vR-Uvi"/>
+                                            <outlet property="photo" destination="CPq-DH-5jP" id="ZGt-W4-DIL"/>
+                                            <outlet property="star1" destination="Kwj-n4-Z5w" id="dpA-Fn-IY3"/>
+                                            <outlet property="star2" destination="Kf0-1b-tdK" id="xDD-kJ-DiT"/>
+                                            <outlet property="star3" destination="QiJ-Mt-kPp" id="4YD-SP-L2c"/>
+                                            <outlet property="star4" destination="BZg-E5-k0V" id="qZc-uL-qEh"/>
+                                            <outlet property="star5" destination="ynj-Fr-LPW" id="PqP-78-sHq"/>
+                                            <outlet property="teaEffects" destination="UI5-F5-vnm" id="q0I-Ml-6ga"/>
+                                            <outlet property="teaName" destination="gA7-iK-NQ9" id="vPP-j9-Whl"/>
+                                            <outlet property="teaPrice" destination="Ljg-M3-aBu" id="EGB-Ay-hl1"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -158,6 +170,9 @@
                             <constraint firstItem="uaz-HR-ewC" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="mpL-qf-VuU"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="likeListCV" destination="uaz-HR-ewC" id="CMi-sA-e4T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
