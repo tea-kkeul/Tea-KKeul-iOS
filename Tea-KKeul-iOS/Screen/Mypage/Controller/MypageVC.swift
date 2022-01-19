@@ -8,6 +8,11 @@
 import UIKit
 
 class MypageVC: UIViewController {
+    @IBOutlet weak var userName: UILabel!
+    @IBOutlet weak var userAddress: UILabel!
+    
+    @IBOutlet weak var boxView: UIView!
+    
     override func viewDidLoad() {
         
     }
