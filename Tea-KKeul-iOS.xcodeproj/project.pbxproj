@@ -27,13 +27,14 @@
 		23FB7871279698D5000549C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23FB7870279698D5000549C2 /* AppDelegate.swift */; };
 		23FB787A279698D6000549C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23FB7879279698D6000549C2 /* Assets.xcassets */; };
 		23FB787D279698D6000549C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23FB787B279698D6000549C2 /* LaunchScreen.storyboard */; };
-		55380B265487589C90FD6428 /* Pods_Tea_KKeul_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 899E3EC9C1BE9A389460B161 /* Pods_Tea_KKeul_iOS.framework */; };
+		3F4DDF6804176C37E807947A /* Pods_Tea_KKeul_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6A3CC9CC804FB8BCF545EA /* Pods_Tea_KKeul_iOS.framework */; };
 		BD2B7EBD27972D990070CA0D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BD2B7EBC27972D990070CA0D /* GoogleService-Info.plist */; };
 		BD9456F72796B6D800EB0222 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD9456F62796B6D800EB0222 /* Login.storyboard */; };
 		BD9456F92796B6EE00EB0222 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9456F82796B6EE00EB0222 /* LoginVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		225711E4162BB061252B27E4 /* Pods-Tea-KKeul-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tea-KKeul-iOS.release.xcconfig"; path = "Target Support Files/Pods-Tea-KKeul-iOS/Pods-Tea-KKeul-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		23E969FD27969DE200D7D7D3 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		23E969FF27969E0100D7D7D3 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		23E96A0127969E7600D7D7D3 /* Magazine.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Magazine.storyboard; sourceTree = "<group>"; };
@@ -56,12 +57,13 @@
 		23FB7879279698D6000549C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23FB787C279698D6000549C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23FB787E279698D6000549C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		899E3EC9C1BE9A389460B161 /* Pods_Tea_KKeul_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tea_KKeul_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1540D966095D75595CE5F89 /* Pods-Tea-KKeul-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tea-KKeul-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Tea-KKeul-iOS/Pods-Tea-KKeul-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		5E6256C7B7A42D0BD4007BF6 /* Pods-Tea-KKeul-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tea-KKeul-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Tea-KKeul-iOS/Pods-Tea-KKeul-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		BA6A3CC9CC804FB8BCF545EA /* Pods_Tea_KKeul_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tea_KKeul_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD2B7EBC27972D990070CA0D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BD695BF927980C590090E598 /* absl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = absl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD9456F62796B6D800EB0222 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		BD9456F82796B6EE00EB0222 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
-		CCFAAEC4C2AFE14CA7D0EEBD /* Pods-Tea-KKeul-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tea-KKeul-iOS.release.xcconfig"; path = "Target Support Files/Pods-Tea-KKeul-iOS/Pods-Tea-KKeul-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		BD9598ED2797D1120032F901 /* Tea-KKeul-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Tea-KKeul-iOS.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55380B265487589C90FD6428 /* Pods_Tea_KKeul_iOS.framework in Frameworks */,
+				3F4DDF6804176C37E807947A /* Pods_Tea_KKeul_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +287,7 @@
 				23FB786F279698D5000549C2 /* Tea-KKeul-iOS */,
 				23FB786E279698D5000549C2 /* Products */,
 				6EF6BE526E1F1AF75494DC6C /* Pods */,
-				A094EDDE21737515A89C4EC4 /* Frameworks */,
+				DACD4949E490049C5F029E75 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -300,6 +302,7 @@
 		23FB786F279698D5000549C2 /* Tea-KKeul-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				BD9598ED2797D1120032F901 /* Tea-KKeul-iOS.entitlements */,
 				BD2B7EBC27972D990070CA0D /* GoogleService-Info.plist */,
 				23E969F027969CF000D7D7D3 /* Global */,
 				23E969EF27969CE400D7D7D3 /* Screen */,
@@ -311,18 +314,10 @@
 		6EF6BE526E1F1AF75494DC6C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A1540D966095D75595CE5F89 /* Pods-Tea-KKeul-iOS.debug.xcconfig */,
-				CCFAAEC4C2AFE14CA7D0EEBD /* Pods-Tea-KKeul-iOS.release.xcconfig */,
+				5E6256C7B7A42D0BD4007BF6 /* Pods-Tea-KKeul-iOS.debug.xcconfig */,
+				225711E4162BB061252B27E4 /* Pods-Tea-KKeul-iOS.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		A094EDDE21737515A89C4EC4 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				899E3EC9C1BE9A389460B161 /* Pods_Tea_KKeul_iOS.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BD9456FA2796B70000EB0222 /* Login */ = {
@@ -350,6 +345,15 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		DACD4949E490049C5F029E75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD695BF927980C590090E598 /* absl.framework */,
+				BA6A3CC9CC804FB8BCF545EA /* Pods_Tea_KKeul_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -357,12 +361,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23FB7881279698D6000549C2 /* Build configuration list for PBXNativeTarget "Tea-KKeul-iOS" */;
 			buildPhases = (
-				BBBA48C30480E00B62AD987A /* [CP] Check Pods Manifest.lock */,
+				8EB2CFD0CCA8A1274C9EE64B /* [CP] Check Pods Manifest.lock */,
 				23FB7869279698D5000549C2 /* Sources */,
 				23FB786A279698D5000549C2 /* Frameworks */,
 				23FB786B279698D5000549C2 /* Resources */,
-				1E666A100231B3E56154C4B8 /* [CP] Embed Pods Frameworks */,
-				57EC4A5A4F2C7B9EFC3D90E9 /* [CP] Copy Pods Resources */,
+				95BCA57ED6D31F6CA0EB4B4A /* [CP] Embed Pods Frameworks */,
+				B614AC839F50CD3BA8567899 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -425,41 +429,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1E666A100231B3E56154C4B8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Tea-KKeul-iOS/Pods-Tea-KKeul-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Tea-KKeul-iOS/Pods-Tea-KKeul-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tea-KKeul-iOS/Pods-Tea-KKeul-iOS-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		57EC4A5A4F2C7B9EFC3D90E9 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Tea-KKeul-iOS/Pods-Tea-KKeul-iOS-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Tea-KKeul-iOS/Pods-Tea-KKeul-iOS-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tea-KKeul-iOS/Pods-Tea-KKeul-iOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BBBA48C30480E00B62AD987A /* [CP] Check Pods Manifest.lock */ = {
+		8EB2CFD0CCA8A1274C9EE64B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -479,6 +449,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95BCA57ED6D31F6CA0EB4B4A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tea-KKeul-iOS/Pods-Tea-KKeul-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tea-KKeul-iOS/Pods-Tea-KKeul-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tea-KKeul-iOS/Pods-Tea-KKeul-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B614AC839F50CD3BA8567899 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tea-KKeul-iOS/Pods-Tea-KKeul-iOS-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tea-KKeul-iOS/Pods-Tea-KKeul-iOS-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tea-KKeul-iOS/Pods-Tea-KKeul-iOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -637,18 +641,20 @@
 		};
 		23FB7882279698D6000549C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1540D966095D75595CE5F89 /* Pods-Tea-KKeul-iOS.debug.xcconfig */;
+			baseConfigurationReference = 5E6256C7B7A42D0BD4007BF6 /* Pods-Tea-KKeul-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Tea-KKeul-iOS/Tea-KKeul-iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U2Z5Z44P4R;
+				DEVELOPMENT_TEAM = 5T44CA4NMQ;
+				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = "Tea-KKeul-iOS/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.TKKeul.Tea-KKeul-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TKKeul.Tea-KKeul-iOS.signin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -657,18 +663,20 @@
 		};
 		23FB7883279698D6000549C2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CCFAAEC4C2AFE14CA7D0EEBD /* Pods-Tea-KKeul-iOS.release.xcconfig */;
+			baseConfigurationReference = 225711E4162BB061252B27E4 /* Pods-Tea-KKeul-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Tea-KKeul-iOS/Tea-KKeul-iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U2Z5Z44P4R;
+				DEVELOPMENT_TEAM = 5T44CA4NMQ;
+				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = "Tea-KKeul-iOS/Support/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.TKKeul.Tea-KKeul-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TKKeul.Tea-KKeul-iOS.signin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
