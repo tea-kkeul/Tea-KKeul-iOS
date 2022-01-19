@@ -19,6 +19,14 @@ class OnboardingBaseVC: UIViewController {
             present(vc, animated: true)
         }
     }
+    
+//    override func viewWillAppear(_ animated: Bool) {
+//        if Core.shared.isNewUser() {
+//            let vc = UIStoryboard(name: Identifiers.onboardingSB, bundle: nil).instantiateViewController(withIdentifier: Identifiers.onboardingVC) as! OnboardingVC
+//            vc.modalPresentationStyle = .fullScreen
+//            present(vc, animated: true)
+//        }
+//    }
 }
 
 class Core {
