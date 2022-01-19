@@ -8,6 +8,7 @@
 import UIKit
 
 class LikeListCVC: UICollectionViewCell {
+    @IBOutlet weak var likeBtn: UIButton!
     @IBOutlet weak var photo: UIImageView!
     @IBOutlet weak var teaName: UILabel!
     @IBOutlet weak var teaEffects: UILabel!
@@ -23,6 +24,9 @@ class LikeListCVC: UICollectionViewCell {
     override func awakeFromNib() {
         setCancelLine()
         setLikeListCVC()
+    }
+    @IBAction func likeToggle(_ sender: Any) {
+        
     }
 }
 //MARK: Custom Method
