@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NotoSansKR-Bold.otf">
+            <string>NotoSansKR-Bold</string>
+        </array>
+        <array key="NotoSansKR-Regular.otf">
+            <string>NotoSansKR-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Purchase CompleteVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="PurchaseCompleteVC" id="Y6W-OH-hqX" customClass="PurchaseCompleteVC" customModule="Tea_KKeul_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mypage_TV1" translatesAutoresizingMaskIntoConstraints="NO" id="LTZ-VJ-37F">
+                                <rect key="frame" x="164.66666666666666" y="261" width="46" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="nOE-bc-gIE"/>
+                                    <constraint firstAttribute="width" constant="46" id="xSg-DK-THQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주문번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lSZ-Ob-0kg">
+                                <rect key="frame" x="159.66666666666666" y="392" width="56" height="22"/>
+                                <fontDescription key="fontDescription" name="NotoSansKR-Regular" family="Noto Sans KR" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNt-aM-sWW">
+                                <rect key="frame" x="20" y="478" width="335" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="5vh-9a-upc"/>
+                                    <constraint firstAttribute="width" constant="335" id="b2P-aE-eJg"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="홈화면가기"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQn-Fk-84e">
+                                <rect key="frame" x="20" y="549" width="335" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="A0g-Dy-44g"/>
+                                    <constraint firstAttribute="width" constant="335" id="G1Y-36-uCq"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="내역확인하기"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="완료되었습니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWv-d4-Vgx">
+                                <rect key="frame" x="136.66666666666666" y="363" width="102" height="22"/>
+                                <fontDescription key="fontDescription" name="NotoSansKR-Bold" family="Noto Sans KR" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JQn-Fk-84e" firstAttribute="top" secondItem="fNt-aM-sWW" secondAttribute="bottom" constant="23" id="9bs-Dm-ix5"/>
+                            <constraint firstItem="fNt-aM-sWW" firstAttribute="top" secondItem="lSZ-Ob-0kg" secondAttribute="bottom" constant="64" id="D0Q-pH-Dk1"/>
+                            <constraint firstItem="FWv-d4-Vgx" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="EaO-rh-hWO"/>
+                            <constraint firstItem="fNt-aM-sWW" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="aaO-Dd-F36"/>
+                            <constraint firstItem="LTZ-VJ-37F" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="217" id="jCg-1z-szq"/>
+                            <constraint firstItem="JQn-Fk-84e" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="qaV-8Y-9NW"/>
+                            <constraint firstItem="lSZ-Ob-0kg" firstAttribute="top" secondItem="FWv-d4-Vgx" secondAttribute="bottom" constant="7" id="rPY-n7-LjF"/>
+                            <constraint firstItem="LTZ-VJ-37F" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="rPq-lE-h1r"/>
+                            <constraint firstItem="FWv-d4-Vgx" firstAttribute="top" secondItem="LTZ-VJ-37F" secondAttribute="bottom" constant="56" id="uCt-Dp-eyL"/>
+                            <constraint firstItem="lSZ-Ob-0kg" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="xI4-UI-vry"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="doneLabel" destination="FWv-d4-Vgx" id="hID-SM-wbz"/>
+                        <outlet property="gotoHomeBtn" destination="fNt-aM-sWW" id="QcM-aP-7cW"/>
+                        <outlet property="purchaseNum" destination="lSZ-Ob-0kg" id="kRs-m0-cT2"/>
+                        <outlet property="showListBtn" destination="JQn-Fk-84e" id="pg7-pG-fjK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64" y="62"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Mypage_TV1" width="21" height="19"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

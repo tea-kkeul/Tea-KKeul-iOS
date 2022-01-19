@@ -21,6 +21,7 @@ class PaymentSelectionTVC: UITableViewCell {
         cautionLabel.isHidden = true
         accountPayButton.addTarget(self, action: #selector(didTapAccountButton), for: .touchUpInside)
         // Initialization code
+        subscribeButton.addTarget(self, action: #selector(didTapSubscribeButton), for: .touchUpInside)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -32,5 +33,13 @@ class PaymentSelectionTVC: UITableViewCell {
     @objc func didTapAccountButton() {
         accountPayButton.setImage(UIImage(named: "ic_accountpay_selected"), for: .normal)
         cautionLabel.isHidden = false
+    }
+    
+    @objc func didTapSubscribeButton() {
+       
+    }
+    
+    func showPurchaseView() {
+        
     }
 }

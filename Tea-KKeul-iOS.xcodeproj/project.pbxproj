@@ -26,6 +26,8 @@
 		23406BB427989822001D12B0 /* OnboardingBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23406BB327989822001D12B0 /* OnboardingBaseVC.swift */; };
 		23406BB62798983A001D12B0 /* OnboardingBase.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23406BB52798983A001D12B0 /* OnboardingBase.storyboard */; };
 		23406BB827989859001D12B0 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23406BB727989859001D12B0 /* Onboarding.storyboard */; };
+		23406BBD2798CB48001D12B0 /* PurchaseCompleteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23406BBC2798CB48001D12B0 /* PurchaseCompleteVC.swift */; };
+		23406BBF2798CB62001D12B0 /* PurchaseComplete.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23406BBE2798CB62001D12B0 /* PurchaseComplete.storyboard */; };
 		23E969FE27969DE200D7D7D3 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23E969FD27969DE200D7D7D3 /* Home.storyboard */; };
 		23E96A0027969E0100D7D7D3 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E969FF27969E0100D7D7D3 /* HomeVC.swift */; };
 		23E96A0227969E7600D7D7D3 /* Magazine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23E96A0127969E7600D7D7D3 /* Magazine.storyboard */; };
@@ -110,6 +112,8 @@
 		23406BB327989822001D12B0 /* OnboardingBaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingBaseVC.swift; sourceTree = "<group>"; };
 		23406BB52798983A001D12B0 /* OnboardingBase.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnboardingBase.storyboard; sourceTree = "<group>"; };
 		23406BB727989859001D12B0 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		23406BBC2798CB48001D12B0 /* PurchaseCompleteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseCompleteVC.swift; sourceTree = "<group>"; };
+		23406BBE2798CB62001D12B0 /* PurchaseComplete.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PurchaseComplete.storyboard; sourceTree = "<group>"; };
 		23E969FD27969DE200D7D7D3 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		23E969FF27969E0100D7D7D3 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		23E96A0127969E7600D7D7D3 /* Magazine.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Magazine.storyboard; sourceTree = "<group>"; };
@@ -261,6 +265,31 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
+		23406BB92798CB21001D12B0 /* Purchase */ = {
+			isa = PBXGroup;
+			children = (
+				23406BBB2798CB34001D12B0 /* Storyboard */,
+				23406BBA2798CB2D001D12B0 /* Controller */,
+			);
+			path = Purchase;
+			sourceTree = "<group>";
+		};
+		23406BBA2798CB2D001D12B0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				23406BBC2798CB48001D12B0 /* PurchaseCompleteVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		23406BBB2798CB34001D12B0 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				23406BBE2798CB62001D12B0 /* PurchaseComplete.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
 		23E969EE27969CAD00D7D7D3 /* Support */ = {
 			isa = PBXGroup;
 			children = (
@@ -277,6 +306,7 @@
 		23E969EF27969CE400D7D7D3 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				23406BB92798CB21001D12B0 /* Purchase */,
 				23406BAE279897DC001D12B0 /* Onboarding */,
 				23E96A1427969F3A00D7D7D3 /* TabBar */,
 				23E969FA27969D8C00D7D7D3 /* Home */,
@@ -679,6 +709,7 @@
 				F278F2592797FA3200B7A22F /* NotoSansKR-Medium.otf in Resources */,
 				F278F26E279846A500B7A22F /* AddressTVC.xib in Resources */,
 				23E96A1A27969F7600D7D7D3 /* TabBar.storyboard in Resources */,
+				23406BBF2798CB62001D12B0 /* PurchaseComplete.storyboard in Resources */,
 				F278F2622797FA4500B7A22F /* NotoSans-Italic.ttf in Resources */,
 				23406B9B27984E1B001D12B0 /* LikeList.storyboard in Resources */,
 				23FB787A279698D6000549C2 /* Assets.xcassets in Resources */,
@@ -740,6 +771,7 @@
 			files = (
 				23406B9227980F34001D12B0 /* DeliveryListVC.swift in Sources */,
 				23406BB227989804001D12B0 /* OnboardingVC.swift in Sources */,
+				23406BBD2798CB48001D12B0 /* PurchaseCompleteVC.swift in Sources */,
 				F2B0453A27970C2F00FFEE27 /* ConditionCheckTVC.swift in Sources */,
 				23E96A2027969FE900D7D7D3 /* ViewControllerFactory.swift in Sources */,
 				23406B942798102A001D12B0 /* MypageNC.swift in Sources */,

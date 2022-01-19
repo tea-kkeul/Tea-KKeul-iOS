@@ -44,6 +44,13 @@ extension SubscribeVC {
     @objc func didBack() {
         navigationController?.popViewController(animated: true)
     }
+    //MARK: 구매 확정 뷰로 이동
+    @objc func tappedSubscribeButton() {
+        guard let vc = UIStoryboard(name: Identifiers.purchaseCompleteSB, bundle: nil).instantiateViewController(withIdentifier: Identifiers.purchaseCompleteVC) as? PurchaseCompleteVC else { return }
+        vc.modalPresentationStyle = .fullScreen
+        vc.isSubscribe = true
+        present(vc, animated: true)
+    }
     func registerCell() {
         let addressNib = UINib(nibName: "AddressTVC", bundle: nil)
         tableView.register(addressNib, forCellReuseIdentifier: Identifiers.addressTVC)
@@ -113,6 +120,7 @@ extension SubscribeVC: UITableViewDataSource {
             guard let cell: PaymentSelectionTVC = tableView.dequeueReusableCell(withIdentifier: Identifiers.paymentSelectionTVC, for: indexPath) as? PaymentSelectionTVC else {
                 return UITableViewCell()
             }
+            cell.subscribeButton.addTarget(self, action: #selector(tappedSubscribeButton), for: .touchUpInside)
             cell.selectionStyle = .none
             return cell
         }
