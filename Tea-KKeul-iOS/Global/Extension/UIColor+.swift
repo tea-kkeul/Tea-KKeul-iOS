@@ -17,4 +17,8 @@ extension UIColor {
     @nonobjc class var tabBarUnSelected: UIColor {
         return UIColor(red: 173.0 / 255.0, green: 193.0 / 255.0, blue: 149.0 / 255.0, alpha: 1.0)
     }
+
+    @nonobjc class var teaPastelGreen: UIColor {
+        return UIColor(red: 248.0 / 255.0, green: 249.0 / 255.0 , blue: 231.0 / 255.0 , alpha: 1.0)
+    }
 }

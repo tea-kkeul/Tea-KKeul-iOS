@@ -40,6 +40,10 @@
 		F205B3E527979DCB0065DB55 /* TeaListTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F205B3E327979DCB0065DB55 /* TeaListTVC.xib */; };
 		F205B3EB2797ACCE0065DB55 /* HomeTitleHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F205B3EA2797ACCE0065DB55 /* HomeTitleHeaderView.swift */; };
 		F205B3EF2797B3960065DB55 /* HomeTitleHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F205B3EE2797B3960065DB55 /* HomeTitleHeaderView.xib */; };
+		F278F2482797F3EE00B7A22F /* UITextView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F278F2472797F3EE00B7A22F /* UITextView+.swift */; };
+		F278F24A2797F44B00B7A22F /* CALayer+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F278F2492797F44B00B7A22F /* CALayer+.swift */; };
+		F278F24C2797F67A00B7A22F /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F278F24B2797F67A00B7A22F /* UIView+.swift */; };
+		F278F24E2797F71000B7A22F /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F278F24D2797F71000B7A22F /* UIImageView+.swift */; };
 		F2B0453A27970C2F00FFEE27 /* ConditionCheckTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0453827970C2F00FFEE27 /* ConditionCheckTVC.swift */; };
 		F2B0453B27970C2F00FFEE27 /* ConditionCheckTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2B0453927970C2F00FFEE27 /* ConditionCheckTVC.xib */; };
 		F2B0453E2797288300FFEE27 /* SubscribeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0453C2797288300FFEE27 /* SubscribeTVC.swift */; };
@@ -84,6 +88,10 @@
 		F205B3E327979DCB0065DB55 /* TeaListTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeaListTVC.xib; sourceTree = "<group>"; };
 		F205B3EA2797ACCE0065DB55 /* HomeTitleHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTitleHeaderView.swift; sourceTree = "<group>"; };
 		F205B3EE2797B3960065DB55 /* HomeTitleHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTitleHeaderView.xib; sourceTree = "<group>"; };
+		F278F2472797F3EE00B7A22F /* UITextView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+.swift"; sourceTree = "<group>"; };
+		F278F2492797F44B00B7A22F /* CALayer+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+.swift"; sourceTree = "<group>"; };
+		F278F24B2797F67A00B7A22F /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		F278F24D2797F71000B7A22F /* UIImageView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
 		F2B0453827970C2F00FFEE27 /* ConditionCheckTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionCheckTVC.swift; sourceTree = "<group>"; };
 		F2B0453927970C2F00FFEE27 /* ConditionCheckTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConditionCheckTVC.xib; sourceTree = "<group>"; };
 		F2B0453C2797288300FFEE27 /* SubscribeTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeTVC.swift; sourceTree = "<group>"; };
@@ -111,6 +119,10 @@
 				23270CA8279719BA0006B9FE /* Notification+Name.swift */,
 				23270CAA279719D90006B9FE /* UITextField+.swift */,
 				23270CAC279719EF0006B9FE /* UIButton+.swift */,
+				F278F2472797F3EE00B7A22F /* UITextView+.swift */,
+				F278F2492797F44B00B7A22F /* CALayer+.swift */,
+				F278F24B2797F67A00B7A22F /* UIView+.swift */,
+				F278F24D2797F71000B7A22F /* UIImageView+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -515,8 +527,10 @@
 				F2B0453A27970C2F00FFEE27 /* ConditionCheckTVC.swift in Sources */,
 				23E96A2027969FE900D7D7D3 /* ViewControllerFactory.swift in Sources */,
 				23E96A0A27969EDF00D7D7D3 /* MypageVC.swift in Sources */,
+				F278F24A2797F44B00B7A22F /* CALayer+.swift in Sources */,
 				23FB7871279698D5000549C2 /* AppDelegate.swift in Sources */,
 				23E96A1827969F6500D7D7D3 /* TeaKKeulTBC.swift in Sources */,
+				F278F2482797F3EE00B7A22F /* UITextView+.swift in Sources */,
 				23E96A1D27969FC900D7D7D3 /* Identifiers.swift in Sources */,
 				23270CA72797199C0006B9FE /* UILabel+.swift in Sources */,
 				23E96A2227969FF900D7D7D3 /* TypeOfViewController.swift in Sources */,
@@ -525,6 +539,8 @@
 				23270CAB279719D90006B9FE /* UITextField+.swift in Sources */,
 				23270CA52797193A0006B9FE /* UIFont+.swift in Sources */,
 				23E96A262796A29C00D7D7D3 /* SceneDelegate.swift in Sources */,
+				F278F24C2797F67A00B7A22F /* UIView+.swift in Sources */,
+				F278F24E2797F71000B7A22F /* UIImageView+.swift in Sources */,
 				23E96A2A2796CA1F00D7D7D3 /* MagazineCVC.swift in Sources */,
 				23E96A1127969F2400D7D7D3 /* a.swift in Sources */,
 				23E96A242796A00900D7D7D3 /* StoryboardRepresentation.swift in Sources */,
