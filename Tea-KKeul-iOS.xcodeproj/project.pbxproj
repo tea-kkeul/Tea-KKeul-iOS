@@ -13,6 +13,7 @@
 		23270CA9279719BA0006B9FE /* Notification+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23270CA8279719BA0006B9FE /* Notification+Name.swift */; };
 		23270CAB279719D90006B9FE /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23270CAA279719D90006B9FE /* UITextField+.swift */; };
 		23270CAD279719EF0006B9FE /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23270CAC279719EF0006B9FE /* UIButton+.swift */; };
+		23406B8E27980304001D12B0 /* SettingTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23406B8D27980304001D12B0 /* SettingTVC.swift */; };
 		23E969FE27969DE200D7D7D3 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23E969FD27969DE200D7D7D3 /* Home.storyboard */; };
 		23E96A0027969E0100D7D7D3 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E969FF27969E0100D7D7D3 /* HomeVC.swift */; };
 		23E96A0227969E7600D7D7D3 /* Magazine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23E96A0127969E7600D7D7D3 /* Magazine.storyboard */; };
@@ -53,6 +54,7 @@
 		23270CA8279719BA0006B9FE /* Notification+Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Name.swift"; sourceTree = "<group>"; };
 		23270CAA279719D90006B9FE /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
 		23270CAC279719EF0006B9FE /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
+		23406B8D27980304001D12B0 /* SettingTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTVC.swift; sourceTree = "<group>"; };
 		23E969FD27969DE200D7D7D3 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		23E969FF27969E0100D7D7D3 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		23E96A0127969E7600D7D7D3 /* Magazine.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Magazine.storyboard; sourceTree = "<group>"; };
@@ -115,6 +117,22 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		23406B8B279802F8001D12B0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				23406B8C279802FC001D12B0 /* TVC */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		23406B8C279802FC001D12B0 /* TVC */ = {
+			isa = PBXGroup;
+			children = (
+				23406B8D27980304001D12B0 /* SettingTVC.swift */,
+			);
+			path = TVC;
+			sourceTree = "<group>";
+		};
 		23E969EE27969CAD00D7D7D3 /* Support */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +170,7 @@
 		23E969F127969D2600D7D7D3 /* Mypage */ = {
 			isa = PBXGroup;
 			children = (
+				23406B8B279802F8001D12B0 /* Cell */,
 				23E969F327969D5300D7D7D3 /* Storyboard */,
 				23E969F227969D4500D7D7D3 /* Controller */,
 			);
@@ -528,6 +547,7 @@
 				23E96A2A2796CA1F00D7D7D3 /* MagazineCVC.swift in Sources */,
 				23E96A1127969F2400D7D7D3 /* a.swift in Sources */,
 				23E96A242796A00900D7D7D3 /* StoryboardRepresentation.swift in Sources */,
+				23406B8E27980304001D12B0 /* SettingTVC.swift in Sources */,
 				F2B0453E2797288300FFEE27 /* SubscribeTVC.swift in Sources */,
 				23E96A0627969EAA00D7D7D3 /* CalendarVC.swift in Sources */,
 				23E96A0027969E0100D7D7D3 /* HomeVC.swift in Sources */,
