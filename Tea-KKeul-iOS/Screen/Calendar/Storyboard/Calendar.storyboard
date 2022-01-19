@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="49" translatesAutoresizingMaskIntoConstraints="NO" id="zdj-bI-Kie">
-                                <rect key="frame" x="67.999999999999986" y="44" width="228.66666666666666" height="47"/>
+                                <rect key="frame" x="67.999999999999986" y="44" width="239.33333333333334" height="47"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sR-Pb-PQj">
                                         <rect key="frame" x="0.0" y="0.0" width="48" height="47"/>
@@ -31,14 +31,14 @@
                                             <action selector="prevBtnTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Phe-QH-wqS"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JAN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHn-Oq-Ip7">
-                                        <rect key="frame" x="97" y="0.0" width="34.666666666666657" height="47"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MMM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHn-Oq-Ip7">
+                                        <rect key="frame" x="97" y="0.0" width="45.333333333333343" height="47"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" red="0.4039215686" green="0.4941176471" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Alu-gJ-cJQ">
-                                        <rect key="frame" x="180.66666666666666" y="0.0" width="48" height="47"/>
+                                        <rect key="frame" x="191.33333333333334" y="0.0" width="48" height="47"/>
                                         <color key="tintColor" red="0.67843137249999996" green="0.75686274509999996" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="NextBtn" title=" ">
@@ -53,14 +53,14 @@
                                     <constraint firstAttribute="height" constant="47" id="USO-1k-Wbj"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17일의 차" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TdF-df-l3f">
-                                <rect key="frame" x="20" y="496" width="77.666666666666671" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dd일의 차" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TdF-df-l3f">
+                                <rect key="frame" x="20" y="496" width="81" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" red="0.4039215686" green="0.4941176471" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1월의 차" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPh-Zb-A51">
-                                <rect key="frame" x="20" y="620" width="66" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MM월의 차" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPh-Zb-A51">
+                                <rect key="frame" x="19.999999999999993" y="620" width="91.333333333333314" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" red="0.4039215686" green="0.4941176471" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -212,7 +212,7 @@
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kkp-P8-mS2">
                                 <rect key="frame" x="0.0" y="395" width="375" height="75"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="som-Nd-IIY">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dd일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="som-Nd-IIY">
                                         <rect key="frame" x="19" y="15" width="31.666666666666671" height="18"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -277,13 +277,16 @@
                         <outlet property="calendarView" destination="ZDk-vP-wKQ" id="GS1-hs-sQ5"/>
                         <outlet property="dateDibButton" destination="pSI-jI-SvE" id="jVS-rN-B5v"/>
                         <outlet property="datePurchaseButton" destination="V7f-hF-HNm" id="0nP-xJ-01T"/>
+                        <outlet property="eachDate" destination="TdF-df-l3f" id="UQ8-Xd-N9v"/>
                         <outlet property="eachDateView" destination="YG2-Qq-P1J" id="Oni-PO-Ckg"/>
                         <outlet property="headerLabel" destination="KHn-Oq-Ip7" id="X3H-mD-2ir"/>
+                        <outlet property="monthDate" destination="KPh-Zb-A51" id="IMw-H2-ELg"/>
                         <outlet property="monthDibButton" destination="T8k-w7-5yH" id="nsx-kC-R7t"/>
                         <outlet property="monthPurchaseButton" destination="z25-NJ-fOo" id="7jx-Yx-RVx"/>
                         <outlet property="monthView" destination="0lU-l7-LHs" id="cim-bH-fhN"/>
                         <outlet property="nextBtn" destination="Alu-gJ-cJQ" id="bhg-dY-tCT"/>
                         <outlet property="prevBtn" destination="5sR-Pb-PQj" id="VrM-Qz-b25"/>
+                        <outlet property="statusDate" destination="som-Nd-IIY" id="gHd-rL-JoE"/>
                         <outlet property="statusView" destination="Kkp-P8-mS2" id="zhd-uH-RCu"/>
                     </connections>
                 </viewController>
