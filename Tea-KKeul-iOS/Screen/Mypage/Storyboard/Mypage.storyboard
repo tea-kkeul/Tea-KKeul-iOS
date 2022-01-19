@@ -64,6 +64,9 @@
                                                 <rect key="frame" x="137" y="16" width="50" height="50"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" image="LikeList"/>
+                                                <connections>
+                                                    <action selector="goLikeListView:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="HAG-Kc-sgw"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="찜목록" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fob-8c-LqA">
                                                 <rect key="frame" x="145" y="71" width="34" height="29"/>
