@@ -62,7 +62,6 @@ extension SubscribeVC {
         let subTitleHeaderNib = UINib(nibName: "SubTitleHeaderView", bundle: nil)
         tableView.register(subTitleHeaderNib, forHeaderFooterViewReuseIdentifier: Identifiers.subTitleHeaderView)
     }
-
 }
 
 extension SubscribeVC: UITableViewDataSource {
@@ -71,8 +70,6 @@ extension SubscribeVC: UITableViewDataSource {
         numberOfRowsInSection section: Int
     ) -> Int {
         switch section {
-        case 1:
-            return 2
         case 2:
             return 3
         case 3:
@@ -99,15 +96,6 @@ extension SubscribeVC: UITableViewDataSource {
             // 여기에 티끌박스 내차박스 cell 만들기!
             guard let cell: DeliveryBoxTVC = tableView.dequeueReusableCell(withIdentifier: Identifiers.deliveryBoxTVC, for: indexPath) as? DeliveryBoxTVC else {
                 return UITableViewCell()
-            }
-            cell.cellDelegate = self
-            if indexPath.row == 0 {
-                cell.boxButton.setImage(UIImage(named: "Group 504"), for: .normal)
-                //cell.boxButton.setImage(UIImage(named: "Group 504"), for: .normal)
-            }
-            if indexPath.row == 1 {
-                cell.boxButton.setImage(UIImage(named: "Group 490"), for: .normal)
-                //cell.boxButton.setImage(UIImage(named: "Group 490"), for: .normal)
             }
             cell.selectionStyle = .none
             return cell
@@ -204,11 +192,5 @@ extension SubscribeVC: UITableViewDelegate {
         default:
             return 0.0
         }
-    }
-}
-
-extension SubscribeVC: DeliveryBoxTapDelegate {
-    func didTapDeliveryBox() {
-        
     }
 }

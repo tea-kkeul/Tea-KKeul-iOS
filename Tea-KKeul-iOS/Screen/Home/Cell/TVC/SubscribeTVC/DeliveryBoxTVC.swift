@@ -10,10 +10,13 @@ import UIKit
 class DeliveryBoxTVC: UITableViewCell {
 
     @IBOutlet weak var boxButton: UIButton!
-    var cellDelegate: DeliveryBoxTapDelegate?
+    @IBOutlet weak var myBoxButton: UIButton!
+
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        boxButton.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
+        myBoxButton.addTarget(self, action: #selector(didTapMyBoxButton), for: .touchUpInside)
         // Initialization code
     }
 
@@ -23,11 +26,12 @@ class DeliveryBoxTVC: UITableViewCell {
     }
 
     @objc func didTapButton() {
-        cellDelegate?.didTapDeliveryBox()
+        boxButton.setImage(UIImage(named: "Group 507"), for: .normal)
+    }
+
+    @objc func didTapMyBoxButton() {
+        myBoxButton.setImage(UIImage(named: "Group 508"), for: .normal)
     }
     
 }
 
-protocol DeliveryBoxTapDelegate: AnyObject {
-    func didTapDeliveryBox()
-}
