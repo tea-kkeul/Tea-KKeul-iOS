@@ -10,6 +10,7 @@ import UIKit
 class SubTitleHeaderView: UITableViewHeaderFooterView {
     @IBOutlet weak var sectionTitleLabel: UILabel!
 
+    @IBOutlet weak var cautionLabel: UILabel!
     /*
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.

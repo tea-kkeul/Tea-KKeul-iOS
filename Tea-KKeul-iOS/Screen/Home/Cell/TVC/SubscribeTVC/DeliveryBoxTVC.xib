@@ -16,8 +16,10 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oN2-Pe-NNn">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oN2-Pe-NNn">
                         <rect key="frame" x="18" y="7" width="339" height="66"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" image="Group 490"/>
                     </button>
                 </subviews>
                 <constraints>
@@ -34,4 +36,7 @@
             <point key="canvasLocation" x="-36" y="65.763546798029566"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="Group 490" width="335" height="73"/>
+    </resources>
 </document>

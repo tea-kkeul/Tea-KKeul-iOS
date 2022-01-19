@@ -32,6 +32,7 @@ struct Identifiers {
     static let addressTVC = "AddressTVC"
     static let deliveryBoxTVC = "DeliveryBoxTVC"
     static let subscribePeriodTVC = "SubscribePeriodTVC"
+    static let blendOptionTVC = "BlendOptionTVC"
     //MARK: CVC
     static let magazineCVC = "MagazineCVC"
     //MARK: View

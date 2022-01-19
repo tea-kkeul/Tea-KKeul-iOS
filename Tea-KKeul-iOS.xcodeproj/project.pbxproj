@@ -65,6 +65,8 @@
 		F278F2792798519100B7A22F /* DeliveryBoxTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F278F2772798519100B7A22F /* DeliveryBoxTVC.xib */; };
 		F278F27C2798648200B7A22F /* SubscribePeriodTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F278F27A2798648200B7A22F /* SubscribePeriodTVC.swift */; };
 		F278F27D2798648200B7A22F /* SubscribePeriodTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F278F27B2798648200B7A22F /* SubscribePeriodTVC.xib */; };
+		F278F28027987A3900B7A22F /* BlendOptionTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F278F27E27987A3900B7A22F /* BlendOptionTVC.swift */; };
+		F278F28127987A3900B7A22F /* BlendOptionTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F278F27F27987A3900B7A22F /* BlendOptionTVC.xib */; };
 		F2B0453A27970C2F00FFEE27 /* ConditionCheckTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0453827970C2F00FFEE27 /* ConditionCheckTVC.swift */; };
 		F2B0453B27970C2F00FFEE27 /* ConditionCheckTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2B0453927970C2F00FFEE27 /* ConditionCheckTVC.xib */; };
 		F2B0453E2797288300FFEE27 /* SubscribeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0453C2797288300FFEE27 /* SubscribeTVC.swift */; };
@@ -134,6 +136,8 @@
 		F278F2772798519100B7A22F /* DeliveryBoxTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeliveryBoxTVC.xib; sourceTree = "<group>"; };
 		F278F27A2798648200B7A22F /* SubscribePeriodTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribePeriodTVC.swift; sourceTree = "<group>"; };
 		F278F27B2798648200B7A22F /* SubscribePeriodTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubscribePeriodTVC.xib; sourceTree = "<group>"; };
+		F278F27E27987A3900B7A22F /* BlendOptionTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlendOptionTVC.swift; sourceTree = "<group>"; };
+		F278F27F27987A3900B7A22F /* BlendOptionTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlendOptionTVC.xib; sourceTree = "<group>"; };
 		F2B0453827970C2F00FFEE27 /* ConditionCheckTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionCheckTVC.swift; sourceTree = "<group>"; };
 		F2B0453927970C2F00FFEE27 /* ConditionCheckTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConditionCheckTVC.xib; sourceTree = "<group>"; };
 		F2B0453C2797288300FFEE27 /* SubscribeTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeTVC.swift; sourceTree = "<group>"; };
@@ -484,6 +488,8 @@
 				F278F2772798519100B7A22F /* DeliveryBoxTVC.xib */,
 				F278F27A2798648200B7A22F /* SubscribePeriodTVC.swift */,
 				F278F27B2798648200B7A22F /* SubscribePeriodTVC.xib */,
+				F278F27E27987A3900B7A22F /* BlendOptionTVC.swift */,
+				F278F27F27987A3900B7A22F /* BlendOptionTVC.xib */,
 			);
 			path = SubscribeTVC;
 			sourceTree = "<group>";
@@ -561,6 +567,7 @@
 				F278F2612797FA4500B7A22F /* NotoSans-Bold.ttf in Resources */,
 				F278F2652798018400B7A22F /* Subscribe.storyboard in Resources */,
 				F278F2562797FA2200B7A22F /* NotoSansKR-Black.otf in Resources */,
+				F278F28127987A3900B7A22F /* BlendOptionTVC.xib in Resources */,
 				F278F2582797FA2F00B7A22F /* NotoSansKR-Light.otf in Resources */,
 				23FB787D279698D6000549C2 /* LaunchScreen.storyboard in Resources */,
 				F205B3E1279796BB0065DB55 /* MyStateTVC.xib in Resources */,
@@ -633,6 +640,7 @@
 				F278F26D279846A500B7A22F /* AddressTVC.swift in Sources */,
 				F278F24A2797F44B00B7A22F /* CALayer+.swift in Sources */,
 				23FB7871279698D5000549C2 /* AppDelegate.swift in Sources */,
+				F278F28027987A3900B7A22F /* BlendOptionTVC.swift in Sources */,
 				23E96A1827969F6500D7D7D3 /* TeaKKeulTBC.swift in Sources */,
 				F278F2782798519100B7A22F /* DeliveryBoxTVC.swift in Sources */,
 				F278F2482797F3EE00B7A22F /* UITextView+.swift in Sources */,

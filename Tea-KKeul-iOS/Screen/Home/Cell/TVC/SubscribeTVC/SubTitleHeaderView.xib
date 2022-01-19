@@ -8,16 +8,15 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="NotoSans-Regular.ttf">
+            <string>NotoSans</string>
+        </array>
         <array key="NotoSansKR-Bold.otf">
             <string>NotoSansKR-Bold</string>
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner">
-            <connections>
-                <outlet property="sectionTitleLabel" destination="fIB-kT-hDn" id="2ZP-BY-xmY"/>
-            </connections>
-        </placeholder>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" restorationIdentifier="SubTitleHeaderView" id="iN0-l3-epB" customClass="SubTitleHeaderView" customModule="Tea_KKeul_iOS" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="52"/>
@@ -42,13 +41,22 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="최대 2개 선택 가능" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QZG-oy-O9b">
+                            <rect key="frame" x="99.333333333333314" y="23" width="89" height="17"/>
+                            <fontDescription key="fontDescription" name="NotoSans" family="Noto Sans" pointSize="12"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
+                        <constraint firstAttribute="bottom" secondItem="QZG-oy-O9b" secondAttribute="bottom" constant="12" id="5cP-Zc-ycI"/>
                         <constraint firstAttribute="bottom" secondItem="fIB-kT-hDn" secondAttribute="bottom" constant="6" id="7mj-db-EqX"/>
                         <constraint firstItem="fIB-kT-hDn" firstAttribute="leading" secondItem="87I-l3-wOP" secondAttribute="leading" constant="18" id="ZyB-OP-avv"/>
                         <constraint firstItem="lTa-gv-ZWH" firstAttribute="top" secondItem="87I-l3-wOP" secondAttribute="top" constant="7" id="d9x-80-PQo"/>
                         <constraint firstItem="lTa-gv-ZWH" firstAttribute="leading" secondItem="87I-l3-wOP" secondAttribute="leading" id="fhf-Ul-VgT"/>
+                        <constraint firstItem="QZG-oy-O9b" firstAttribute="leading" secondItem="fIB-kT-hDn" secondAttribute="trailing" constant="15" id="iGF-iA-jCA"/>
+                        <constraint firstItem="QZG-oy-O9b" firstAttribute="top" secondItem="lTa-gv-ZWH" secondAttribute="bottom" constant="15" id="reV-xk-a6j"/>
                         <constraint firstAttribute="trailing" secondItem="lTa-gv-ZWH" secondAttribute="trailing" id="spu-5R-jQY"/>
                         <constraint firstItem="fIB-kT-hDn" firstAttribute="top" secondItem="lTa-gv-ZWH" secondAttribute="bottom" constant="8" symbolic="YES" id="yiQ-fz-7IK"/>
                     </constraints>
@@ -63,6 +71,10 @@
                 <constraint firstItem="87I-l3-wOP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="qLd-sY-32W"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cautionLabel" destination="QZG-oy-O9b" id="iwp-AZ-pgn"/>
+                <outlet property="sectionTitleLabel" destination="fIB-kT-hDn" id="tfu-Hz-ipD"/>
+            </connections>
             <point key="canvasLocation" x="63.200000000000003" y="65.763546798029566"/>
         </view>
     </objects>
