@@ -11,56 +11,25 @@ import UIKit
 
 class LoginVC: UIViewController {
     
-    // 수정 필요
-    @IBOutlet weak var googleLoginBtn: UIButton!
+    @IBOutlet weak var googleLoginBtn: GIDSignInButton!
     @IBOutlet weak var appleLoginBtn: UIButton!
-    @IBOutlet weak var logoTitle: UIImageView!
-    
-    let googleLoginButton = GIDSignInButton()
+
     let db = Firestore.firestore()
         
     override func viewDidLoad() {
         setSocialLoginBtn()
-        configureUI()
         GIDSignIn.sharedInstance().delegate = self
         GIDSignIn.sharedInstance()?.presentingViewController = self
     }
     
-//    func configureUI() {
-//        googleLoginButton.style = .wide
-//        view.addSubview(googleLoginButton)
-//        googleLoginButton.translatesAutoresizingMaskIntoConstraints = false
-//        NSLayoutConstraint.activate([
-//            googleLoginButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-//            googleLoginButton.centerYAnchor.constraint(equalTo: self.logoTitle.bottomAnchor, constant: 100)
-//        ])
-//    }
-    
-    func configureUI() {
-        view.addSubview(gBtn)
-        gBtn.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            gBtn.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            gBtn.centerYAnchor.constraint(equalTo: self.logoTitle.bottomAnchor, constant: 100)
-        ])
-    }
-    
     @IBAction func googleLoginBtnClick(_ sender: Any) {
+        GIDSignIn.sharedInstance().signIn()
         print("google")
     }
     
     @IBAction func appleLoginBtnClick(_ sender: Any) {
         print("apple")
     }
-    
-    let gBtn: GIDSignInButton = {
-        let btn = GIDSignInButton()
-        btn.colorScheme = .light
-        btn.style = .wide
-        btn.addTarget(self, action: #selector(sign), for: .touchUpInside)
-        return btn
-    }()
-    
 }
 
 // MARK: - custom Method
