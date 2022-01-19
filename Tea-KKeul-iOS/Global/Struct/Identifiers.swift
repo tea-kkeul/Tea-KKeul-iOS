@@ -28,7 +28,6 @@ struct Identifiers {
     static let teaListTVC = "TeaListTVC"
     //MARK: CVC
     static let magazineCVC = "MagazineCVC"
-    
     //MARK: View
-    static let homeSectionHeaderView = "HomeSectionHeaderView"
+    static let homeTitleHeaderView = "HomeTitleHeaderView"
 }

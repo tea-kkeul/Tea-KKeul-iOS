@@ -15,6 +15,7 @@ class HomeVC: UIViewController {
         setLayout()
         setButton()
         registerCell()
+        setHeaderView()
     }
 }
 
@@ -37,6 +38,13 @@ extension HomeVC {
         tableView.register(subscribeNib, forCellReuseIdentifier: Identifiers.subscribeTVC)
         let teaListNib = UINib(nibName: "TeaListTVC", bundle: nil)
         tableView.register(teaListNib, forCellReuseIdentifier: Identifiers.teaListTVC)
+//        let homeSectionHeaderNib = UINib(nibName: "HomeSectionHeaderView", bundle: nil)
+//        tableView.register(homeSectionHeaderNib, forCellReuseIdentifier: Identifiers.homeSectionHeaderView)
+    }
+    // MARK: - section header view 추가
+    func setHeaderView() {
+        let homeTitleHeaderNib = UINib(nibName: "HomeTitleHeaderView", bundle: nil)
+        tableView.register(homeTitleHeaderNib, forHeaderFooterViewReuseIdentifier: Identifiers.homeTitleHeaderView)
     }
 }
 
@@ -71,6 +79,20 @@ extension HomeVC: UITableViewDataSource {
             return cell
         }
     }
+    // MARK: - headerview 설정
+    func tableView(
+        _ tableView: UITableView,
+        viewForHeaderInSection section: Int
+    ) -> UIView? {
+        let view = tableView.dequeueReusableHeaderFooterView(withIdentifier: Identifiers.homeTitleHeaderView) as! HomeTitleHeaderView
+        if section == 2{
+            view.backgroundColor = .white
+            return view
+        } else {
+            view.isHidden = true
+            return view
+        }
+    }
     // MARK: - 섹션 별 셀 높이 설정
     func tableview(
         _ tableView: UITableView,
@@ -78,10 +100,13 @@ extension HomeVC: UITableViewDataSource {
     -> CGFloat {
         return 251
     }
-
-
 }
 
 extension HomeVC: UITableViewDelegate {
-
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        let view = tableView.dequeueReusableHeaderFooterView(withIdentifier: Identifiers.homeTitleHeaderView) as! HomeTitleHeaderView
+        if section == 2{
+            view.backgroundColor = .white
+        }
+    }
 }
