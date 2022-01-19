@@ -18,6 +18,7 @@ struct Identifiers {
     static let subscribeSB = "Subscribe"
     static let deliveryListSB = "DeliveryList"
     static let likeListSB = "LikeList"
+    static let purchaseCompleteSB = "PurchaseComplete"
 
     
     //MARK: Controller
@@ -33,6 +34,7 @@ struct Identifiers {
     static let subscribeVC = "SubscribeVC"
     static let deliveryListVC = "DeliveryListVC"
     static let likeListVC = "LikeListVC"
+    static let purchaseCompleteVC = "PurchaseCompleteVC"
     
     //MARK: TVC
     static let conditionCheckTVC = "ConditionCheckTVC"
