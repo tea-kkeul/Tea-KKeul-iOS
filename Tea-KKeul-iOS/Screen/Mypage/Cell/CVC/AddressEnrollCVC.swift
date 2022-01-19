@@ -12,6 +12,7 @@ class AddressEnrollCVC: UICollectionViewCell {
     
     override func awakeFromNib() {
         setEnrollBtnLayout()
+        setBackgroundColor()
     }
 }
 extension AddressEnrollCVC {
@@ -19,5 +20,9 @@ extension AddressEnrollCVC {
         enrollBtn.layer.cornerRadius = 10
         enrollBtn.backgroundColor = .normalGreen
         enrollBtn.tintColor = .white
+    }
+    
+    func setBackgroundColor() {
+        self.backgroundColor = .clear
     }
 }
