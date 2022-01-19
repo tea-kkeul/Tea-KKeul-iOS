@@ -22,9 +22,12 @@ struct Identifiers {
     static let mypageVC = "MypageVC"
     
     //MARK: TVC
-    
+    static let conditionCheckTVC = "ConditionCheckTVC"
+    static let myStateTVC = "MyStateTVC"
+    static let subscribeTVC = "SubscribeTVC"
+    static let teaListTVC = "TeaListTVC"
     //MARK: CVC
     static let magazineCVC = "MagazineCVC"
-    
     //MARK: View
+    static let homeTitleHeaderView = "HomeTitleHeaderView"
 }

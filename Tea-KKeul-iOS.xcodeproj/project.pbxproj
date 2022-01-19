@@ -22,7 +22,6 @@
 		23E96A0A27969EDF00D7D7D3 /* MypageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E96A0927969EDF00D7D7D3 /* MypageVC.swift */; };
 		23E96A0C27969EF300D7D7D3 /* Mypage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23E96A0B27969EF300D7D7D3 /* Mypage.storyboard */; };
 		23E96A1127969F2400D7D7D3 /* a.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E96A1027969F2400D7D7D3 /* a.swift */; };
-		23E96A1327969F2900D7D7D3 /* b.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E96A1227969F2900D7D7D3 /* b.swift */; };
 		23E96A1827969F6500D7D7D3 /* TeaKKeulTBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E96A1727969F6500D7D7D3 /* TeaKKeulTBC.swift */; };
 		23E96A1A27969F7600D7D7D3 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23E96A1927969F7600D7D7D3 /* TabBar.storyboard */; };
 		23E96A1D27969FC900D7D7D3 /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E96A1C27969FC900D7D7D3 /* Identifiers.swift */; };
@@ -35,6 +34,16 @@
 		23FB787A279698D6000549C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23FB7879279698D6000549C2 /* Assets.xcassets */; };
 		23FB787D279698D6000549C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23FB787B279698D6000549C2 /* LaunchScreen.storyboard */; };
 		55380B265487589C90FD6428 /* Pods_Tea_KKeul_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 899E3EC9C1BE9A389460B161 /* Pods_Tea_KKeul_iOS.framework */; };
+		F205B3E0279796BB0065DB55 /* MyStateTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F205B3DE279796BB0065DB55 /* MyStateTVC.swift */; };
+		F205B3E1279796BB0065DB55 /* MyStateTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F205B3DF279796BB0065DB55 /* MyStateTVC.xib */; };
+		F205B3E427979DCB0065DB55 /* TeaListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F205B3E227979DCB0065DB55 /* TeaListTVC.swift */; };
+		F205B3E527979DCB0065DB55 /* TeaListTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F205B3E327979DCB0065DB55 /* TeaListTVC.xib */; };
+		F205B3EB2797ACCE0065DB55 /* HomeTitleHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F205B3EA2797ACCE0065DB55 /* HomeTitleHeaderView.swift */; };
+		F205B3EF2797B3960065DB55 /* HomeTitleHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F205B3EE2797B3960065DB55 /* HomeTitleHeaderView.xib */; };
+		F2B0453A27970C2F00FFEE27 /* ConditionCheckTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0453827970C2F00FFEE27 /* ConditionCheckTVC.swift */; };
+		F2B0453B27970C2F00FFEE27 /* ConditionCheckTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2B0453927970C2F00FFEE27 /* ConditionCheckTVC.xib */; };
+		F2B0453E2797288300FFEE27 /* SubscribeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0453C2797288300FFEE27 /* SubscribeTVC.swift */; };
+		F2B0453F2797288300FFEE27 /* SubscribeTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2B0453D2797288300FFEE27 /* SubscribeTVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,7 +62,6 @@
 		23E96A0927969EDF00D7D7D3 /* MypageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageVC.swift; sourceTree = "<group>"; };
 		23E96A0B27969EF300D7D7D3 /* Mypage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mypage.storyboard; sourceTree = "<group>"; };
 		23E96A1027969F2400D7D7D3 /* a.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = a.swift; sourceTree = "<group>"; };
-		23E96A1227969F2900D7D7D3 /* b.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = b.swift; sourceTree = "<group>"; };
 		23E96A1727969F6500D7D7D3 /* TeaKKeulTBC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaKKeulTBC.swift; sourceTree = "<group>"; };
 		23E96A1927969F7600D7D7D3 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		23E96A1C27969FC900D7D7D3 /* Identifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifiers.swift; sourceTree = "<group>"; };
@@ -70,6 +78,16 @@
 		899E3EC9C1BE9A389460B161 /* Pods_Tea_KKeul_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tea_KKeul_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1540D966095D75595CE5F89 /* Pods-Tea-KKeul-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tea-KKeul-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Tea-KKeul-iOS/Pods-Tea-KKeul-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		CCFAAEC4C2AFE14CA7D0EEBD /* Pods-Tea-KKeul-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tea-KKeul-iOS.release.xcconfig"; path = "Target Support Files/Pods-Tea-KKeul-iOS/Pods-Tea-KKeul-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		F205B3DE279796BB0065DB55 /* MyStateTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStateTVC.swift; sourceTree = "<group>"; };
+		F205B3DF279796BB0065DB55 /* MyStateTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyStateTVC.xib; sourceTree = "<group>"; };
+		F205B3E227979DCB0065DB55 /* TeaListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeaListTVC.swift; sourceTree = "<group>"; };
+		F205B3E327979DCB0065DB55 /* TeaListTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeaListTVC.xib; sourceTree = "<group>"; };
+		F205B3EA2797ACCE0065DB55 /* HomeTitleHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTitleHeaderView.swift; sourceTree = "<group>"; };
+		F205B3EE2797B3960065DB55 /* HomeTitleHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTitleHeaderView.xib; sourceTree = "<group>"; };
+		F2B0453827970C2F00FFEE27 /* ConditionCheckTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionCheckTVC.swift; sourceTree = "<group>"; };
+		F2B0453927970C2F00FFEE27 /* ConditionCheckTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConditionCheckTVC.xib; sourceTree = "<group>"; };
+		F2B0453C2797288300FFEE27 /* SubscribeTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeTVC.swift; sourceTree = "<group>"; };
+		F2B0453D2797288300FFEE27 /* SubscribeTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubscribeTVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,7 +263,16 @@
 		23E96A0E27969F0900D7D7D3 /* TVC */ = {
 			isa = PBXGroup;
 			children = (
-				23E96A1227969F2900D7D7D3 /* b.swift */,
+				F2B0453827970C2F00FFEE27 /* ConditionCheckTVC.swift */,
+				F2B0453927970C2F00FFEE27 /* ConditionCheckTVC.xib */,
+				F2B0453C2797288300FFEE27 /* SubscribeTVC.swift */,
+				F2B0453D2797288300FFEE27 /* SubscribeTVC.xib */,
+				F205B3DE279796BB0065DB55 /* MyStateTVC.swift */,
+				F205B3DF279796BB0065DB55 /* MyStateTVC.xib */,
+				F205B3E227979DCB0065DB55 /* TeaListTVC.swift */,
+				F205B3E327979DCB0065DB55 /* TeaListTVC.xib */,
+				F205B3EA2797ACCE0065DB55 /* HomeTitleHeaderView.swift */,
+				F205B3EE2797B3960065DB55 /* HomeTitleHeaderView.xib */,
 			);
 			path = TVC;
 			sourceTree = "<group>";
@@ -421,13 +448,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2B0453F2797288300FFEE27 /* SubscribeTVC.xib in Resources */,
+				F2B0453B27970C2F00FFEE27 /* ConditionCheckTVC.xib in Resources */,
+				F205B3EF2797B3960065DB55 /* HomeTitleHeaderView.xib in Resources */,
 				23E969FE27969DE200D7D7D3 /* Home.storyboard in Resources */,
 				23E96A0C27969EF300D7D7D3 /* Mypage.storyboard in Resources */,
 				23FB787D279698D6000549C2 /* LaunchScreen.storyboard in Resources */,
+				F205B3E1279796BB0065DB55 /* MyStateTVC.xib in Resources */,
 				23E96A0227969E7600D7D7D3 /* Magazine.storyboard in Resources */,
 				23E96A0827969ECE00D7D7D3 /* Calendar.storyboard in Resources */,
 				23E96A1A27969F7600D7D7D3 /* TabBar.storyboard in Resources */,
 				23FB787A279698D6000549C2 /* Assets.xcassets in Resources */,
+				F205B3E527979DCB0065DB55 /* TeaListTVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,7 +512,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23E96A1327969F2900D7D7D3 /* b.swift in Sources */,
+				F2B0453A27970C2F00FFEE27 /* ConditionCheckTVC.swift in Sources */,
 				23E96A2027969FE900D7D7D3 /* ViewControllerFactory.swift in Sources */,
 				23E96A0A27969EDF00D7D7D3 /* MypageVC.swift in Sources */,
 				23FB7871279698D5000549C2 /* AppDelegate.swift in Sources */,
@@ -489,14 +521,18 @@
 				23270CA72797199C0006B9FE /* UILabel+.swift in Sources */,
 				23E96A2227969FF900D7D7D3 /* TypeOfViewController.swift in Sources */,
 				23E96A0427969E8300D7D7D3 /* MagazineVC.swift in Sources */,
+				F205B3E427979DCB0065DB55 /* TeaListTVC.swift in Sources */,
 				23270CAB279719D90006B9FE /* UITextField+.swift in Sources */,
 				23270CA52797193A0006B9FE /* UIFont+.swift in Sources */,
 				23E96A262796A29C00D7D7D3 /* SceneDelegate.swift in Sources */,
 				23E96A2A2796CA1F00D7D7D3 /* MagazineCVC.swift in Sources */,
 				23E96A1127969F2400D7D7D3 /* a.swift in Sources */,
 				23E96A242796A00900D7D7D3 /* StoryboardRepresentation.swift in Sources */,
+				F2B0453E2797288300FFEE27 /* SubscribeTVC.swift in Sources */,
 				23E96A0627969EAA00D7D7D3 /* CalendarVC.swift in Sources */,
 				23E96A0027969E0100D7D7D3 /* HomeVC.swift in Sources */,
+				F205B3EB2797ACCE0065DB55 /* HomeTitleHeaderView.swift in Sources */,
+				F205B3E0279796BB0065DB55 /* MyStateTVC.swift in Sources */,
 				23270CA3279718EC0006B9FE /* UIColor+.swift in Sources */,
 				23270CA9279719BA0006B9FE /* Notification+Name.swift in Sources */,
 				23270CAD279719EF0006B9FE /* UIButton+.swift in Sources */,
