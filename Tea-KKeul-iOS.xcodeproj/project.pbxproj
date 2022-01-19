@@ -305,16 +305,7 @@
 		23E96A0E27969F0900D7D7D3 /* TVC */ = {
 			isa = PBXGroup;
 			children = (
-				F2B0453827970C2F00FFEE27 /* ConditionCheckTVC.swift */,
-				F2B0453927970C2F00FFEE27 /* ConditionCheckTVC.xib */,
-				F2B0453C2797288300FFEE27 /* SubscribeTVC.swift */,
-				F2B0453D2797288300FFEE27 /* SubscribeTVC.xib */,
-				F205B3DE279796BB0065DB55 /* MyStateTVC.swift */,
-				F205B3DF279796BB0065DB55 /* MyStateTVC.xib */,
-				F205B3E227979DCB0065DB55 /* TeaListTVC.swift */,
-				F205B3E327979DCB0065DB55 /* TeaListTVC.xib */,
-				F205B3EA2797ACCE0065DB55 /* HomeTitleHeaderView.swift */,
-				F205B3EE2797B3960065DB55 /* HomeTitleHeaderView.xib */,
+				F278F26A2798127900B7A22F /* HomeTVC */,
 			);
 			path = TVC;
 			sourceTree = "<group>";
@@ -446,6 +437,23 @@
 				F278F25C2797FA4400B7A22F /* NotoSans-Regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F278F26A2798127900B7A22F /* HomeTVC */ = {
+			isa = PBXGroup;
+			children = (
+				F2B0453827970C2F00FFEE27 /* ConditionCheckTVC.swift */,
+				F2B0453927970C2F00FFEE27 /* ConditionCheckTVC.xib */,
+				F2B0453C2797288300FFEE27 /* SubscribeTVC.swift */,
+				F2B0453D2797288300FFEE27 /* SubscribeTVC.xib */,
+				F205B3DE279796BB0065DB55 /* MyStateTVC.swift */,
+				F205B3DF279796BB0065DB55 /* MyStateTVC.xib */,
+				F205B3E227979DCB0065DB55 /* TeaListTVC.swift */,
+				F205B3E327979DCB0065DB55 /* TeaListTVC.xib */,
+				F205B3EA2797ACCE0065DB55 /* HomeTitleHeaderView.swift */,
+				F205B3EE2797B3960065DB55 /* HomeTitleHeaderView.xib */,
+			);
+			path = HomeTVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

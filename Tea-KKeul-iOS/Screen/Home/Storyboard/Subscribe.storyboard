@@ -16,21 +16,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wun-Zo-l74">
-                                <rect key="frame" x="175" y="288" width="30" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="b14-9P-TPK">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="b14-9P-TPK" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="haq-32-2wq"/>
+                            <constraint firstItem="b14-9P-TPK" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="i4G-4b-jQT"/>
+                            <constraint firstItem="b14-9P-TPK" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="msP-LM-3b1"/>
+                            <constraint firstItem="b14-9P-TPK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="z47-8F-Nbk"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="74" y="67"/>
+            <point key="canvasLocation" x="73.913043478260875" y="66.964285714285708"/>
         </scene>
     </scenes>
     <resources>
