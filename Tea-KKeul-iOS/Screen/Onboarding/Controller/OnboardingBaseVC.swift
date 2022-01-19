@@ -14,7 +14,7 @@ class OnboardingBaseVC: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         if Core.shared.isNewUser() {
-            let vc = storyboard?.instantiateViewController(withIdentifier: Identifiers.onboardingVC) as! OnboardingVC
+            let vc = UIStoryboard(name: Identifiers.onboardingSB, bundle: nil).instantiateViewController(withIdentifier: Identifiers.onboardingVC) as! OnboardingVC
             vc.modalPresentationStyle = .fullScreen
             present(vc, animated: true)
         }
