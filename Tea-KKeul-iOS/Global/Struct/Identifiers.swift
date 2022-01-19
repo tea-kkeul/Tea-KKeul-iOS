@@ -8,6 +8,8 @@
 import Foundation
 struct Identifiers {
     //MARK: Storyboard
+    static let onboardingBaseSB = "OnboardingBase"
+    static let onboardingSB = "Onboarding"
     static let tabBarSB = "TabBar"
     static let homeSB = "Home"
     static let magazineSB = "Magazine"
@@ -17,6 +19,8 @@ struct Identifiers {
     static let likeListSB = "LikeList"
     
     //MARK: Controller
+    static let onboardingBaseVC = "OnboardingBaseVC"
+    static let onboardingVC = "OnboardingVC"
     static let teaKKeulTBC = "TeaKKeulTBC"
     static let homeVC = "HomeVC"
     static let magazineVC = "MagazineVC"
