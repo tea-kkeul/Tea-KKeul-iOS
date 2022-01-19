@@ -14,6 +14,9 @@ struct Identifiers {
     static let calendarSB = "Calendar"
     static let mypageSB = "Mypage"
     static let subscribeSB = "Subscribe"
+    static let deliveryListSB = "DeliveryList"
+    static let likeListSB = "LikeList"
+
     
     //MARK: Controller
     static let teaKKeulTBC = "TeaKKeulTBC"
@@ -21,8 +24,11 @@ struct Identifiers {
     static let homeNC = "HomeNC"
     static let magazineVC = "MagazineVC"
     static let calendarVC = "CalendarVC"
+    static let mypageNC = "MypageNC"
     static let mypageVC = "MypageVC"
     static let subscribeVC = "SubscribeVC"
+    static let deliveryListVC = "DeliveryListVC"
+    static let likeListVC = "LikeListVC"
     
     //MARK: TVC
     static let conditionCheckTVC = "ConditionCheckTVC"
@@ -35,8 +41,14 @@ struct Identifiers {
     static let blendOptionTVC = "BlendOptionTVC"
     static let totalCostTVC = "TotalCostTVC"
     static let paymentSelectionTVC = "PaymentSelectionTVC"
+    static let settingTVC = "SettingTVC"
+    
     //MARK: CVC
     static let magazineCVC = "MagazineCVC"
+    static let addressEnrollCVC = "AddressEnrollCVC"
+    static let addressCVC = "AddressCVC"
+    static let likeListCVC = "LikeListCVC"
+    
     //MARK: View
     static let homeTitleHeaderView = "HomeTitleHeaderView"
     static let subTitleHeaderView = "SubTitleHeaderView"

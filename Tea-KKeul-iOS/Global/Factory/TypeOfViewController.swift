@@ -26,7 +26,7 @@ extension TypeOfViewController {
         case .calendar:
             return StoryboardRepresentation(bundle: nil, storyboardName: Identifiers.calendarSB, storyboardId: Identifiers.calendarVC)
         case .mypage:
-            return StoryboardRepresentation(bundle: nil, storyboardName: Identifiers.mypageSB, storyboardId: Identifiers.mypageVC)
+            return StoryboardRepresentation(bundle: nil, storyboardName: Identifiers.mypageSB, storyboardId: Identifiers.mypageNC)
         }
     }
 }

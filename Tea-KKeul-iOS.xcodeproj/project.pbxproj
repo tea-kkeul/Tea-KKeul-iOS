@@ -13,6 +13,15 @@
 		23270CA9279719BA0006B9FE /* Notification+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23270CA8279719BA0006B9FE /* Notification+Name.swift */; };
 		23270CAB279719D90006B9FE /* UITextField+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23270CAA279719D90006B9FE /* UITextField+.swift */; };
 		23270CAD279719EF0006B9FE /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23270CAC279719EF0006B9FE /* UIButton+.swift */; };
+		23406B8E27980304001D12B0 /* SettingTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23406B8D27980304001D12B0 /* SettingTVC.swift */; };
+		23406B9027980F27001D12B0 /* DeliveryList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23406B8F27980F27001D12B0 /* DeliveryList.storyboard */; };
+		23406B9227980F34001D12B0 /* DeliveryListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23406B9127980F34001D12B0 /* DeliveryListVC.swift */; };
+		23406B942798102A001D12B0 /* MypageNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23406B932798102A001D12B0 /* MypageNC.swift */; };
+		23406B9727981C52001D12B0 /* AddressEnrollCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23406B9627981C52001D12B0 /* AddressEnrollCVC.swift */; };
+		23406B99279842C0001D12B0 /* AddressCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23406B98279842C0001D12B0 /* AddressCVC.swift */; };
+		23406B9B27984E1B001D12B0 /* LikeList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23406B9A27984E1B001D12B0 /* LikeList.storyboard */; };
+		23406B9D27984E23001D12B0 /* LikeListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23406B9C27984E23001D12B0 /* LikeListVC.swift */; };
+		23406B9F27985D77001D12B0 /* LikeListCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23406B9E27985D77001D12B0 /* LikeListCVC.swift */; };
 		23E969FE27969DE200D7D7D3 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23E969FD27969DE200D7D7D3 /* Home.storyboard */; };
 		23E96A0027969E0100D7D7D3 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E969FF27969E0100D7D7D3 /* HomeVC.swift */; };
 		23E96A0227969E7600D7D7D3 /* Magazine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23E96A0127969E7600D7D7D3 /* Magazine.storyboard */; };
@@ -84,6 +93,15 @@
 		23270CA8279719BA0006B9FE /* Notification+Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Name.swift"; sourceTree = "<group>"; };
 		23270CAA279719D90006B9FE /* UITextField+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+.swift"; sourceTree = "<group>"; };
 		23270CAC279719EF0006B9FE /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
+		23406B8D27980304001D12B0 /* SettingTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTVC.swift; sourceTree = "<group>"; };
+		23406B8F27980F27001D12B0 /* DeliveryList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DeliveryList.storyboard; sourceTree = "<group>"; };
+		23406B9127980F34001D12B0 /* DeliveryListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryListVC.swift; sourceTree = "<group>"; };
+		23406B932798102A001D12B0 /* MypageNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageNC.swift; sourceTree = "<group>"; };
+		23406B9627981C52001D12B0 /* AddressEnrollCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressEnrollCVC.swift; sourceTree = "<group>"; };
+		23406B98279842C0001D12B0 /* AddressCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressCVC.swift; sourceTree = "<group>"; };
+		23406B9A27984E1B001D12B0 /* LikeList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LikeList.storyboard; sourceTree = "<group>"; };
+		23406B9C27984E23001D12B0 /* LikeListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeListVC.swift; sourceTree = "<group>"; };
+		23406B9E27985D77001D12B0 /* LikeListCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeListCVC.swift; sourceTree = "<group>"; };
 		23E969FD27969DE200D7D7D3 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		23E969FF27969E0100D7D7D3 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		23E96A0127969E7600D7D7D3 /* Magazine.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Magazine.storyboard; sourceTree = "<group>"; };
@@ -181,6 +199,33 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		23406B8B279802F8001D12B0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				23406B9527981C44001D12B0 /* CVC */,
+				23406B8C279802FC001D12B0 /* TVC */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		23406B8C279802FC001D12B0 /* TVC */ = {
+			isa = PBXGroup;
+			children = (
+				23406B8D27980304001D12B0 /* SettingTVC.swift */,
+			);
+			path = TVC;
+			sourceTree = "<group>";
+		};
+		23406B9527981C44001D12B0 /* CVC */ = {
+			isa = PBXGroup;
+			children = (
+				23406B9627981C52001D12B0 /* AddressEnrollCVC.swift */,
+				23406B98279842C0001D12B0 /* AddressCVC.swift */,
+				23406B9E27985D77001D12B0 /* LikeListCVC.swift */,
+			);
+			path = CVC;
+			sourceTree = "<group>";
+		};
 		23E969EE27969CAD00D7D7D3 /* Support */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +266,7 @@
 			children = (
 				23E969F327969D5300D7D7D3 /* Storyboard */,
 				23E969F227969D4500D7D7D3 /* Controller */,
+				23406B8B279802F8001D12B0 /* Cell */,
 			);
 			path = Mypage;
 			sourceTree = "<group>";
@@ -229,6 +275,9 @@
 			isa = PBXGroup;
 			children = (
 				23E96A0927969EDF00D7D7D3 /* MypageVC.swift */,
+				23406B9127980F34001D12B0 /* DeliveryListVC.swift */,
+				23406B932798102A001D12B0 /* MypageNC.swift */,
+				23406B9C27984E23001D12B0 /* LikeListVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -237,6 +286,8 @@
 			isa = PBXGroup;
 			children = (
 				23E96A0B27969EF300D7D7D3 /* Mypage.storyboard */,
+				23406B8F27980F27001D12B0 /* DeliveryList.storyboard */,
+				23406B9A27984E1B001D12B0 /* LikeList.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -592,7 +643,9 @@
 				F278F26E279846A500B7A22F /* AddressTVC.xib in Resources */,
 				23E96A1A27969F7600D7D7D3 /* TabBar.storyboard in Resources */,
 				F278F2622797FA4500B7A22F /* NotoSans-Italic.ttf in Resources */,
+				23406B9B27984E1B001D12B0 /* LikeList.storyboard in Resources */,
 				23FB787A279698D6000549C2 /* Assets.xcassets in Resources */,
+				23406B9027980F27001D12B0 /* DeliveryList.storyboard in Resources */,
 				F278F2632797FA4500B7A22F /* NotoSans-BoldItalic.ttf in Resources */,
 				F205B3E527979DCB0065DB55 /* TeaListTVC.xib in Resources */,
 			);
@@ -647,8 +700,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23406B9227980F34001D12B0 /* DeliveryListVC.swift in Sources */,
 				F2B0453A27970C2F00FFEE27 /* ConditionCheckTVC.swift in Sources */,
 				23E96A2027969FE900D7D7D3 /* ViewControllerFactory.swift in Sources */,
+				23406B942798102A001D12B0 /* MypageNC.swift in Sources */,
 				23E96A0A27969EDF00D7D7D3 /* MypageVC.swift in Sources */,
 				F278F27527984AAC00B7A22F /* SubTitleHeaderView.swift in Sources */,
 				F278F26D279846A500B7A22F /* AddressTVC.swift in Sources */,
@@ -657,6 +712,7 @@
 				F278F28027987A3900B7A22F /* BlendOptionTVC.swift in Sources */,
 				23E96A1827969F6500D7D7D3 /* TeaKKeulTBC.swift in Sources */,
 				F278F2782798519100B7A22F /* DeliveryBoxTVC.swift in Sources */,
+				23406B99279842C0001D12B0 /* AddressCVC.swift in Sources */,
 				F278F2482797F3EE00B7A22F /* UITextView+.swift in Sources */,
 				23E96A1D27969FC900D7D7D3 /* Identifiers.swift in Sources */,
 				23270CA72797199C0006B9FE /* UILabel+.swift in Sources */,
@@ -672,10 +728,12 @@
 				23E96A2A2796CA1F00D7D7D3 /* MagazineCVC.swift in Sources */,
 				23E96A1127969F2400D7D7D3 /* a.swift in Sources */,
 				23E96A242796A00900D7D7D3 /* StoryboardRepresentation.swift in Sources */,
+				23406B8E27980304001D12B0 /* SettingTVC.swift in Sources */,
 				F2B0453E2797288300FFEE27 /* SubscribeTVC.swift in Sources */,
 				23E96A0627969EAA00D7D7D3 /* CalendarVC.swift in Sources */,
 				F278F26927980AE300B7A22F /* HomeNC.swift in Sources */,
 				23E96A0027969E0100D7D7D3 /* HomeVC.swift in Sources */,
+				23406B9F27985D77001D12B0 /* LikeListCVC.swift in Sources */,
 				F205B3EB2797ACCE0065DB55 /* HomeTitleHeaderView.swift in Sources */,
 				F278F28A2798AB0900B7A22F /* PaymentSelectionTVC.swift in Sources */,
 				F205B3E0279796BB0065DB55 /* MyStateTVC.swift in Sources */,
@@ -684,6 +742,8 @@
 				23270CA9279719BA0006B9FE /* Notification+Name.swift in Sources */,
 				23270CAD279719EF0006B9FE /* UIButton+.swift in Sources */,
 				F278F27C2798648200B7A22F /* SubscribePeriodTVC.swift in Sources */,
+				23406B9727981C52001D12B0 /* AddressEnrollCVC.swift in Sources */,
+				23406B9D27984E23001D12B0 /* LikeListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
