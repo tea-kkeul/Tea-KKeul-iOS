@@ -7,7 +7,6 @@
 
 import Foundation
 enum TypeOfViewController {
-//    case onboarding
     case tabBar
     case home
     case magazine
@@ -18,8 +17,6 @@ enum TypeOfViewController {
 extension TypeOfViewController {
     func storyboardRepresentation() -> StoryboardRepresentation {
         switch self {
-//        case .onboarding:
-//            return StoryboardRepresentation(bundle: nil, storyboardName: Identifiers.onboardingBaseSB, storyboardId: Identifiers.onboardingBaseVC)
         case .tabBar:
             return StoryboardRepresentation(bundle: nil, storyboardName: Identifiers.tabBarSB, storyboardId: Identifiers.teaKKeulTBC)
         case .home:
