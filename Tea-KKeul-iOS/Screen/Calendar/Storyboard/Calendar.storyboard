@@ -13,60 +13,24 @@
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="CalendarVC" id="Y6W-OH-hqX" customClass="CalendarVC" customModule="Tea_KKeul_iOS" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="5EZ-qb-Rvc">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="49" translatesAutoresizingMaskIntoConstraints="NO" id="zdj-bI-Kie">
-                                <rect key="frame" x="67.999999999999986" y="44" width="246.66666666666666" height="40"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sR-Pb-PQj">
-                                        <rect key="frame" x="0.0" y="0.0" width="48" height="40"/>
-                                        <color key="tintColor" red="0.67843137249999996" green="0.75686274509999996" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="PrevBtn" title=" ">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="9"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="prevBtnTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Phe-QH-wqS"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MMM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHn-Oq-Ip7">
-                                        <rect key="frame" x="97.000000000000014" y="0.0" width="52.666666666666671" height="40"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                        <color key="textColor" red="0.4039215686" green="0.4941176471" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Alu-gJ-cJQ">
-                                        <rect key="frame" x="198.66666666666669" y="0.0" width="48" height="40"/>
-                                        <color key="tintColor" red="0.67843137249999996" green="0.75686274509999996" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="NextBtn" title=" ">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="17"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="nextBtnTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="dw0-Zy-2sd"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="xe9-9g-bcN"/>
-                                </constraints>
-                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dd일의 차" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TdF-df-l3f">
-                                <rect key="frame" x="20" y="489" width="81" height="24"/>
+                                <rect key="frame" x="20" y="473" width="81" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" red="0.4039215686" green="0.4941176471" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MM월의 차" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPh-Zb-A51">
-                                <rect key="frame" x="19.999999999999993" y="613" width="91.333333333333314" height="24"/>
+                                <rect key="frame" x="19.999999999999993" y="597" width="91.333333333333314" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" red="0.4039215686" green="0.4941176471" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YG2-Qq-P1J">
-                                <rect key="frame" x="20" y="518" width="335" height="75"/>
+                                <rect key="frame" x="20" y="502" width="335" height="75"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e1Z-6A-Crs">
                                         <rect key="frame" x="0.0" y="0.0" width="78" height="75"/>
@@ -94,11 +58,10 @@
                                             <constraint firstAttribute="width" constant="74" id="LB0-ir-rx4"/>
                                             <constraint firstAttribute="height" constant="24" id="cpl-Wc-GjC"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="찜하기">
-                                            <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
-                                        </buttonConfiguration>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="찜하기"/>
                                         <connections>
                                             <action selector="dibTea:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="c6Q-EA-j9h"/>
                                         </connections>
@@ -110,11 +73,10 @@
                                             <constraint firstAttribute="height" constant="24" id="THk-XS-pUg"/>
                                             <constraint firstAttribute="width" constant="74" id="gyf-uS-9Ul"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="구매하기">
-                                            <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
-                                        </buttonConfiguration>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="구매하기"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -134,7 +96,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0lU-l7-LHs">
-                                <rect key="frame" x="20" y="642" width="335" height="75"/>
+                                <rect key="frame" x="20" y="626" width="335" height="75"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SeJ-My-0mb">
                                         <rect key="frame" x="0.0" y="0.0" width="78" height="75"/>
@@ -162,11 +124,10 @@
                                             <constraint firstAttribute="height" constant="24" id="TgY-OC-vz3"/>
                                             <constraint firstAttribute="width" constant="74" id="uD1-Az-2iO"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="찜하기">
-                                            <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
-                                        </buttonConfiguration>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="찜하기"/>
                                         <connections>
                                             <action selector="dibTea:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Vgy-UO-LNK"/>
                                         </connections>
@@ -178,11 +139,10 @@
                                             <constraint firstAttribute="width" constant="74" id="drm-4D-V4N"/>
                                             <constraint firstAttribute="height" constant="24" id="p77-eF-1bR"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="구매하기">
-                                            <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
-                                        </buttonConfiguration>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="구매하기"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -201,12 +161,12 @@
                                     <constraint firstAttribute="trailing" secondItem="T8k-w7-5yH" secondAttribute="trailing" constant="9" id="y0z-5I-P5a"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZDk-vP-wKQ" customClass="FSCalendar">
-                                <rect key="frame" x="22" y="87" width="330" height="300"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZDk-vP-wKQ" customClass="FSCalendar">
+                                <rect key="frame" x="20" y="73" width="335" height="300"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="330" id="EBJ-7P-Uti"/>
-                                    <constraint firstAttribute="height" constant="300" id="W7x-c1-rzi"/>
+                                    <constraint firstAttribute="height" constant="300" id="1on-4P-6Lh"/>
+                                    <constraint firstAttribute="width" constant="335" id="CVD-KX-K62"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kkp-P8-mS2">
@@ -219,22 +179,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="tMT-db-2bl">
-                                        <rect key="frame" x="18" y="42" width="168" height="18"/>
+                                        <rect key="frame" x="18" y="42" width="174" height="18"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#편두통" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="341-ib-rIV">
-                                                <rect key="frame" x="0.0" y="0.0" width="48.333333333333336" height="18"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#피곤함" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r5X-qN-bhF">
-                                                <rect key="frame" x="53.333333333333329" y="0.0" width="48.333333333333329" height="18"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#감기기운" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHf-EL-4HL">
-                                                <rect key="frame" x="106.66666666666664" y="0.0" width="61.333333333333329" height="18"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#편두통, #피곤함, #감기기운" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="341-ib-rIV">
+                                                <rect key="frame" x="0.0" y="0.0" width="174" height="18"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -246,12 +194,50 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="1YT-FF-sbg"/>
                                     <constraint firstItem="som-Nd-IIY" firstAttribute="top" secondItem="Kkp-P8-mS2" secondAttribute="top" constant="15" id="KYM-Ta-Oy7"/>
-                                    <constraint firstAttribute="width" constant="375" id="NjU-8L-03T"/>
                                     <constraint firstAttribute="bottom" secondItem="tMT-db-2bl" secondAttribute="bottom" constant="15" id="gqh-nq-Nr0"/>
                                     <constraint firstItem="tMT-db-2bl" firstAttribute="leading" secondItem="Kkp-P8-mS2" secondAttribute="leading" constant="18" id="ri3-mQ-1oF"/>
                                     <constraint firstItem="som-Nd-IIY" firstAttribute="leading" secondItem="Kkp-P8-mS2" secondAttribute="leading" constant="19" id="xuw-ff-LMP"/>
                                 </constraints>
                             </view>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" alignment="center" spacing="49" translatesAutoresizingMaskIntoConstraints="NO" id="zdj-bI-Kie">
+                                <rect key="frame" x="108.33333333333333" y="44" width="158.66666666666669" height="24"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sR-Pb-PQj">
+                                        <rect key="frame" x="0.0" y="7.6666666666666643" width="4" height="9"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="9" id="Lob-NA-h5R"/>
+                                            <constraint firstAttribute="width" constant="4" id="kdI-a1-9uo"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.67843137249999996" green="0.75686274509999996" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="PrevBtn">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="15"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="prevBtnTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Phe-QH-wqS"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MMM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHn-Oq-Ip7">
+                                        <rect key="frame" x="53.000000000000014" y="0.0" width="52.666666666666671" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" red="0.4039215686" green="0.4941176471" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Alu-gJ-cJQ">
+                                        <rect key="frame" x="154.66666666666669" y="7.6666666666666643" width="4" height="9"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="4" id="5oR-y5-nRv"/>
+                                            <constraint firstAttribute="height" constant="9" id="Csw-8O-4Vh"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.67843137249999996" green="0.75686274509999996" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title=" " image="NextBtn"/>
+                                        <connections>
+                                            <action selector="nextBtnTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="dw0-Zy-2sd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -278,11 +264,18 @@
                         <outlet property="dateDibButton" destination="pSI-jI-SvE" id="jVS-rN-B5v"/>
                         <outlet property="datePurchaseButton" destination="V7f-hF-HNm" id="0nP-xJ-01T"/>
                         <outlet property="eachDate" destination="TdF-df-l3f" id="UQ8-Xd-N9v"/>
+                        <outlet property="eachDateEffect" destination="G0v-JV-9tX" id="XsT-ai-Rh3"/>
+                        <outlet property="eachDateImage" destination="e1Z-6A-Crs" id="HRr-QW-CWH"/>
+                        <outlet property="eachDateTag" destination="341-ib-rIV" id="1AL-lQ-cof"/>
+                        <outlet property="eachDateTea" destination="o3v-Dw-vMN" id="WpU-uR-KPg"/>
                         <outlet property="eachDateView" destination="YG2-Qq-P1J" id="Oni-PO-Ckg"/>
                         <outlet property="headerLabel" destination="KHn-Oq-Ip7" id="X3H-mD-2ir"/>
                         <outlet property="monthDate" destination="KPh-Zb-A51" id="IMw-H2-ELg"/>
                         <outlet property="monthDibButton" destination="T8k-w7-5yH" id="nsx-kC-R7t"/>
+                        <outlet property="monthEffect" destination="ht5-T4-Bxw" id="vpi-NT-aGE"/>
+                        <outlet property="monthImage" destination="SeJ-My-0mb" id="GYi-hd-Nd1"/>
                         <outlet property="monthPurchaseButton" destination="z25-NJ-fOo" id="7jx-Yx-RVx"/>
+                        <outlet property="monthTea" destination="Ofm-O4-W7s" id="VUX-cK-X99"/>
                         <outlet property="monthView" destination="0lU-l7-LHs" id="cim-bH-fhN"/>
                         <outlet property="nextBtn" destination="Alu-gJ-cJQ" id="bhg-dY-tCT"/>
                         <outlet property="prevBtn" destination="5sR-Pb-PQj" id="VrM-Qz-b25"/>
@@ -296,8 +289,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="NextBtn" width="20" height="33"/>
-        <image name="PrevBtn" width="20" height="33"/>
+        <image name="NextBtn" width="6.6666665077209473" height="11"/>
+        <image name="PrevBtn" width="6.6666665077209473" height="11"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
