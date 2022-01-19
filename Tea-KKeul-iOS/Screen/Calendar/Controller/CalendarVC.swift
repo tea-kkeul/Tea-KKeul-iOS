@@ -36,6 +36,7 @@ class CalendarVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        calendarView.register(FSCalendarCell.self, forCellReuseIdentifier: "CELL")
         setCalendarView()
         setStatusView()
         setEachDateView()
@@ -68,11 +69,10 @@ class CalendarVC: UIViewController {
         eachDateView.layer.shadowOpacity = 0.3
         eachDateView.layer.shadowRadius = 1.5
         
-        dateDibButton.layer.cornerRadius = 14
-        dateDibButton.titleLabel?.font = .systemFont(ofSize: 12)
+        dateDibButton.layer.cornerRadius = dateDibButton.frame.height/2
         
-        datePurchaseButton.layer.cornerRadius = 14
-        datePurchaseButton.titleLabel?.font = .systemFont(ofSize: 12)
+        datePurchaseButton.layer.cornerRadius = dateDibButton.frame.height/2
+ 
     }
     
     // monthView 설정
@@ -86,11 +86,10 @@ class CalendarVC: UIViewController {
         monthView.layer.shadowOpacity = 0.3
         monthView.layer.shadowRadius = 1.5
         
-        monthDibButton.layer.cornerRadius = 14
-        monthDibButton.titleLabel?.font = .systemFont(ofSize: 12)
+        monthDibButton.layer.cornerRadius = monthDibButton.frame.height/2
         
-        monthPurchaseButton.layer.cornerRadius = 14
-        monthPurchaseButton.titleLabel?.font = .systemFont(ofSize: 12)
+        monthPurchaseButton.layer.cornerRadius = monthPurchaseButton.frame.height/2
+        
     }
 
     // 이전 버튼 누르면 이전 달이 나오게 하는 함수
@@ -113,6 +112,7 @@ class CalendarVC: UIViewController {
         return df
         
     }()
+
     
     // 이전 & 다음 버튼 누르면 호출되는 함수
     private func scrollCurrentPage(isPrev: Bool) {
@@ -171,12 +171,7 @@ extension CalendarVC: FSCalendarDelegate, FSCalendarDataSource, FSCalendarDelega
         
         // 오늘 날짜는 표시 안 되게 설정
         calendarView.today = nil
-        
-        // 이미지 보여주는 함수 호출
-        calendar(calendarView, imageFor: Date())
-        
-        
-        
+     
         // 처음에 monthDate, statusDate, eachDate에 현재 날짜의 월과 일이 표시되도록 시도중...
         let current = Date()
         let dateFormatter6: DateFormatter = {
@@ -187,7 +182,8 @@ extension CalendarVC: FSCalendarDelegate, FSCalendarDataSource, FSCalendarDelega
             
         }()
         
-        headerLabel.text = dateFormatter6.string(from: current)
+        headerLabel.text = dateFormatter6.string(from: current).uppercased()
+        headerLabel.font = UIFont(name: "NotoSans-Bold", size: 20)
         
         let dateFormatter3 = DateFormatter()
         dateFormatter3.dateFormat = "MM" // 월
@@ -241,14 +237,15 @@ extension CalendarVC: FSCalendarDelegate, FSCalendarDataSource, FSCalendarDelega
     // 선택된 날짜 글자 색깔 설정
     func calendar(_ calendar: FSCalendar, appearance: FSCalendarAppearance, titleSelectionColorFor date: Date) -> UIColor? {
         
-        return .black
+        return UIColor(red: 103/255, green: 126/255, blue: 96/255, alpha: 1.0)
     }
     
     // 캘린더 페이지가 변하면 호출되는 함수
     func calendarCurrentPageDidChange(_ calendar: FSCalendar) {
         
         // 헤더라벨을 JAN 형식으로 표시하기
-        self.headerLabel.text = self.dateFormatter2.string(from: calendar.currentPage)
+        self.headerLabel.text = dateFormatter2.string(from: calendar.currentPage).uppercased()
+        headerLabel.font = UIFont(name: "NotoSans-Bold", size: 20)
     
         // month 변수에 MM형태로 날짜 저장하기
         let dateFormatter = DateFormatter()
@@ -284,10 +281,24 @@ extension CalendarVC: FSCalendarDelegate, FSCalendarDataSource, FSCalendarDelega
         // 날짜가 클릭되면 해당 날짜 추천차 뷰의 날짜 라벨 변경하기
         eachDate.text = clickedDate + "일의 차"
         
-        
     }
-
     
+    
+//    func calendar(_ calendar: FSCalendar, cellFor date: Date, at position: FSCalendarMonthPosition) -> FSCalendarCell {
+//
+//        let cell: FSCalendarCell = calendar.dequeueReusableCell(withIdentifier: "CELL", for: date, at: position)
+//        cell.frame.size.height = 50
+//        //cell.frame.size.width = 20
+//
+//
+//        return cell;
+//
+//     }
+    
+    func calendar(_ calendar: FSCalendar, willDisplay cell: FSCalendarCell, for date: Date, at monthPosition: FSCalendarMonthPosition) {
+        cell.bounds.size.height = 50
+        cell.bounds.size.width = 20
+    }
     
     
 }
