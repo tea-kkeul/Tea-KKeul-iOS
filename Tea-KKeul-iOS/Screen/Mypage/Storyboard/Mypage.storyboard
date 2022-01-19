@@ -183,6 +183,7 @@
                             <constraint firstItem="EcY-i5-2gA" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="j5Q-zx-g1N"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="dnF-ZB-TtH"/>
                     <connections>
                         <outlet property="boxView" destination="ULK-bF-9Pe" id="ZrA-ff-Ipg"/>
                         <outlet property="settingTV" destination="2LG-E1-qGs" id="2fu-W4-iS8"/>
@@ -191,6 +192,24 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="986.39999999999998" y="93.103448275862078"/>
+        </scene>
+        <!--MypageNC-->
+        <scene sceneID="d7m-kA-Wfw">
+            <objects>
+                <navigationController storyboardIdentifier="MypageNC" automaticallyAdjustsScrollViewInsets="NO" id="WUJ-6M-hlK" customClass="MypageNC" customModule="Tea_KKeul_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="42p-wh-Zn2">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="ZWL-up-MRX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CUm-d8-pnN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="44" y="93.103448275862078"/>
         </scene>
