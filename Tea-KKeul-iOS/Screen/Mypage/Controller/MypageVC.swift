@@ -68,4 +68,16 @@ extension MypageVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+        if indexPath.row == 0 {
+            // 티끌 가이드
+            
+        } else if indexPath.row == 1 {
+            // 배송지 관리
+            guard let deliveryListVC = UIStoryboard(name: Identifiers.deliveryListSB, bundle: nil).instantiateViewController(withIdentifier: Identifiers.deliveryListVC) as? DeliveryListVC else { return }
+            navigationController?.pushViewController(deliveryListVC, animated: true)
+        }
+    }
 }
