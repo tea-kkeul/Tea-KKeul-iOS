@@ -12,5 +12,7 @@ target 'Tea-KKeul-iOS' do
   pod 'GoogleSignIn', '=5.0.2'
 
   # Pods for Tea-KKeul-iOS
-
+  pod 'Alamofire', '~> 5.4'
+  pod 'Kingfisher', '~> 6.0'
+  pod 'FSCalendar'
 end

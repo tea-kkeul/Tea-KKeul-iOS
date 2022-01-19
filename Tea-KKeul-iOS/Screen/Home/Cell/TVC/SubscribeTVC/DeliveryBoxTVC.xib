@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DeliveryBoxTVC" rowHeight="160" id="KGk-i7-Jjw" customClass="DeliveryBoxTVC" customModule="Tea_KKeul_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oN2-Pe-NNn">
+                        <rect key="frame" x="18" y="7" width="339" height="66"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="66" id="N49-Su-Djd"/>
+                        </constraints>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" image="Group 504"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDX-nP-P8Q">
+                        <rect key="frame" x="18" y="78" width="339" height="66"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <state key="normal" image="Group 490"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="CDX-nP-P8Q" secondAttribute="bottom" constant="1" id="038-pY-4in"/>
+                    <constraint firstItem="oN2-Pe-NNn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="HDl-4Y-uzz"/>
+                    <constraint firstAttribute="trailing" secondItem="oN2-Pe-NNn" secondAttribute="trailing" constant="18" id="h3E-mY-8iY"/>
+                    <constraint firstItem="oN2-Pe-NNn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="kmd-UU-RnA"/>
+                    <constraint firstItem="CDX-nP-P8Q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="l3I-iN-Ffn"/>
+                    <constraint firstItem="CDX-nP-P8Q" firstAttribute="height" secondItem="oN2-Pe-NNn" secondAttribute="height" id="lSg-M5-fEo"/>
+                    <constraint firstAttribute="trailing" secondItem="CDX-nP-P8Q" secondAttribute="trailing" constant="18" id="nEX-Fz-NW2"/>
+                    <constraint firstItem="CDX-nP-P8Q" firstAttribute="top" secondItem="oN2-Pe-NNn" secondAttribute="bottom" constant="5" id="pW8-90-Us6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="boxButton" destination="oN2-Pe-NNn" id="FxB-zh-rUy"/>
+                <outlet property="myBoxButton" destination="CDX-nP-P8Q" id="MC8-Tr-whe"/>
+            </connections>
+            <point key="canvasLocation" x="-36" y="104.92610837438424"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Group 490" width="335" height="73"/>
+        <image name="Group 504" width="335" height="73"/>
+    </resources>
+</document>

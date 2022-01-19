@@ -1,4 +1,5 @@
 PODS:
+
   - abseil/algorithm (0.20200225.0):
     - abseil/algorithm/algorithm (= 0.20200225.0)
     - abseil/algorithm/container (= 0.20200225.0)
@@ -553,5 +554,28 @@ SPEC CHECKSUMS:
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
 
 PODFILE CHECKSUM: bcf197da2921267039d291729df77da2529c63f3
+
+  - Alamofire (5.4.4)
+  - FSCalendar (2.8.2)
+  - Kingfisher (6.3.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.4)
+  - FSCalendar
+  - Kingfisher (~> 6.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - FSCalendar
+    - Kingfisher
+
+SPEC CHECKSUMS:
+  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  FSCalendar: e6a2eb9c571bf0719ed797ef807e08426753c241
+  Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
+
+PODFILE CHECKSUM: 0fc6df980cc405a55e0c4b5626ff6d352a265878
+
 
 COCOAPODS: 1.11.2
