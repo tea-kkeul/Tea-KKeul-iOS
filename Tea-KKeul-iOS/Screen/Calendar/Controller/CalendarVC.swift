@@ -14,7 +14,6 @@ class CalendarVC: UIViewController {
     @IBOutlet weak var statusView: UIView!
     @IBOutlet weak var statusDate: UILabel!
     
-    
     @IBOutlet weak var eachDateView: UIView!
     @IBOutlet weak var eachDate: UILabel!
     
@@ -162,7 +161,7 @@ extension CalendarVC: FSCalendarDelegate, FSCalendarDataSource, FSCalendarDelega
         calendarView.placeholderType = .none
         
         // 선택된 날짜의 모서리 설정 ( 0으로 하면 사각형으로 표시 )
-        calendarView.appearance.borderRadius = 0
+        calendarView.appearance.borderRadius = 0.5
         
         // 선택된 날짜 border 색깔 설정
         calendarView.appearance.borderSelectionColor = UIColor(red: 103/255, green: 126/255, blue: 96/255, alpha: 1.0)
@@ -175,6 +174,8 @@ extension CalendarVC: FSCalendarDelegate, FSCalendarDataSource, FSCalendarDelega
         
         // 이미지 보여주는 함수 호출
         calendar(calendarView, imageFor: Date())
+        
+        
         
         // 처음에 monthDate, statusDate, eachDate에 현재 날짜의 월과 일이 표시되도록 시도중...
         let current = Date()
