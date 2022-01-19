@@ -28,9 +28,16 @@ class MypageVC: UIViewController {
         setTitleView()
         setSettingTV()
     }
+    override func viewWillDisappear(_ animated: Bool) {
+        setNaviBar()
+    }
 }
 //MARK: Custom Method
 extension MypageVC {
+    func setNaviBar() {
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        navigationItem.backBarButtonItem?.tintColor = .label
+    }
     func setTitleView() {
         userName.text = UserData[0]
         userAddress.text = UserData[1]
