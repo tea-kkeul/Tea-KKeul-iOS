@@ -31,6 +31,10 @@ class MypageVC: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         setNaviBar()
     }
+    @IBAction func goLikeListView(_ sender: Any) {
+        guard let likeListVC = UIStoryboard(name: Identifiers.likeListSB, bundle: nil).instantiateViewController(withIdentifier: Identifiers.likeListVC) as? LikeListVC else { return }
+        navigationController?.pushViewController(likeListVC, animated: true)
+    }
 }
 //MARK: Custom Method
 extension MypageVC {
