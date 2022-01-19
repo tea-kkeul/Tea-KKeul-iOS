@@ -45,9 +45,6 @@
                                                     <rect key="frame" x="122" y="18" width="20" height="22"/>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                     <state key="normal" image="LikeBtn"/>
-                                                    <connections>
-                                                        <action selector="likeToggle:" destination="d37-Hy-sHr" eventType="touchUpInside" id="xtE-0C-ejo"/>
-                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="차이름" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gA7-iK-NQ9">
                                                     <rect key="frame" x="16.000000000000004" y="135" width="36.333333333333343" height="18"/>

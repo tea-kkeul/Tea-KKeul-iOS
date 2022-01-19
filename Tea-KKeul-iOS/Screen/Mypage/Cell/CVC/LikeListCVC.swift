@@ -25,9 +25,6 @@ class LikeListCVC: UICollectionViewCell {
         setCancelLine()
         setLikeListCVC()
     }
-    @IBAction func likeToggle(_ sender: Any) {
-        
-    }
 }
 //MARK: Custom Method
 extension LikeListCVC {
