@@ -69,15 +69,7 @@ extension SubscribeVC: UITableViewDataSource {
         _ tableView: UITableView,
         numberOfRowsInSection section: Int
     ) -> Int {
-        switch section {
-        case 2:
-            return 3
-        case 3:
-            return 6
-        default:
-            return 1
-        }
-
+        return 1
     }
     func numberOfSections(in tableView: UITableView) -> Int {
         return 6
@@ -103,46 +95,11 @@ extension SubscribeVC: UITableViewDataSource {
             guard let cell: SubscribePeriodTVC = tableView.dequeueReusableCell(withIdentifier: Identifiers.subscribePeriodTVC, for: indexPath) as? SubscribePeriodTVC else {
                 return UITableViewCell()
             }
-            if indexPath.row == 0 {
-                cell.subscribeButton.setImage(UIImage(named:"Group 512"), for: .normal)
-            }
-            if indexPath.row == 1 {
-                cell.subscribeButton.setImage(UIImage(named: "Group 513"), for: .normal)
-            }
-            if indexPath.row == 2 {
-                cell.subscribeButton.setImage(UIImage(named: "Group 514"), for: .normal)
-            }
             cell.selectionStyle = .none
             return cell
         } else if indexPath.section == 3{
             guard let cell: BlendOptionTVC = tableView.dequeueReusableCell(withIdentifier: Identifiers.blendOptionTVC, for: indexPath) as? BlendOptionTVC else {
                 return UITableViewCell()
-            }
-            switch indexPath.row {
-            case 1:
-                cell.checkButton.setImage(UIImage(named: "check_unselected"), for: .normal)
-                cell.checkButton.setImage(UIImage(named: "check_selected"), for: .selected)
-                cell.blendOptionLabel.text = "자몽"
-            case 2:
-                cell.checkButton.setImage(UIImage(named: "check_unselected"), for: .normal)
-                cell.checkButton.setImage(UIImage(named: "check_selected"), for: .selected)
-                cell.blendOptionLabel.text = "사과"
-            case 3:
-                cell.checkButton.setImage(UIImage(named: "check_unselected"), for: .normal)
-                cell.checkButton.setImage(UIImage(named: "check_selected"), for: .selected)
-                cell.blendOptionLabel.text = "오렌지"
-            case 4:
-                cell.checkButton.setImage(UIImage(named: "check_unselected"), for: .normal)
-                cell.checkButton.setImage(UIImage(named: "check_selected"), for: .selected)
-                cell.blendOptionLabel.text = "키위"
-            case 5:
-                cell.checkButton.setImage(UIImage(named: "check_unselected"), for: .normal)
-                cell.checkButton.setImage(UIImage(named: "check_selected"), for: .selected)
-                cell.blendOptionLabel.text = "파인애플"
-            default:
-                cell.checkButton.setImage(UIImage(named: "check_unselected"), for: .normal)
-                cell.checkButton.setImage(UIImage(named: "check_selected"), for: .selected)
-                cell.blendOptionLabel.text = "안함"
             }
             cell.selectionStyle = .none
             return cell
@@ -150,11 +107,13 @@ extension SubscribeVC: UITableViewDataSource {
             guard let cell: TotalCostTVC = tableView.dequeueReusableCell(withIdentifier: Identifiers.totalCostTVC, for: indexPath) as? TotalCostTVC else {
                 return UITableViewCell()
             }
+            cell.selectionStyle = .none
             return cell
         } else {
             guard let cell: PaymentSelectionTVC = tableView.dequeueReusableCell(withIdentifier: Identifiers.paymentSelectionTVC, for: indexPath) as? PaymentSelectionTVC else {
                 return UITableViewCell()
             }
+            cell.selectionStyle = .none
             return cell
         }
     }
