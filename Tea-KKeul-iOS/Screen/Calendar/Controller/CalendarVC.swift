@@ -19,6 +19,10 @@ class CalendarVC: UIViewController {
     @IBOutlet weak var monthPurchaseButton: UIButton!
     
     @IBOutlet weak var headerLabel: UILabel!
+    
+    @IBOutlet weak var nextBtn: UIButton!
+    @IBOutlet weak var prevBtn: UIButton!
+    
     let dateFormatter = DateFormatter()
     
     override func viewDidLoad() {
@@ -80,6 +84,7 @@ class CalendarVC: UIViewController {
         monthPurchaseButton.layer.cornerRadius = 14
         monthPurchaseButton.titleLabel?.font = .systemFont(ofSize: 12)
     }
+
     
     
     @IBAction func prevBtnTapped(_ sender: UIButton) {
@@ -123,10 +128,14 @@ extension CalendarVC: FSCalendarDelegate, FSCalendarDataSource, FSCalendarDelega
         calendarView.delegate = self
         calendarView.dataSource = self
         
+        
         // 한글로 바꾸기
         calendarView.locale = Locale(identifier: "ko_KR")
         
-        // 평일 날짜 색상 설정
+        // 헤더 버튼 이미지 설정
+        prevBtn.setImage(UIImage(named: "PrevBtn.png"), for: .normal)
+        
+        // 평일 날짜 색상 설정 (월 ~ 금)
         calendarView.appearance.weekdayTextColor = .black
 
         // 흐릿한 문자 지우기
@@ -144,12 +153,14 @@ extension CalendarVC: FSCalendarDelegate, FSCalendarDataSource, FSCalendarDelega
         // 선택된 날짜 border 색깔 설정
         calendarView.appearance.borderSelectionColor = UIColor(red: 103/255, green: 126/255, blue: 96/255, alpha: 1.0)
         
+        // 선택되는 날짜 배경 없애기
         calendarView.appearance.selectionColor = .none
-        calendarView.appearance.todaySelectionColor = .none
         
-        //calendar.appearance.selectionColor = UIColor.blueColor
+        // 오늘 날짜는 표시 안 되게 설정
         calendarView.today = nil
-        //calendar.appearance.todaySelectionColor = UIColor.blackColor
+        
+        // 이미지 보여주는 함수 호출
+        calendar(calendarView, imageFor: Date())
         
         //        // 헤더 폰트 설정
         //        calendarView.appearance.headerTitleFont = UIFont(name: "NotoSansKR-Medium", size: 20)
@@ -159,16 +170,13 @@ extension CalendarVC: FSCalendarDelegate, FSCalendarDataSource, FSCalendarDelega
         //
         //        // 각각의 일(날짜) 폰트 설정 (ex. 1 2 3 4 5 6 ...)
         //        calendarView.appearance.titleFont = UIFont(name: "NotoSansKR-Regular", size: 12)
-        
-        headerLabel.text = self.dateFormatter2.string(from: calendarView.currentPage)
-        
-        // 
-        calendar(calendarView, imageFor: Date())
     
     }
     
     // FSCalendarDataSource
     func calendar(_ calendar: FSCalendar, imageFor date: Date) -> UIImage? {
+        
+        // 상태 나타내는 나뭇잎 이미지들
         let status0: UIImage = UIImage(named: "button_empty-1")!
         let status1: UIImage = UIImage(named: "Status_1")!
         let status2: UIImage = UIImage(named: "Status_2")!
@@ -176,10 +184,30 @@ extension CalendarVC: FSCalendarDelegate, FSCalendarDataSource, FSCalendarDelega
         let status4: UIImage = UIImage(named: "Status_4")!
         let status5: UIImage = UIImage(named: "Status_5")!
         
-        return status0
+        // 해당 date에 입력했던 상태에 따른 이미지를 반환해야함
+        
+        
+        
+        
+        return status1
+    }
+    
+    // 기본 날짜 글자 색깔 설정
+    func calendar(_ calendar: FSCalendar, appearance: FSCalendarAppearance, titleDefaultColorFor date: Date) -> UIColor? {
+        
+        return .black
+                
+    }
+    
+    // 선택된 날짜 글자 색깔 설정
+    func calendar(_ calendar: FSCalendar, appearance: FSCalendarAppearance, titleSelectionColorFor date: Date) -> UIColor? {
+        
+        return .black
     }
     
     func calendarCurrentPageDidChange(_ calendar: FSCalendar) {
+        
+        // 헤더라벨을 JAN 형식으로 표시하기
         self.headerLabel.text = self.dateFormatter2.string(from: calendar.currentPage)
         
     }

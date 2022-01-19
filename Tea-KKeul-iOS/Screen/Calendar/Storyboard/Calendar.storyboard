@@ -17,57 +17,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZDk-vP-wKQ" customClass="FSCalendar">
-                                <rect key="frame" x="22.666666666666657" y="80" width="330" height="267"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="330" id="EBJ-7P-Uti"/>
-                                    <constraint firstAttribute="height" constant="267" id="jTo-PZ-scj"/>
-                                </constraints>
-                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="49" translatesAutoresizingMaskIntoConstraints="NO" id="zdj-bI-Kie">
-                                <rect key="frame" x="89.666666666666671" y="44" width="198.66666666666666" height="31"/>
+                                <rect key="frame" x="67.999999999999986" y="44" width="228.66666666666666" height="47"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5sR-Pb-PQj">
-                                        <rect key="frame" x="0.0" y="0.0" width="33" height="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="48" height="47"/>
                                         <color key="tintColor" red="0.67843137249999996" green="0.75686274509999996" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="&lt;"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="PrevBtn" title=" ">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="9"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="prevBtnTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Phe-QH-wqS"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JAN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHn-Oq-Ip7">
-                                        <rect key="frame" x="82" y="0.0" width="34.666666666666657" height="31"/>
+                                        <rect key="frame" x="97" y="0.0" width="34.666666666666657" height="47"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <color key="textColor" red="0.4039215686" green="0.4941176471" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Alu-gJ-cJQ">
-                                        <rect key="frame" x="165.66666666666666" y="0.0" width="33" height="31"/>
+                                        <rect key="frame" x="180.66666666666666" y="0.0" width="48" height="47"/>
                                         <color key="tintColor" red="0.67843137249999996" green="0.75686274509999996" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="&gt;"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="NextBtn" title=" ">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="9"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="nextBtnTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="dw0-Zy-2sd"/>
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="USO-1k-Wbj"/>
+                                </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17일의 차" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TdF-df-l3f">
-                                <rect key="frame" x="20" y="447" width="77.666666666666671" height="24"/>
+                                <rect key="frame" x="20" y="496" width="77.666666666666671" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" red="0.4039215686" green="0.4941176471" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1월의 차" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPh-Zb-A51">
-                                <rect key="frame" x="20" y="571" width="66" height="24"/>
+                                <rect key="frame" x="20" y="620" width="66" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" red="0.4039215686" green="0.4941176471" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YG2-Qq-P1J">
-                                <rect key="frame" x="20" y="476" width="335" height="75"/>
+                                <rect key="frame" x="20" y="525" width="335" height="75"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e1Z-6A-Crs">
                                         <rect key="frame" x="0.0" y="0.0" width="78" height="75"/>
@@ -135,7 +134,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0lU-l7-LHs">
-                                <rect key="frame" x="20" y="600" width="335" height="75"/>
+                                <rect key="frame" x="20" y="649" width="335" height="75"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SeJ-My-0mb">
                                         <rect key="frame" x="0.0" y="0.0" width="78" height="75"/>
@@ -202,8 +201,16 @@
                                     <constraint firstAttribute="trailing" secondItem="T8k-w7-5yH" secondAttribute="trailing" constant="9" id="y0z-5I-P5a"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZDk-vP-wKQ" customClass="FSCalendar">
+                                <rect key="frame" x="22" y="87" width="330" height="300"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="330" id="EBJ-7P-Uti"/>
+                                    <constraint firstAttribute="height" constant="300" id="W7x-c1-rzi"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kkp-P8-mS2">
-                                <rect key="frame" x="0.0" y="350" width="375" height="75"/>
+                                <rect key="frame" x="0.0" y="395" width="375" height="75"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="som-Nd-IIY">
                                         <rect key="frame" x="19" y="15" width="31.666666666666671" height="18"/>
@@ -275,6 +282,8 @@
                         <outlet property="monthDibButton" destination="T8k-w7-5yH" id="nsx-kC-R7t"/>
                         <outlet property="monthPurchaseButton" destination="z25-NJ-fOo" id="7jx-Yx-RVx"/>
                         <outlet property="monthView" destination="0lU-l7-LHs" id="cim-bH-fhN"/>
+                        <outlet property="nextBtn" destination="Alu-gJ-cJQ" id="bhg-dY-tCT"/>
+                        <outlet property="prevBtn" destination="5sR-Pb-PQj" id="VrM-Qz-b25"/>
                         <outlet property="statusView" destination="Kkp-P8-mS2" id="zhd-uH-RCu"/>
                     </connections>
                 </viewController>
@@ -284,6 +293,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="NextBtn" width="20" height="33"/>
+        <image name="PrevBtn" width="20" height="33"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
