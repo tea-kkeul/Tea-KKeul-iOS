@@ -57,6 +57,8 @@
 		F278F2652798018400B7A22F /* Subscribe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F278F2642798018400B7A22F /* Subscribe.storyboard */; };
 		F278F2672798019A00B7A22F /* SubscribeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F278F2662798019A00B7A22F /* SubscribeVC.swift */; };
 		F278F26927980AE300B7A22F /* HomeNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F278F26827980AE300B7A22F /* HomeNC.swift */; };
+		F278F26D279846A500B7A22F /* AddressTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F278F26B279846A500B7A22F /* AddressTVC.swift */; };
+		F278F26E279846A500B7A22F /* AddressTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F278F26C279846A500B7A22F /* AddressTVC.xib */; };
 		F2B0453A27970C2F00FFEE27 /* ConditionCheckTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0453827970C2F00FFEE27 /* ConditionCheckTVC.swift */; };
 		F2B0453B27970C2F00FFEE27 /* ConditionCheckTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2B0453927970C2F00FFEE27 /* ConditionCheckTVC.xib */; };
 		F2B0453E2797288300FFEE27 /* SubscribeTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0453C2797288300FFEE27 /* SubscribeTVC.swift */; };
@@ -118,6 +120,8 @@
 		F278F2642798018400B7A22F /* Subscribe.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Subscribe.storyboard; sourceTree = "<group>"; };
 		F278F2662798019A00B7A22F /* SubscribeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeVC.swift; sourceTree = "<group>"; };
 		F278F26827980AE300B7A22F /* HomeNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNC.swift; sourceTree = "<group>"; };
+		F278F26B279846A500B7A22F /* AddressTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressTVC.swift; sourceTree = "<group>"; };
+		F278F26C279846A500B7A22F /* AddressTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressTVC.xib; sourceTree = "<group>"; };
 		F2B0453827970C2F00FFEE27 /* ConditionCheckTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionCheckTVC.swift; sourceTree = "<group>"; };
 		F2B0453927970C2F00FFEE27 /* ConditionCheckTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConditionCheckTVC.xib; sourceTree = "<group>"; };
 		F2B0453C2797288300FFEE27 /* SubscribeTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeTVC.swift; sourceTree = "<group>"; };
@@ -306,6 +310,7 @@
 			isa = PBXGroup;
 			children = (
 				F278F26A2798127900B7A22F /* HomeTVC */,
+				F278F26F279846AB00B7A22F /* SubscribeTVC */,
 			);
 			path = TVC;
 			sourceTree = "<group>";
@@ -456,6 +461,15 @@
 			path = HomeTVC;
 			sourceTree = "<group>";
 		};
+		F278F26F279846AB00B7A22F /* SubscribeTVC */ = {
+			isa = PBXGroup;
+			children = (
+				F278F26B279846A500B7A22F /* AddressTVC.swift */,
+				F278F26C279846A500B7A22F /* AddressTVC.xib */,
+			);
+			path = SubscribeTVC;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -533,6 +547,7 @@
 				23E96A0227969E7600D7D7D3 /* Magazine.storyboard in Resources */,
 				23E96A0827969ECE00D7D7D3 /* Calendar.storyboard in Resources */,
 				F278F2592797FA3200B7A22F /* NotoSansKR-Medium.otf in Resources */,
+				F278F26E279846A500B7A22F /* AddressTVC.xib in Resources */,
 				23E96A1A27969F7600D7D7D3 /* TabBar.storyboard in Resources */,
 				F278F2622797FA4500B7A22F /* NotoSans-Italic.ttf in Resources */,
 				23FB787A279698D6000549C2 /* Assets.xcassets in Resources */,
@@ -593,6 +608,7 @@
 				F2B0453A27970C2F00FFEE27 /* ConditionCheckTVC.swift in Sources */,
 				23E96A2027969FE900D7D7D3 /* ViewControllerFactory.swift in Sources */,
 				23E96A0A27969EDF00D7D7D3 /* MypageVC.swift in Sources */,
+				F278F26D279846A500B7A22F /* AddressTVC.swift in Sources */,
 				F278F24A2797F44B00B7A22F /* CALayer+.swift in Sources */,
 				23FB7871279698D5000549C2 /* AppDelegate.swift in Sources */,
 				23E96A1827969F6500D7D7D3 /* TeaKKeulTBC.swift in Sources */,
