@@ -94,6 +94,16 @@ extension OnboardingVC {
         guard button.tag < 5 else {
 //            Core.shared.setIsNotNewUser()
             dismiss(animated: true, completion: nil)
+
+            guard let pvc = self.presentingViewController else { return }
+
+            self.dismiss(animated: true) {
+                guard let vc = UIStoryboard(name: Identifiers.tabBarSB, bundle: nil).instantiateViewController(withIdentifier: Identifiers.teaKKeulTBC) as? TeaKKeulTBC else { return }
+                vc.modalPresentationStyle = .fullScreen
+                
+                pvc.present(vc, animated: true, completion: nil)
+            }
+            
             return
         }
         

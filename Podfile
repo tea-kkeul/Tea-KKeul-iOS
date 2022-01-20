@@ -9,4 +9,6 @@ target 'Tea-KKeul-iOS' do
   pod 'Alamofire', '~> 5.4'
   pod 'Kingfisher', '~> 6.0'
   pod 'FSCalendar'
+  pod 'Firebase/Core'
+  pod 'Firebase/Firestore'
 end
