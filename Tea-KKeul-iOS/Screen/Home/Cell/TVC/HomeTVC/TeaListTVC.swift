@@ -9,7 +9,13 @@ import UIKit
 
 class TeaListTVC: UITableViewCell {
 
+    @IBOutlet weak var buyButton: UIButton!
+    @IBOutlet weak var likeButton: UIButton!
+    @IBOutlet weak var profitLabel: UILabel!
+    @IBOutlet weak var teaNameLabel: UILabel!
+    @IBOutlet weak var teaImageView: UIImageView!
     @IBOutlet weak var gradientView: UIView!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         setTeaListTVC()

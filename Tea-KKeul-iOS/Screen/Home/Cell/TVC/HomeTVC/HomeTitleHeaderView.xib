@@ -17,14 +17,14 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WBA-4l-gwf">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘의 차" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ske-ge-p4T">
-                            <rect key="frame" x="21" y="3" width="74" height="24"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="인기 차" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ske-ge-p4T">
+                            <rect key="frame" x="21.000000000000004" y="3" width="56.333333333333343" height="24"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                             <color key="textColor" red="0.4039215686" green="0.4941176471" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBu-Hj-l4k">
-                            <rect key="frame" x="106" y="12" width="8" height="8"/>
+                            <rect key="frame" x="88.333333333333329" y="12" width="8" height="8"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="8" id="8Au-dE-C3T"/>
                                 <constraint firstAttribute="height" constant="8" id="wYR-nn-Hes"/>

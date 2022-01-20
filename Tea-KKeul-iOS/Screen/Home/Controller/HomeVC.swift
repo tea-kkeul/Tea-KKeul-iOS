@@ -8,7 +8,13 @@
 import UIKit
 
 class HomeVC: UIViewController {
-    
+    var listData = [
+        ["LikeList_CV1", "귤껍질차", "피로회복, 식욕증진"],
+        ["LikeList_CV2", "대추차", "식욕증진, 심신안정"],
+        ["LikeList_CV3", "페퍼민트차", "혈액순환, 숙면"]
+    ]
+
+
     @IBOutlet weak var tableView: UITableView!
 
     override func viewDidLoad() {
@@ -56,7 +62,6 @@ extension HomeVC {
     // MARK: - cell button action 설정
     @objc func didTapSubscribeButton() {
         guard let nvc = UIStoryboard(name: Identifiers.subscribeSB, bundle: nil).instantiateViewController(identifier: Identifiers.subscribeVC) as? SubscribeVC else {
-            print("aaaa")
             return
         }
         navigationController?.pushViewController(nvc, animated: true)
@@ -74,7 +79,13 @@ extension HomeVC: UITableViewDataSource {
     }
     // MARK: - 섹션 별 행 개수 (셀 개수)
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        switch section {
+        case 2:
+            return listData.count
+        default:
+            return 1
+        }
+
     }
     // MARK: - 셀 연결
     func tableView(
@@ -96,6 +107,10 @@ extension HomeVC: UITableViewDataSource {
             guard let cell: TeaListTVC = tableView.dequeueReusableCell(withIdentifier: Identifiers.teaListTVC, for: indexPath) as? TeaListTVC else {
                 return UITableViewCell()
             }
+            cell.imageView?.image = UIImage(named: "\(listData[indexPath.row][0])")
+            cell.teaNameLabel.text = "\(listData[indexPath.row][1])"
+            cell.profitLabel.text = "\(listData[indexPath.row][2])"
+            cell.contentView.layer.masksToBounds = true
             return cell
         }
     }
@@ -113,15 +128,7 @@ extension HomeVC: UITableViewDataSource {
             return view
         }
     }
-    // MARK: - 섹션 별 셀 높이 설정
-    func tableview(
-        _ tableView: UITableView,
-        heightForRowAt indexPath: IndexPath)
-    -> CGFloat {
-        return 251
-    }
 }
-
 extension HomeVC: UITableViewDelegate {
     func tableView(
         _ tableView: UITableView,
@@ -146,3 +153,4 @@ extension HomeVC: UITableViewDelegate {
         }
     }
 }
+
