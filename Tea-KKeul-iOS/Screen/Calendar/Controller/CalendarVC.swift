@@ -249,11 +249,65 @@ extension CalendarVC: FSCalendarDelegate, FSCalendarDataSource, FSCalendarDelega
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yy-MM-dd"
         
+        if dateFormatter.string(from: date) == "22-01-01" {
+            leaf = 5
+        }
+        if dateFormatter.string(from: date) == "22-01-02" {
+            leaf = 4
+        }
+        if dateFormatter.string(from: date) == "22-01-03" {
+            leaf = 4
+        }
+        if dateFormatter.string(from: date) == "22-01-04" {
+            leaf = 3
+        }
         if dateFormatter.string(from: date) == "22-01-05" {
             leaf = 3
         }
         if dateFormatter.string(from: date) == "22-01-06" {
+            leaf = 3
+        }
+        if dateFormatter.string(from: date) == "22-01-07" {
+            leaf = 2
+        }
+        if dateFormatter.string(from: date) == "22-01-08" {
             leaf = 1
+        }
+        if dateFormatter.string(from: date) == "22-01-09" {
+            leaf = 1
+        }
+        if dateFormatter.string(from: date) == "22-01-10" {
+            leaf = 2
+        }
+        if dateFormatter.string(from: date) == "22-01-11" {
+            leaf = 2
+        }
+        if dateFormatter.string(from: date) == "22-01-12" {
+            leaf = 3
+        }
+        if dateFormatter.string(from: date) == "22-01-13" {
+            leaf = 4
+        }
+        if dateFormatter.string(from: date) == "22-01-14" {
+            leaf = 4
+        }
+        if dateFormatter.string(from: date) == "22-01-15" {
+            leaf = 3
+        }
+        if dateFormatter.string(from: date) == "22-01-16" {
+            leaf = 1
+        }
+        if dateFormatter.string(from: date) == "22-01-17" {
+            leaf = 2
+        }
+        if dateFormatter.string(from: date) == "22-01-18" {
+            leaf = 3
+        }
+        if dateFormatter.string(from: date) == "22-01-19" {
+            leaf = 3
+        }
+        if dateFormatter.string(from: date) == "22-01-20" {
+            leaf = 2
         }
         
         switch (leaf) {
@@ -322,6 +376,13 @@ extension CalendarVC: FSCalendarDelegate, FSCalendarDataSource, FSCalendarDelega
         
         // 날짜가 클릭되면 해당 날짜 추천차 뷰의 날짜 라벨 변경하기
         eachDate.text = clickedDate + "일의 차"
+        
+        if clickedDate == "20" {
+            eachDateImage.image = UIImage(named: "LikeList_CV2.png")
+            eachDateTea.text = "대추차"
+            eachDateEffect.text = "식욕증진, 심신안정"
+            eachDateTag.text = "#피곤함, #스트레스, #식욕부진"
+        }
         
     }
     

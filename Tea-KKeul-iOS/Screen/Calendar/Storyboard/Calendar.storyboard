@@ -32,7 +32,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YG2-Qq-P1J">
                                 <rect key="frame" x="20" y="502" width="335" height="75"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e1Z-6A-Crs">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LikeList_CV1" translatesAutoresizingMaskIntoConstraints="NO" id="e1Z-6A-Crs">
                                         <rect key="frame" x="0.0" y="0.0" width="78" height="75"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="78" id="Ful-n4-Vl3"/>
@@ -98,21 +98,21 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0lU-l7-LHs">
                                 <rect key="frame" x="20" y="626" width="335" height="75"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SeJ-My-0mb">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LikeList_CV3" translatesAutoresizingMaskIntoConstraints="NO" id="SeJ-My-0mb">
                                         <rect key="frame" x="0.0" y="0.0" width="78" height="75"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="78" id="9Im-iw-v4i"/>
                                             <constraint firstAttribute="height" constant="75" id="voA-JL-xgn"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="둥글레차" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ofm-O4-W7s">
-                                        <rect key="frame" x="89" y="14" width="45" height="15.666666666666664"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="페퍼민트차" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ofm-O4-W7s">
+                                        <rect key="frame" x="89" y="14" width="56.333333333333343" height="15.666666666666664"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="피로회복, 두통완화, 건강체질" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ht5-T4-Bxw">
-                                        <rect key="frame" x="88.999999999999986" y="36.666666666666629" width="138.66666666666663" height="14.333333333333336"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="혈액순환, 해독효과, 숙면" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ht5-T4-Bxw">
+                                        <rect key="frame" x="89" y="36.666666666666629" width="118" height="14.333333333333336"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -289,6 +289,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="LikeList_CV1" width="157" height="135"/>
+        <image name="LikeList_CV3" width="159" height="131"/>
         <image name="NextBtn" width="6.6666665077209473" height="11"/>
         <image name="PrevBtn" width="6.6666665077209473" height="11"/>
         <systemColor name="systemBackgroundColor">
