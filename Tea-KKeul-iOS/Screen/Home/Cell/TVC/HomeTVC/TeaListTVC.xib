@@ -19,7 +19,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZFc-VZ-b1L">
                         <rect key="frame" x="20" y="5" width="335" height="66"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button_empty-1" translatesAutoresizingMaskIntoConstraints="NO" id="e2G-xu-Qtv">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button_empty-1" translatesAutoresizingMaskIntoConstraints="NO" id="e2G-xu-Qtv">
                                 <rect key="frame" x="0.0" y="0.0" width="69" height="66"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="66" id="MD4-5h-4sP"/>
@@ -27,13 +27,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="차name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ndm-zf-19C">
-                                <rect key="frame" x="78" y="14" width="47" height="16"/>
+                                <rect key="frame" x="87" y="14" width="47" height="16"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="효능리스트로받아올까?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1y-tO-rwZ">
-                                <rect key="frame" x="78" y="36" width="110" height="15"/>
+                                <rect key="frame" x="87" y="36" width="110" height="15"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -52,7 +52,7 @@
                             <constraint firstItem="F1y-tO-rwZ" firstAttribute="leading" secondItem="Ndm-zf-19C" secondAttribute="leading" id="57t-J1-9Oy"/>
                             <constraint firstItem="F1y-tO-rwZ" firstAttribute="top" secondItem="Ndm-zf-19C" secondAttribute="bottom" constant="6" id="ADR-aJ-otC"/>
                             <constraint firstAttribute="height" constant="66" id="Agt-Qw-OmL"/>
-                            <constraint firstItem="Ndm-zf-19C" firstAttribute="leading" secondItem="e2G-xu-Qtv" secondAttribute="trailing" constant="9" id="EIQ-6d-Y3I"/>
+                            <constraint firstItem="Ndm-zf-19C" firstAttribute="leading" secondItem="e2G-xu-Qtv" secondAttribute="trailing" constant="18" id="EIQ-6d-Y3I"/>
                             <constraint firstAttribute="trailing" secondItem="pFx-m9-Bv1" secondAttribute="trailing" constant="10" id="GQA-g7-5oA"/>
                             <constraint firstItem="e2G-xu-Qtv" firstAttribute="top" secondItem="ZFc-VZ-b1L" secondAttribute="top" id="NWQ-T7-edW"/>
                             <constraint firstItem="pFx-m9-Bv1" firstAttribute="top" secondItem="ZFc-VZ-b1L" secondAttribute="top" constant="7" id="VYE-RB-N6h"/>
@@ -73,7 +73,12 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="buyButton" destination="RPP-VN-hBb" id="RUJ-5M-Jfp"/>
                 <outlet property="gradientView" destination="ZFc-VZ-b1L" id="ek7-2U-Dmn"/>
+                <outlet property="likeButton" destination="pFx-m9-Bv1" id="q37-uL-ag7"/>
+                <outlet property="profitLabel" destination="F1y-tO-rwZ" id="tJn-Xk-fzR"/>
+                <outlet property="teaImageView" destination="e2G-xu-Qtv" id="7j8-o4-rzf"/>
+                <outlet property="teaNameLabel" destination="Ndm-zf-19C" id="EjR-Wq-d0W"/>
             </connections>
             <point key="canvasLocation" x="140" y="81.650246305418719"/>
         </tableViewCell>

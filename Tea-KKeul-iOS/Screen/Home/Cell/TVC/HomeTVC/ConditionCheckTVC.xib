@@ -96,15 +96,15 @@
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hk-Sd-1zP">
                         <rect key="frame" x="114" y="95.666666666666671" width="71" height="24"/>
-                        <state key="normal" image="Group 454"/>
+                        <state key="normal" image="d"/>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="muU-pY-Vj0">
                         <rect key="frame" x="191" y="95.666666666666671" width="71" height="24"/>
-                        <state key="normal" image="Group 454"/>
+                        <state key="normal" image="2"/>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BfV-hC-K9n">
                         <rect key="frame" x="268" y="95.666666666666671" width="71" height="24"/>
-                        <state key="normal" image="Group 454"/>
+                        <state key="normal" image="3"/>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2E-8j-COQ">
                         <rect key="frame" x="37" y="127.66666666666669" width="71" height="24"/>
@@ -112,7 +112,7 @@
                             <constraint firstAttribute="height" constant="24" id="HNm-xV-bFi"/>
                             <constraint firstAttribute="width" constant="71" id="pBe-Cq-84C"/>
                         </constraints>
-                        <state key="normal" image="Group 454"/>
+                        <state key="normal" image="4"/>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZ2-ua-L8F">
                         <rect key="frame" x="114" y="127.66666666666669" width="71" height="24"/>
@@ -120,15 +120,15 @@
                             <constraint firstAttribute="height" constant="24" id="HLQ-kH-iDZ"/>
                             <constraint firstAttribute="width" constant="71" id="Yzo-bU-g16"/>
                         </constraints>
-                        <state key="normal" image="Group 454"/>
+                        <state key="normal" image="5"/>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMk-oG-BiH">
                         <rect key="frame" x="191" y="127.66666666666669" width="71" height="24"/>
-                        <state key="normal" image="Group 454"/>
+                        <state key="normal" image="6"/>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHe-2x-pMF">
                         <rect key="frame" x="268" y="127.66666666666669" width="71" height="24"/>
-                        <state key="normal" image="Group 454"/>
+                        <state key="normal" image="7"/>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2uE-b4-8DS">
                         <rect key="frame" x="37" y="157.66666666666666" width="71" height="24"/>
@@ -136,19 +136,19 @@
                             <constraint firstAttribute="height" constant="24" id="76A-EQ-yDk"/>
                             <constraint firstAttribute="width" constant="71" id="vtg-iv-dLA"/>
                         </constraints>
-                        <state key="normal" image="Group 454"/>
+                        <state key="normal" image="8"/>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LFG-zw-AGr">
                         <rect key="frame" x="114" y="157.66666666666666" width="71" height="24"/>
-                        <state key="normal" image="Group 454"/>
+                        <state key="normal" image="9"/>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7oD-QB-RFT">
                         <rect key="frame" x="191" y="157.66666666666666" width="71" height="24"/>
-                        <state key="normal" image="Group 454"/>
+                        <state key="normal" image="10"/>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tk-Yw-jF7">
                         <rect key="frame" x="268" y="157.66666666666666" width="71" height="24"/>
-                        <state key="normal" image="Group 454"/>
+                        <state key="normal" image="11"/>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LS6-Q5-Txx">
                         <rect key="frame" x="37" y="197" width="302" height="36"/>
@@ -218,12 +218,43 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="button1" destination="vdr-Kz-MBB" id="LMg-M7-9e5"/>
+                <outlet property="button2" destination="grx-OW-VVb" id="0p9-JD-Gdc"/>
+                <outlet property="button3" destination="UEF-YU-QLS" id="9CD-l0-zST"/>
+                <outlet property="button4" destination="42e-je-5ee" id="2Fu-h7-Nx2"/>
+                <outlet property="button5" destination="ue5-LZ-yRK" id="I11-q8-SfV"/>
+                <outlet property="state1" destination="slX-VY-2To" id="fVY-1u-Aqz"/>
+                <outlet property="state10" destination="LFG-zw-AGr" id="yn0-9L-vrx"/>
+                <outlet property="state11" destination="7oD-QB-RFT" id="TWT-5a-ZTa"/>
+                <outlet property="state12" destination="6tk-Yw-jF7" id="M2Q-lt-gaQ"/>
+                <outlet property="state2" destination="6hk-Sd-1zP" id="fQm-e6-fD3"/>
+                <outlet property="state3" destination="muU-pY-Vj0" id="jYz-gx-L4I"/>
+                <outlet property="state4" destination="BfV-hC-K9n" id="8jO-cn-6PJ"/>
+                <outlet property="state5" destination="b2E-8j-COQ" id="tyI-Id-DAZ"/>
+                <outlet property="state6" destination="qZ2-ua-L8F" id="YTN-pV-JsT"/>
+                <outlet property="state7" destination="HMk-oG-BiH" id="EEe-7P-vA7"/>
+                <outlet property="state8" destination="LHe-2x-pMF" id="hVS-6C-Aae"/>
+                <outlet property="state9" destination="2uE-b4-8DS" id="A1N-rP-BV1"/>
+                <outlet property="submitButton" destination="LS6-Q5-Txx" id="M5d-2K-Own"/>
+            </connections>
             <point key="canvasLocation" x="138.40000000000001" y="79.433497536945822"/>
         </tableViewCell>
     </objects>
     <resources>
+        <image name="10" width="70.333335876464844" height="24"/>
+        <image name="11" width="70.333335876464844" height="24"/>
+        <image name="2" width="70.666664123535156" height="24"/>
+        <image name="3" width="70.333335876464844" height="24"/>
+        <image name="4" width="70.333335876464844" height="24"/>
+        <image name="5" width="70.666664123535156" height="24"/>
+        <image name="6" width="70.666664123535156" height="24"/>
+        <image name="7" width="70.333335876464844" height="24"/>
+        <image name="8" width="70.333335876464844" height="24"/>
+        <image name="9" width="70.666664123535156" height="24"/>
         <image name="Group 454" width="70.333335876464844" height="24"/>
         <image name="Group 466" width="298" height="36"/>
         <image name="button_empty-1" width="21" height="21"/>
+        <image name="d" width="70.333335876464844" height="24"/>
     </resources>
 </document>
