@@ -123,13 +123,14 @@ extension HomeVC: UITableViewDataSource {
 //            cell.profitLabel.text = "\(listData[indexPath.row][2])"
 //            cell.contentView.layer.masksToBounds = true
             let teaInfo = likestTeaList[indexPath.row]
+            print(teaInfo)
             guard let cell: TeaListTVC = tableView.dequeueReusableCell(withIdentifier: Identifiers.teaListTVC, for: indexPath) as? TeaListTVC else {
                 return UITableViewCell()
             }
             cell.teaNameLabel.text = teaInfo.name
             cell.profitLabel.text = teaInfo.tagList
+            cell.imageView?.image = UIImage(named: setImageToName(teaName: teaInfo.name ?? "default"))
             cell.contentView.layer.masksToBounds = true
-           
             return cell
         }
     }
@@ -212,6 +213,20 @@ extension HomeVC {
                     }
                 }
             }
+        }
+    }
+}
+
+// MARK: - 차 이름에 따라 이미지 불러오기
+extension HomeVC {
+    func setImageToName(teaName: String) -> String {
+        switch (teaName) {
+        case "귤껍질차" : return "LikeList_CV1"
+        case "대추차" : return "LikeList_CV2"
+        case "페퍼민트차" : return "LikeList_CV3"
+        case "메밀차" : return "LikeList_CV4"
+        default:
+            return "LikeList_CV1"
         }
     }
 }
