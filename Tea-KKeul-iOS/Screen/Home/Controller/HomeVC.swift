@@ -6,6 +6,13 @@
 //
 
 import UIKit
+import Firebase
+
+struct Tea : Codable{
+    let name: String?
+    let tagList: String?
+    let imgPath: String?
+}
 
 class HomeVC: UIViewController {
     var listData = [
@@ -16,8 +23,11 @@ class HomeVC: UIViewController {
 
 
     @IBOutlet weak var tableView: UITableView!
+    let db = Firestore.firestore()
+    var likestTeaList:[Tea] = []
 
     override func viewDidLoad() {
+        fetchLikestList()
         setLayout()
         setButton()
         registerCell()
@@ -81,7 +91,8 @@ extension HomeVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 2:
-            return listData.count
+            // return listData.count
+            return likestTeaList.count
         default:
             return 1
         }
@@ -104,13 +115,21 @@ extension HomeVC: UITableViewDataSource {
             cell.subscribeButton.addTarget(self, action: #selector(didTapSubscribeButton), for: .touchUpInside)
             return cell
         } else {
+//            guard let cell: TeaListTVC = tableView.dequeueReusableCell(withIdentifier: Identifiers.teaListTVC, for: indexPath) as? TeaListTVC else {
+//                return UITableViewCell()
+//            }
+//            cell.imageView?.image = UIImage(named: "\(listData[indexPath.row][0])")
+//            cell.teaNameLabel.text = "\(listData[indexPath.row][1])"
+//            cell.profitLabel.text = "\(listData[indexPath.row][2])"
+//            cell.contentView.layer.masksToBounds = true
+            let teaInfo = likestTeaList[indexPath.row]
             guard let cell: TeaListTVC = tableView.dequeueReusableCell(withIdentifier: Identifiers.teaListTVC, for: indexPath) as? TeaListTVC else {
                 return UITableViewCell()
             }
-            cell.imageView?.image = UIImage(named: "\(listData[indexPath.row][0])")
-            cell.teaNameLabel.text = "\(listData[indexPath.row][1])"
-            cell.profitLabel.text = "\(listData[indexPath.row][2])"
+            cell.teaNameLabel.text = teaInfo.name
+            cell.profitLabel.text = teaInfo.tagList
             cell.contentView.layer.masksToBounds = true
+           
             return cell
         }
     }
@@ -154,3 +173,45 @@ extension HomeVC: UITableViewDelegate {
     }
 }
 
+// MARK: - firebase 설정
+extension HomeVC {
+    func fetchLikestList() {
+        db.collection("tea").order(by: "scrap", descending: true).limit(to: 3).addSnapshotListener() { [self] (querySnapshot, err) in
+            self.likestTeaList = []
+            if let e = err {
+                print(e.localizedDescription)
+            } else {
+                if let snapshotDocuments = querySnapshot?.documents {
+                    snapshotDocuments.forEach { (doc) in
+                        let data = doc.data()
+                        let id = data["id"] as? String
+                        let imgPath = data["img"] as? String
+
+                        db.collection("tea").document(id!).collection("tag").addSnapshotListener() { (querySnapshot, err) in
+                            if let err = err {
+                                print("Error getting documents: \(err)")
+                            } else {
+                                var tag: String = ""
+                                if let snapshotDocuments = querySnapshot?.documents {
+                                    print("갯수", snapshotDocuments.count)
+                                    snapshotDocuments.forEach { (doc) in
+                                        let data = doc.data()
+                                        if let name = data["name"] as? String {
+                                            tag += name + ", "
+                                        }
+                                    }
+                                }
+                                if let name = data["name"] as? String {
+                                    self.likestTeaList.append(Tea(name: name, tagList: String(tag.dropLast(2)), imgPath: imgPath))
+                                    DispatchQueue.main.async {
+                                        self.tableView.reloadData()
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
