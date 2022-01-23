@@ -31,7 +31,11 @@ class ConditionCheckTVC: UITableViewCell {
     @IBOutlet weak var submitButton: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
+        button1.addTarget(self, action: #selector(didTapFirstButton), for: .touchUpInside)
+        button2.addTarget(self, action: #selector(didTapSecondButton), for: .touchUpInside)
         button3.addTarget(self, action: #selector(didTapThirdButton), for: .touchUpInside)
+        button4.addTarget(self, action: #selector(didTapForthButton), for: .touchUpInside)
+        button5.addTarget(self, action: #selector(didTapFifthButton), for: .touchUpInside)
         // Initialization code
         state1.addTarget(self, action: #selector(didTapState1), for: .touchUpInside)
         state2.addTarget(self, action: #selector(didTapState2), for: .touchUpInside)
@@ -48,12 +52,6 @@ class ConditionCheckTVC: UITableViewCell {
 
     }
 
-    @objc func didTapThirdButton() {
-        button1.setImage(UIImage(named: "Rectangle 40"), for: .normal)
-        button2.setImage(UIImage(named: "Rectangle 40"), for: .normal)
-        button3.setImage(UIImage(named: "Rectangle 40"), for: .normal)
-    }
-
     @objc func didTapState1() {
         state1.setImage(UIImage(named: "a"), for: .normal)
     }
@@ -64,4 +62,47 @@ class ConditionCheckTVC: UITableViewCell {
         state2.setImage(UIImage(named: "c"), for: .normal)
     }
 
+}
+
+// MARK: - didTapButton() 나뭇잎 버튼
+extension ConditionCheckTVC {
+    @objc func didTapFirstButton() {
+        button1.setImage(UIImage(named: "Rectangle 40"), for: .normal)
+        button2.setImage(UIImage(named: "button_empty-1"), for: .normal)
+        button3.setImage(UIImage(named: "button_empty-1"), for: .normal)
+        button4.setImage(UIImage(named: "button_empty-1"), for: .normal)
+        button5.setImage(UIImage(named: "button_empty-1"), for: .normal)
+    }
+    
+    @objc func didTapSecondButton() {
+        button1.setImage(UIImage(named: "Rectangle 40"), for: .normal)
+        button2.setImage(UIImage(named: "Rectangle 40"), for: .normal)
+        button3.setImage(UIImage(named: "button_empty-1"), for: .normal)
+        button4.setImage(UIImage(named: "button_empty-1"), for: .normal)
+        button5.setImage(UIImage(named: "button_empty-1"), for: .normal)
+    }
+    
+    @objc func didTapThirdButton() {
+        button1.setImage(UIImage(named: "Rectangle 40"), for: .normal)
+        button2.setImage(UIImage(named: "Rectangle 40"), for: .normal)
+        button3.setImage(UIImage(named: "Rectangle 40"), for: .normal)
+        button4.setImage(UIImage(named: "button_empty-1"), for: .normal)
+        button5.setImage(UIImage(named: "button_empty-1"), for: .normal)
+    }
+    
+    @objc func didTapForthButton() {
+        button1.setImage(UIImage(named: "Rectangle 40"), for: .normal)
+        button2.setImage(UIImage(named: "Rectangle 40"), for: .normal)
+        button3.setImage(UIImage(named: "Rectangle 40"), for: .normal)
+        button4.setImage(UIImage(named: "Rectangle 40"), for: .normal)
+        button5.setImage(UIImage(named: "button_empty-1"), for: .normal)
+    }
+    
+    @objc func didTapFifthButton() {
+        button1.setImage(UIImage(named: "Rectangle 40"), for: .normal)
+        button2.setImage(UIImage(named: "Rectangle 40"), for: .normal)
+        button3.setImage(UIImage(named: "Rectangle 40"), for: .normal)
+        button4.setImage(UIImage(named: "Rectangle 40"), for: .normal)
+        button5.setImage(UIImage(named: "Rectangle 40"), for: .normal)
+    }
 }
