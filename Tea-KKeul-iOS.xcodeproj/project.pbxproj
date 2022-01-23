@@ -50,6 +50,7 @@
 		23FB787A279698D6000549C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23FB7879279698D6000549C2 /* Assets.xcassets */; };
 		23FB787D279698D6000549C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23FB787B279698D6000549C2 /* LaunchScreen.storyboard */; };
 		55380B265487589C90FD6428 /* Pods_Tea_KKeul_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 899E3EC9C1BE9A389460B161 /* Pods_Tea_KKeul_iOS.framework */; };
+		BDD50A7C279D1315007162D4 /* Tea.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD50A7B279D1315007162D4 /* Tea.swift */; };
 		F205B3E0279796BB0065DB55 /* MyStateTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F205B3DE279796BB0065DB55 /* MyStateTVC.swift */; };
 		F205B3E1279796BB0065DB55 /* MyStateTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F205B3DF279796BB0065DB55 /* MyStateTVC.xib */; };
 		F205B3E427979DCB0065DB55 /* TeaListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F205B3E227979DCB0065DB55 /* TeaListTVC.swift */; };
@@ -140,6 +141,7 @@
 		23FB787E279698D6000549C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		899E3EC9C1BE9A389460B161 /* Pods_Tea_KKeul_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tea_KKeul_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1540D966095D75595CE5F89 /* Pods-Tea-KKeul-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tea-KKeul-iOS.debug.xcconfig"; path = "Target Support Files/Pods-Tea-KKeul-iOS/Pods-Tea-KKeul-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		BDD50A7B279D1315007162D4 /* Tea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tea.swift; sourceTree = "<group>"; };
 		CCFAAEC4C2AFE14CA7D0EEBD /* Pods-Tea-KKeul-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tea-KKeul-iOS.release.xcconfig"; path = "Target Support Files/Pods-Tea-KKeul-iOS/Pods-Tea-KKeul-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		F205B3DE279796BB0065DB55 /* MyStateTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStateTVC.swift; sourceTree = "<group>"; };
 		F205B3DF279796BB0065DB55 /* MyStateTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyStateTVC.xib; sourceTree = "<group>"; };
@@ -495,6 +497,7 @@
 			isa = PBXGroup;
 			children = (
 				23E96A1C27969FC900D7D7D3 /* Identifiers.swift */,
+				BDD50A7B279D1315007162D4 /* Tea.swift */,
 			);
 			path = Struct;
 			sourceTree = "<group>";
@@ -803,6 +806,7 @@
 				23E96A2A2796CA1F00D7D7D3 /* MagazineCVC.swift in Sources */,
 				23E96A1127969F2400D7D7D3 /* a.swift in Sources */,
 				23E96A242796A00900D7D7D3 /* StoryboardRepresentation.swift in Sources */,
+				BDD50A7C279D1315007162D4 /* Tea.swift in Sources */,
 				23406B8E27980304001D12B0 /* SettingTVC.swift in Sources */,
 				F2B0453E2797288300FFEE27 /* SubscribeTVC.swift in Sources */,
 				23E96A0627969EAA00D7D7D3 /* CalendarVC.swift in Sources */,
