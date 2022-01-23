@@ -19,7 +19,9 @@ class ConditionCheckTVC: UITableViewCell {
     @IBOutlet weak var button3: UIButton!
     @IBOutlet weak var button4: UIButton!
     @IBOutlet weak var button5: UIButton!
-
+    @IBOutlet weak var todayMonthLabel: UILabel!
+    @IBOutlet weak var todayLabel: UILabel!
+    
     @IBOutlet weak var state1: UIButton!
     @IBOutlet weak var state2: UIButton!
     @IBOutlet weak var state3: UIButton!
@@ -49,14 +51,26 @@ class ConditionCheckTVC: UITableViewCell {
         state2.addTarget(self, action: #selector(didTapState2), for: .touchUpInside)
         state11.addTarget(self, action: #selector(didTapState11), for: .touchUpInside)
         submitButton.addTarget(self, action: #selector(didTapSubmitButton), for: .touchUpInside)
+        print(Date())
+        
+        let nowDate = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMM"
+        todayMonthLabel.text = dateFormatter.string(from: nowDate).uppercased()
+        todayMonthLabel.textAlignment = .right
+        dateFormatter.dateFormat = "dd"
+        todayLabel.text = dateFormatter.string(from: nowDate)
+        todayLabel.textAlignment = .right
+        
+        
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
     }
-
+    
     @objc func didTapSubmitButton() {
         print("leaf", myLeaf)
         print("state", myState[0].state)

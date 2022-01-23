@@ -238,6 +238,8 @@
                 <outlet property="state8" destination="LHe-2x-pMF" id="hVS-6C-Aae"/>
                 <outlet property="state9" destination="2uE-b4-8DS" id="A1N-rP-BV1"/>
                 <outlet property="submitButton" destination="LS6-Q5-Txx" id="JM5-ti-CQh"/>
+                <outlet property="todayLabel" destination="3qe-gB-Ded" id="Z9g-0q-Y1E"/>
+                <outlet property="todayMonthLabel" destination="5eh-0V-smc" id="Jii-XU-whh"/>
             </connections>
             <point key="canvasLocation" x="138.40000000000001" y="79.433497536945822"/>
         </tableViewCell>
