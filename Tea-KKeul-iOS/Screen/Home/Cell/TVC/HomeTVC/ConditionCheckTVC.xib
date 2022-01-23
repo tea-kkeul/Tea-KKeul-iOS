@@ -93,11 +93,11 @@
                             <constraint firstAttribute="width" constant="71" id="BX9-KS-lG4"/>
                             <constraint firstAttribute="height" constant="24" id="pAb-Dc-RPL"/>
                         </constraints>
-                        <state key="normal" image="Group 454"/>
+                        <state key="normal" image="state1_empty"/>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hk-Sd-1zP">
                         <rect key="frame" x="114" y="95.666666666666671" width="71" height="24"/>
-                        <state key="normal" image="d"/>
+                        <state key="normal" image="state2_empty"/>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="muU-pY-Vj0">
                         <rect key="frame" x="191" y="95.666666666666671" width="71" height="24"/>
@@ -237,7 +237,7 @@
                 <outlet property="state7" destination="HMk-oG-BiH" id="EEe-7P-vA7"/>
                 <outlet property="state8" destination="LHe-2x-pMF" id="hVS-6C-Aae"/>
                 <outlet property="state9" destination="2uE-b4-8DS" id="A1N-rP-BV1"/>
-                <outlet property="submitButton" destination="LS6-Q5-Txx" id="M5d-2K-Own"/>
+                <outlet property="submitButton" destination="LS6-Q5-Txx" id="JM5-ti-CQh"/>
             </connections>
             <point key="canvasLocation" x="138.40000000000001" y="79.433497536945822"/>
         </tableViewCell>
@@ -253,9 +253,9 @@
         <image name="7" width="70.333335876464844" height="24"/>
         <image name="8" width="70.333335876464844" height="24"/>
         <image name="9" width="70.666664123535156" height="24"/>
-        <image name="Group 454" width="70.333335876464844" height="24"/>
         <image name="Group 466" width="298" height="36"/>
         <image name="button_empty-1" width="21" height="21"/>
-        <image name="d" width="70.333335876464844" height="24"/>
+        <image name="state1_empty" width="70.333335876464844" height="24"/>
+        <image name="state2_empty" width="70.333335876464844" height="24"/>
     </resources>
 </document>
