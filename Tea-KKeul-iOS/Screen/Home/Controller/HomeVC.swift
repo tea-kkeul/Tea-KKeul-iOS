@@ -8,12 +8,6 @@
 import UIKit
 import Firebase
 
-struct Tea : Codable{
-    let name: String?
-    let tagList: String?
-    let imgPath: String?
-}
-
 class HomeVC: UIViewController {
     var listData = [
         ["LikeList_CV1", "귤껍질차", "피로회복, 식욕증진"],
@@ -225,6 +219,8 @@ extension HomeVC {
         case "대추차" : return "LikeList_CV2"
         case "페퍼민트차" : return "LikeList_CV3"
         case "메밀차" : return "LikeList_CV4"
+        case "녹차" : return "LikeList_CV5"
+        case "보이차" : return "LikeList_CV6"
         default:
             return "LikeList_CV1"
         }
