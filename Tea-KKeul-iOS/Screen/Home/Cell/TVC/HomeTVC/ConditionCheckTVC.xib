@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -92,19 +93,19 @@
                             <constraint firstAttribute="width" constant="71" id="BX9-KS-lG4"/>
                             <constraint firstAttribute="height" constant="24" id="pAb-Dc-RPL"/>
                         </constraints>
-                        <state key="normal" image="Group 454"/>
+                        <state key="normal" image="state1_empty"/>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hk-Sd-1zP">
                         <rect key="frame" x="114" y="95.666666666666671" width="71" height="24"/>
-                        <state key="normal" image="d"/>
+                        <state key="normal" image="state2_empty"/>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="muU-pY-Vj0">
                         <rect key="frame" x="191" y="95.666666666666671" width="71" height="24"/>
-                        <state key="normal" image="2"/>
+                        <state key="normal" image="state3_empty"/>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BfV-hC-K9n">
                         <rect key="frame" x="268" y="95.666666666666671" width="71" height="24"/>
-                        <state key="normal" image="3"/>
+                        <state key="normal" image="state4_empty"/>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2E-8j-COQ">
                         <rect key="frame" x="37" y="127.66666666666669" width="71" height="24"/>
@@ -112,7 +113,7 @@
                             <constraint firstAttribute="height" constant="24" id="HNm-xV-bFi"/>
                             <constraint firstAttribute="width" constant="71" id="pBe-Cq-84C"/>
                         </constraints>
-                        <state key="normal" image="4"/>
+                        <state key="normal" image="state5_empty"/>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZ2-ua-L8F">
                         <rect key="frame" x="114" y="127.66666666666669" width="71" height="24"/>
@@ -120,15 +121,15 @@
                             <constraint firstAttribute="height" constant="24" id="HLQ-kH-iDZ"/>
                             <constraint firstAttribute="width" constant="71" id="Yzo-bU-g16"/>
                         </constraints>
-                        <state key="normal" image="5"/>
+                        <state key="normal" image="state6_empty"/>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMk-oG-BiH">
                         <rect key="frame" x="191" y="127.66666666666669" width="71" height="24"/>
-                        <state key="normal" image="6"/>
+                        <state key="normal" image="state7_empty"/>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHe-2x-pMF">
                         <rect key="frame" x="268" y="127.66666666666669" width="71" height="24"/>
-                        <state key="normal" image="7"/>
+                        <state key="normal" image="state8_empty"/>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2uE-b4-8DS">
                         <rect key="frame" x="37" y="157.66666666666666" width="71" height="24"/>
@@ -136,19 +137,19 @@
                             <constraint firstAttribute="height" constant="24" id="76A-EQ-yDk"/>
                             <constraint firstAttribute="width" constant="71" id="vtg-iv-dLA"/>
                         </constraints>
-                        <state key="normal" image="8"/>
+                        <state key="normal" image="state9_empty"/>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LFG-zw-AGr">
                         <rect key="frame" x="114" y="157.66666666666666" width="71" height="24"/>
-                        <state key="normal" image="9"/>
+                        <state key="normal" image="state10_empty"/>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7oD-QB-RFT">
                         <rect key="frame" x="191" y="157.66666666666666" width="71" height="24"/>
-                        <state key="normal" image="10"/>
+                        <state key="normal" image="state11_empty"/>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tk-Yw-jF7">
                         <rect key="frame" x="268" y="157.66666666666666" width="71" height="24"/>
-                        <state key="normal" image="11"/>
+                        <state key="normal" image="state12_empty"/>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LS6-Q5-Txx">
                         <rect key="frame" x="37" y="197" width="302" height="36"/>
@@ -236,25 +237,27 @@
                 <outlet property="state7" destination="HMk-oG-BiH" id="EEe-7P-vA7"/>
                 <outlet property="state8" destination="LHe-2x-pMF" id="hVS-6C-Aae"/>
                 <outlet property="state9" destination="2uE-b4-8DS" id="A1N-rP-BV1"/>
-                <outlet property="submitButton" destination="LS6-Q5-Txx" id="M5d-2K-Own"/>
+                <outlet property="submitButton" destination="LS6-Q5-Txx" id="JM5-ti-CQh"/>
+                <outlet property="todayLabel" destination="3qe-gB-Ded" id="Z9g-0q-Y1E"/>
+                <outlet property="todayMonthLabel" destination="5eh-0V-smc" id="Jii-XU-whh"/>
             </connections>
             <point key="canvasLocation" x="138.40000000000001" y="79.433497536945822"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="10" width="70.333335876464844" height="24"/>
-        <image name="11" width="70.333335876464844" height="24"/>
-        <image name="2" width="70.666664123535156" height="24"/>
-        <image name="3" width="70.333335876464844" height="24"/>
-        <image name="4" width="70.333335876464844" height="24"/>
-        <image name="5" width="70.666664123535156" height="24"/>
-        <image name="6" width="70.666664123535156" height="24"/>
-        <image name="7" width="70.333335876464844" height="24"/>
-        <image name="8" width="70.333335876464844" height="24"/>
-        <image name="9" width="70.666664123535156" height="24"/>
-        <image name="Group 454" width="70.333335876464844" height="24"/>
         <image name="Group 466" width="298" height="36"/>
         <image name="button_empty-1" width="21" height="21"/>
-        <image name="d" width="70.333335876464844" height="24"/>
+        <image name="state10_empty" width="70.666664123535156" height="24"/>
+        <image name="state11_empty" width="70.333335876464844" height="24"/>
+        <image name="state12_empty" width="70.333335876464844" height="24"/>
+        <image name="state1_empty" width="70.333335876464844" height="24"/>
+        <image name="state2_empty" width="70.333335876464844" height="24"/>
+        <image name="state3_empty" width="70.666664123535156" height="24"/>
+        <image name="state4_empty" width="70.333335876464844" height="24"/>
+        <image name="state5_empty" width="70.333335876464844" height="24"/>
+        <image name="state6_empty" width="70.666664123535156" height="24"/>
+        <image name="state7_empty" width="70.666664123535156" height="24"/>
+        <image name="state8_empty" width="70.333335876464844" height="24"/>
+        <image name="state9_empty" width="70.333335876464844" height="24"/>
     </resources>
 </document>
