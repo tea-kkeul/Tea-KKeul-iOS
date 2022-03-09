@@ -2,9 +2,9 @@
 2022.01.17 ~ 2022.01.20
 
 👩‍💻👨‍💻 개발팀
-|[황윤경](https://github.com/yunkyung-Hwang) <img src="https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1582581609/noticon/cczbpahp5od6voerbvwr.svg" width="14px;"/> | [이윤진](https://github.com/profitjean) <img src="https://avatars.githubusercontent.com/u/59593223?v=4" width="14px;"/> | [김내림](https://github.com/naerim) <img src="https://avatars.githubusercontent.com/u/61643122?v=4" width="14px;"/> | [조은비](https://github.com/eunbicho) <img src="https://avatars.githubusercontent.com/u/36323800?v=4" width="14px;"/> | 
+|[황윤경](https://github.com/yunkyung-Hwang) <img src="https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1582581609/noticon/cczbpahp5od6voerbvwr.svg" width="14px;"/> | [이윤진](https://github.com/profitjean) <img src="https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1582581609/noticon/cczbpahp5od6voerbvwr.svg" width="14px;"/> | [김내림](https://github.com/naerim) <img src="https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1582581609/noticon/cczbpahp5od6voerbvwr.svg" width="14px;"/> | [조은비](https://github.com/eunbicho) <img src="https://noticon-static.tammolo.com/dgggcrkxq/image/upload/v1582581609/noticon/cczbpahp5od6voerbvwr.svg" width="14px;"/> | 
 | ------------------------------------------------------- | -------------------------------------------------------- | --------------------------------------------------------- | ---------------------------------------------------------- |
-| <img src="https://github.com/yunkyung-Hwang.png" width="100"> | <img src="https://github.com/profitjean.png" width="100">  | <img src="https://github.com/naerim.png" width="100"> | <img src="https://github.com/eunbicho" width="100"> |
+| <img src="https://github.com/yunkyung-Hwang.png" width="100"> | <img src="https://github.com/profitjean.png" width="100">  | <img src="https://github.com/naerim.png" width="100"> | <img src="https://github.com/eunbicho.png" width="100"> |
 
 
 ![스크린샷 2022-03-09 오후 11 35 17](https://user-images.githubusercontent.com/61379671/157463164-d44a01e8-526c-4c3e-8843-4bf7329788df.png)
